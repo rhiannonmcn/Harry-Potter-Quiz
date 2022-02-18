@@ -1,8 +1,8 @@
-# **_Harry Potter Quiz - Project Portfolio 2 - Javascript**
+# **_Harry Potter Quiz - Project Portfolio 2 - Javascript_**
 
 # Contents
 
-* [Objective](<#objective>)
+* [Objective](<#objective>) 
 * [User Experience](<#user-experience-ux>)
     * [Target Audience](<#target-audience>)
     * [User Stories](<#user-stories>)
@@ -35,6 +35,18 @@
 ## Target Audience
 
 ## User Stories
+
+| ID | ROLE | ACTION | GOAL |
+|-----------------|:-------------|:---------------:|---------------:| ---------------:|
+| 1 | USER | As a user, I want to be able play the Harry Potter Quiz| So I can test my knowledge|
+| 2 | USER | As a user, I want to be able to navigate around the interface easily | So I can |
+| 3 | USER | As a user, I want to be able to play the quiz across all devices | So I can play the quiz on different devices |
+| 4 | USER | As a user, I want the option of a more difficult quiz | So I can challenge myself  |
+| 5 | USER | As a user, I want to be able to start the game when I am ready | So I can prepare myself |
+| 6 | USER | As a user, I want to be track my score | So I can improve on it |
+| 7 | USER | As a user, I want to see the right answer highlighted if I answer wrong | So I can see where I went wrong |
+| 8 | USER | As a user, I want to be able to start a new game when the current one ends | So I can see if I can beat my score|
+
 
 ## Site Aims
 
