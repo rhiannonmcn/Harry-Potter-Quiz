@@ -4,9 +4,8 @@
 
 * [Objective](<#objective>) 
 * [User Experience](<#user-experience-ux>)
-    * [Target Audience](<#target-audience>)
-    * [User Stories](<#user-stories>)
     * [Site Aims](<#site-aims>)
+    * [User Stories](<#user-stories>)
     * [Design Wireframes](<#design-wireframes>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
@@ -32,9 +31,17 @@
 
 # User Experience (UX)
 
-## Target Audience
+## Site Aims
+
+* To provide the user with an interative quiz to test their knowledge on the subject of the Harry Potter Books.
+* To create a quiz that encourages the user to start again to improve their score.
+* To provide a quiz that is fully responsive so the user can play across multiple platforms.
+* To provide an interactive experience that is easy to navigate and understand.
+* To provide an experience that is enjoyable to the user so that they will do the quiz again.
 
 ## User Stories
+
+The **user** is any person who would like to test their Harry Potter book knowledge.
 
 | ID | ROLE | ACTION | GOAL |
 |-----------------|:-------------|:---------------:|:---------------:|
@@ -46,9 +53,7 @@
 | 6 | USER | As a user, I want to be track my score | So I can improve on it |
 | 7 | USER | As a user, I want to see the right answer highlighted if I answer wrong | So I can see where I went wrong |
 | 8 | USER | As a user, I want to be able to start a new game when the current one ends | So I can see if I can beat my score|
-
-
-## Site Aims
+| 9 | USER | As a user, when I play the game a game I want the questions to be randomly ordered | So the game can be as challenging as possible
 
 ## Design Wireframes
 
