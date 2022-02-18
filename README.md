@@ -37,7 +37,7 @@
 ## User Stories
 
 | ID | ROLE | ACTION | GOAL |
-|-----------------|:-------------|:---------------:|---------------:| ---------------:|
+|-----------------|:-------------|:---------------:|:---------------:|
 | 1 | USER | As a user, I want to be able play the Harry Potter Quiz| So I can test my knowledge|
 | 2 | USER | As a user, I want to be able to navigate around the interface easily | So I can |
 | 3 | USER | As a user, I want to be able to play the quiz across all devices | So I can play the quiz on different devices |
