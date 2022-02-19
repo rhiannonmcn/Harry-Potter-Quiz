@@ -3,9 +3,46 @@
 /* Global styles */
 
 *{
-    background-color:blueviolet;
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-size:16px;
 }
+
+html{
+    background:url("../images/hp-bg-image.jpg") no-repeat center center;
+    background-size:cover;
+}
+body{
+    display:grid;
+    width:100vw;
+    height:100vh;
+}
+
+main{
+    display:grid;
+}
+.quiz-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width:60%;
+    max-height:60%;
+    width:100%;
+    height:100%;
+    justify-self: center;
+    align-self:center;
+}
+
+.info-bar{
+    height:50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+/*.hide{
+    display:none;
+}*/
+

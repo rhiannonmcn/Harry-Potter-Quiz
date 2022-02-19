@@ -15,120 +15,118 @@
 </head>
 
 <body>
-    <!-- Start of game difficulty selection area -->
-    <section class="quiz-difficulty" id="quiz-difficulty">
-        <div class="info-bar">
-            <div>
-                <i class="fab fa-fort-awesome"></i>
-            </div>
-            <div>
-                <div>
-                    <i class="fas fa-volume-mute"></i>
+    <main>
+        <section class="quiz-container">
+            <!-- Start of game difficulty selection area -->
+            <section class="quiz-difficulty" id="quiz-difficulty">
+                <div class="info-bar">
+                    <div>
+                        <i class="fab fa-fort-awesome"></i>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <div div class="hide">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <i class="fas fa-volume-up"></i>
+                    <div>Select difficulty</div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <h1>Select difficulty</h1>
-        </div>
-        <div class="difficulty-btn-container">
-            <button class="difficulty-btn easy-difficulty">Easy</button>
-            <button class="difficulty-btn medium-difficulty">Medium</button>
-            <button class="difficulty-btn hard-difficulty">Hard</button>
-        </div>
-    </section>
-    <!--Start of quiz start area-->
-    <section class="quiz-start" id="quiz-start">
-        <div class="info-bar">
-            <div>
-                <i class="fab fa-fort-awesome"></i>
-            </div>
-            <div>
-                <div>
-                    <i class="fas fa-volume-mute"></i>
+                <div class="difficulty-btn-container">
+                    <button class="difficulty-btn easy-difficulty">Easy</button>
+                    <button class="difficulty-btn medium-difficulty">Medium</button>
+                    <button class="difficulty-btn hard-difficulty">Hard</button>
                 </div>
-                <div>
-                    <i class="fas fa-volume-up"></i>
-                </div>
-            </div>
-        </div>
-        <div>
-            <p>Are you ready?</p>
-        </div>
-        <div>
-            <button class="start-button">Start</button>
-        </div>
-    </section>
-    <!--Start of quiz questions area-->
-    <section class="quiz-questions" id="quiz-questions">
-        <div class="info-bar">
-            <div>
-                <i class="fab fa-fort-awesome"></i>
-            </div>
-            <div>
-                <div>
-                    <i class="fas fa-volume-mute"></i>
+            </section>
+            <!--Start of quiz start area-->
+            <section class="quiz-start hide" id="quiz-start">
+                <div class="info-bar">
+                    <div>
+                        <i class="fab fa-fort-awesome"></i>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <div div class="hide">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <i class="fas fa-volume-up"></i>
-                </div>
-            </div>
-            <div class="question-number">
-                Question number
-            </div>
-            <div>
-                <div>
-                    <i class="far fa-hourglass"></i>
+                    <p>Are you ready?</p>
                 </div>
                 <div>
-                    20s
+                    <button class="start-button">Start</button>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div>
-                    10
-                </div>
-            </div>
+            </section>
+            <!--Start of quiz questions area-->
+            <section class="quiz-questions hide" id="quiz-questions">
+                <div class="info-bar">
+                    <div>
+                        <i class="fab fa-fort-awesome"></i>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <div class="hide">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
+                    <div class="question-number">
+                        Question number
+                    </div>
+                    <div>
+                        <div>
+                            <i class="far fa-hourglass"> 20s </i>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-trophy"> 6 </i>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="question-text">
-            <p>Question did not load, please reload and try again.</p>
-        </div>
-        <div class="question-answer">
-            <button class="answer answer1">Answer 1</button>
-            <button class="answer answer2">Answer 2</button>
-            <button class="answer answer3">Answer 3</button>
-            <button class="answer answer4">Answer 4</button>
-        </div>
-    </section>
-    <!--Start of results section area-->
-    <section class="quiz-results" id="quiz-results">
-        <div class="info-bar">
-            <div>
-                <i class="fab fa-fort-awesome"></i>
-            </div>
-            <div>
-                <div>
-                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div class="question-text">
+                    <p>Question did not load, please reload and try again.</p>
+                </div>
+                <div class="question-answer">
+                    <button class="answer answer1">Answer 1</button>
+                    <button class="answer answer2">Answer 2</button>
+                    <button class="answer answer3">Answer 3</button>
+                    <button class="answer answer4">Answer 4</button>
+                </div>
+            </section>
+            <!--Start of results section area-->
+            <section class="quiz-results hide" id="quiz-results">
+                <div class="info-bar">
+                    <div>
+                        <i class="fab fa-fort-awesome"></i>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <div div class="hide">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <i class="fas fa-volume-up"></i>
+                    <div>Congratulations, you got 9/10 correct on easy mode and a score of</div>
+                    <div> 18 </div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <div>Congratulations, you got 9/10 correct on easy mode and a score of</div>
-            <div> 18 </div>
-        </div>
-        <div>
-            <button class="play-again">Play again?</button>
-        </div>
-    </section>
+                <div>
+                    <button class="play-again">Play again?</button>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
 
