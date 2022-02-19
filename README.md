@@ -100,6 +100,10 @@ The **user** is any person who would like to test their Harry Potter book knowle
 
 ### Colour Scheme
 
+The final colour scheme chosen was a rich dark red colour, with a warm, cream colour for the text and a mid grey colour as an accent. This colour scheme directly links back with the theme of the project: Harry Potter. Red is often associated with Harry Potter, the main character, because of his association with the Gryffindor house, who's colour is red or scarlet. The grey and cream colours are a nod to the main setting of the books, which is a castle, and the magical communitys main ways of communication which tends to be a bit old fashioned in it's use of parchment and quills. 
+
+![Site colour scheme](assets/images/readme/color-palete.png)
+
 ### Typography
 
 [Back to top](<#contents>)
