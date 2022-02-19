@@ -1,0 +1,11 @@
+/* Google font */
+
+/* Global styles */
+
+*{
+    background-color:blueviolet;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:16px;
+}

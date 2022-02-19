@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="An interactive Harry Potter quiz based off the books of the same name" />
+    <meta name="keywords"
+        content="Harry Potter, books, Harry Potter Quiz, Harry Potter Books, Harry Potter Questions" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Harry Potter Book Quiz</title>
 </head>
+
 <body>
-    
+    <!-- Start of game difficulty selection area -->
+    <section class="game-difficulty" id="game-difficulty">
+        <div class="info-bar">
+            <div>
+                <i class="fab fa-fort-awesome"></i>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Select difficulty</h1>
+        </div>
+        <div class="difficulty-btn-container">
+            <button class="difficulty-btn easy-difficulty">Easy</button>
+            <button class="difficulty-btn medium-difficulty">Medium</button>
+            <button class="difficulty-btn hard-difficulty">Hard</button>
+        </div>
+    </section>
+    <section class="game-start" id="game-start">
+        <div class="info-bar">
+            <div>
+                <i class="fab fa-fort-awesome"></i>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Are you ready?</p>
+        </div>
+        <div>
+            <button class="start-button">Start</button>
+        </div>
+    </section>
+    <section class="game-questions" id="game-questions">
+        <div class="info-bar">
+            <div>
+                <i class="fab fa-fort-awesome"></i>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+            <div class="question-number">
+                Question number
+            </div>
+            <div>
+                <div>
+                    <i class="far fa-hourglass"></i>
+                </div>
+                <div>
+                    20s
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div>
+                    10
+                </div>
+            </div>
+
+        </div>
+        <div class="question-text">
+            <p>Question did not load, please reload and try again.</p>
+        </div>
+        <div class="question-answer">
+            <button class="answer answer1">Answer 1</button>
+            <button class="answer answer2">Answer 2</button>
+            <button class="answer answer3">Answer 3</button>
+            <button class="answer answer4">Answer 4</button>
+        </div>
+    </section>
+    <section class="game-results" id="game-results">
+        <div class="info-bar">
+            <div>
+                <i class="fab fa-fort-awesome"></i>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>Congratulations, you got 9/10 correct on easy mode and a score of</div>
+            <div> 18 </div>
+        </div>
+        <div>
+            <button class="play-again">Play again?</button>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
