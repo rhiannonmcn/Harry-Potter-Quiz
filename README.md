@@ -57,6 +57,43 @@ The **user** is any person who would like to test their Harry Potter book knowle
 
 ## Design Wireframes
 
+<details> <summary> Low fidelity desktop wireframe</summary>
+
+![Difficulty screen](assets/images/wireframes/desktop-wireframe-difficulty.png)
+
+![Start screen](assets/images/wireframes/desktop-wireframe-start.png)
+
+![Questions screen](assets/images/wireframes/dekstop-wireframe-questions.png)
+
+![Finish quiz screen](assets/images/wireframes/desktop-wireframe-finish.png)
+
+</details>
+
+<details> <summary> Low fidelity tablet wireframe</summary>
+
+![Difficulty screen](assets/images/wireframes/tablet-wireframe-difficulty.png)
+
+![Start screen](assets/images/wireframes/tablet-wireframe-start.png)
+
+![Questions screen](assets/images/wireframes/tablet-wireframe-questions.png)
+
+![Finish quiz screen](assets/images/wireframes/tablet-wireframe-finish.png)
+
+</details>
+
+<details> <summary> Low fidelity phone wireframe</summary>
+
+![Difficulty screen](assets/images/wireframes/phone-wireframe-difficulty.png)
+
+![Start screen](assets/images/wireframes/phone-wireframe-start.png)
+
+![Questions screen](assets/images/wireframes/phone-wireframe-questions.png)
+
+![Finish quiz screen](assets/images/wireframes/phone-wireframe-finish.png)
+
+</details>
+
+
 ## Site Structure
 
 ## Design Choices
