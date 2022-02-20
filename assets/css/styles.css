@@ -89,7 +89,7 @@ h1{
 
 /* Styles for quiz area layout start here */
 
-.quiz-text h2{
+h2{
     font-size: 3rem;
     text-align:center;
     padding:20px;
@@ -98,14 +98,14 @@ h1{
 
 /* Styles for difficulty quiz area start here */
 
-.difficulty-btn-container{
+.difficulty-btn-container, .quiz-start-content{
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.difficulty-btn{
+.difficulty-btn, .start-button{
     padding:20px;
     margin-top:12px;
     background-color:#4a0600;
@@ -120,13 +120,17 @@ h1{
     
 }
 
-.difficulty-btn:hover{
+.difficulty-btn:hover, .start-button:hover{
     background-color:#fff9e6;
     color:#4a0600;
     border: 2px #4a0600 solid;
     outline: 1px solid #4a0600;
     transform: scale(1.1);
     transition: transform 0.2s ease-in;
+}
+
+.quiz-start-content{
+    padding-top:120px;
 }
 
 

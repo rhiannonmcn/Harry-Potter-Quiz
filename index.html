@@ -18,13 +18,14 @@
     <main>
         <header>
             <div>
-                <img src="assets/images/Hogwarts-Crest.png" alt="An image of the Hogwarts school of witchcraft and wizardry crest" height="200">
+                <img src="assets/images/Hogwarts-Crest.png"
+                    alt="An image of the Hogwarts school of witchcraft and wizardry crest" height="200">
             </div>
             <h1>Harry Potter Online Quiz</h1>
         </header>
         <section class="quiz-container">
             <!-- Start of game difficulty selection area -->
-            <section class="quiz-difficulty" id="quiz-difficulty">
+            <section class="quiz-difficulty hide" id="quiz-difficulty">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome "></i>
@@ -50,7 +51,7 @@
                 </div>
             </section>
             <!--Start of quiz start area-->
-            <section class="quiz-start hide" id="quiz-start">
+            <section class="quiz-start" id="quiz-start">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome"></i>
@@ -64,10 +65,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>Are you ready?</p>
-                </div>
-                <div>
+                <div class="quiz-start-content">
+                    <h2>Are you ready?</h2>
                     <button class="start-button">Start</button>
                 </div>
             </section>
