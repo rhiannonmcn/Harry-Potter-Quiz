@@ -30,8 +30,15 @@ main{
     grid-gap: 1rem;
 }
 
+h2{
+    font-size: 3rem;
+    text-align:center;
+    padding:20px;
+    color:#fff9e6;
+}
+
 .quiz-container{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     border: 2px #fff9e6 solid;
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
@@ -42,6 +49,7 @@ main{
     justify-self: center;
     align-self:center;
     padding: 10px;
+    box-shadow: 5px 5px 100px #fff9e6;
 }
 
 .info-bar{
@@ -52,6 +60,7 @@ main{
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    border-bottom: 1px solid #fff9e6;
 }
 .fas, .fab, .far{
     color:#fff9e6;
@@ -89,25 +98,16 @@ h1{
     1px 30px 60px rgba(16,16,16,0.4); 
 }
 
-/* Styles for quiz area layout start here */
+/* Same styles for quiz difficulty, quiz start screen, quiz questions screen and the results screen start here */
 
-h2{
-    font-size: 3rem;
-    text-align:center;
-    padding:20px;
-    color:#fff9e6;
-}
-
-/* Same styles for quiz difficulty, quiz start screen and quiz questions screen start here */
-
-.difficulty-btn-container, .quiz-start-content{
+.difficulty-btn-container, .quiz-start-content {
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.difficulty-btn, .start-button, .answer-btn, .next-btn{
+.difficulty-btn, .start-button, .answer-btn, .next-btn, .play-again-btn{
     padding:20px;
     margin-top:12px;
     background-color:#4a0600;
@@ -122,7 +122,7 @@ h2{
     
 }
 
-.difficulty-btn:hover, .start-button:hover,.answer-btn:hover, .next-btn:hover{
+.difficulty-btn:hover, .start-button:hover,.answer-btn:hover, .next-btn:hover, .play-again-btn:hover{
     background-color:#fff9e6;
     color:#4a0600;
     border: 2px #4a0600 solid;
@@ -140,7 +140,7 @@ h2{
 /* unique styles for quiz questions screen */
 
 .question-text{
-    margin:60px 0 20px 0;
+    margin:40px 0;
 }
 
 .question-text p{
@@ -152,7 +152,6 @@ h2{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin:20px 0;
 }
 .answer-btn {
     justify-self:center;
@@ -177,6 +176,23 @@ h2{
     justify-self:center;
 }
 
+/*unique styles for the results screen */
+
+.results-content-container {
+    display:grid;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.results-content-container h2 {
+    font-size: 2rem;
+}
+
+.results-content-container p {
+    font-size: 3rem;
+}
+
+/* hide the content with the class hide */
 .hide{
     display:none;
 }
