@@ -77,7 +77,7 @@ header{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 4.6rem;
     color:#fff9e6;
     align-self:center;
     text-align: center;
@@ -131,6 +131,12 @@ h1{
     transition: transform 0.2s ease-in;
 }
 
+/* unique styles for quiz difficulty screen */
+
+.quiz-difficulty-container {
+    margin-top: 10px;
+}
+
 /* unique styles for quiz start screen */
 
 .quiz-start-content{
@@ -155,6 +161,10 @@ h1{
 }
 .answer-btn {
     justify-self:center;
+    height:80px;
+    width:60%;
+    font-size: 1.6rem;
+    padding:10px;
 }
 
 .answer-btn-container button:nth-child(even){
@@ -174,6 +184,8 @@ h1{
     width:100%;
     max-width:20%;
     justify-self:center;
+    font-size: 1.8rem;
+    padding: 10px;
 }
 
 /*unique styles for the results screen */
