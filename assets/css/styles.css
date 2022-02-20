@@ -1,4 +1,5 @@
 /* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Prata&display=swap');
 
 /* Global styles */
 
@@ -17,6 +18,8 @@ body{
     display:grid;
     width:100vw;
     height:100vh;
+    font-family: 'Prata', sans-serif;
+    letter-spacing: 4px;
 }
 
 main{
@@ -91,7 +94,21 @@ h1{
     color:#fff9e6;
     font-size:2rem;
     width:50%;
-    border: 1px #fff9e6 solid;
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
+    font-family: 'Prata', sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+.difficulty-btn:hover{
+    background-color:#fff9e6;
+    color:#4a0600;
+    border: 2px #4a0600 solid;
+    outline: 1px solid #4a0600;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
 }
 
 
