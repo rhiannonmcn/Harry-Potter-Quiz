@@ -19,7 +19,8 @@ body{
     width:100vw;
     height:100vh;
     font-family: 'Prata', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+    color:#fff9e6;
 }
 
 main{
@@ -70,6 +71,7 @@ h1{
     font-size: 5rem;
     color:#fff9e6;
     align-self:center;
+    text-align: center;
     /* code for h1 3d effect can be found here: https://codepen.io/ryandsouza13/pen/yEBJQV */
     text-shadow: 1px 1px 1px #4a0600,
         1px 2px 1px #4a0600,
@@ -96,7 +98,7 @@ h2{
     color:#fff9e6;
 }
 
-/* Styles for difficulty quiz area start here */
+/* Same styles for quiz difficulty, quiz start screen and quiz questions screen start here */
 
 .difficulty-btn-container, .quiz-start-content{
     display:grid;
@@ -105,7 +107,7 @@ h2{
     align-items: center;
 }
 
-.difficulty-btn, .start-button{
+.difficulty-btn, .start-button, .answer-btn, .next-btn{
     padding:20px;
     margin-top:12px;
     background-color:#4a0600;
@@ -120,7 +122,7 @@ h2{
     
 }
 
-.difficulty-btn:hover, .start-button:hover{
+.difficulty-btn:hover, .start-button:hover,.answer-btn:hover, .next-btn:hover{
     background-color:#fff9e6;
     color:#4a0600;
     border: 2px #4a0600 solid;
@@ -129,10 +131,51 @@ h2{
     transition: transform 0.2s ease-in;
 }
 
+/* unique styles for quiz start screen */
+
 .quiz-start-content{
-    padding-top:120px;
+    margin-top:120px;
 }
 
+/* unique styles for quiz questions screen */
+
+.question-text{
+    margin:60px 0 20px 0;
+}
+
+.question-text p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.answer-btn-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin:20px 0;
+}
+.answer-btn {
+    justify-self:center;
+}
+
+.answer-btn-container button:nth-child(even){
+    margin-right:100px;
+}
+
+.answer-btn-container button:nth-child(odd){
+    margin-left:100px;
+}
+
+.next-btn-container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.next-btn{
+    width:100%;
+    max-width:20%;
+    justify-self:center;
+}
 
 .hide{
     display:none;
