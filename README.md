@@ -150,6 +150,8 @@ The website was deployed to GitHub pages via the following methods:
 
 # Credits
 
+* [Hogwarts Crest image](https://commons.wikimedia.org/wiki/File:Hogwarts-Crest.png)
+
 [Back to top](<#contents>)
 
 # Acknowledgements
