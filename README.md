@@ -151,6 +151,7 @@ The website was deployed to GitHub pages via the following methods:
 # Credits
 
 * [Hogwarts Crest image](https://commons.wikimedia.org/wiki/File:Hogwarts-Crest.png)
+*[3D CSS effect in h1](https://codepen.io/ryandsouza13/pen/yEBJQV)
 
 [Back to top](<#contents>)
 

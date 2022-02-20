@@ -31,6 +31,9 @@ main{
 
 .quiz-container{
     background-color: rgba(0, 0, 0, 0.7);
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
     max-width:80%;
     max-height:80%;
     width:100%;
@@ -44,7 +47,7 @@ main{
     height:50px;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: max(100px) max(100px) auto max(100px) max(100px);
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
@@ -67,6 +70,21 @@ h1{
     font-size: 5rem;
     color:#fff9e6;
     align-self:center;
+    /* code for h1 3d effect can be found here: https://codepen.io/ryandsouza13/pen/yEBJQV */
+    text-shadow: 1px 1px 1px #4a0600,
+        1px 2px 1px #4a0600,
+        1px 3px 1px #4a0600,
+        1px 4px 1px #4a0600,
+        1px 5px 1px #4a0600,
+        1px 6px 1px #4a0600,
+        1px 7px 1px #4a0600,
+        1px 8px 1px #4a0600,
+        1px 9px 1px #4a0600,
+        1px 10px 1px #4a0600,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4); 
 }
 
 /* Styles for quiz area layout start here */
