@@ -33,7 +33,7 @@ main{
 h2{
     font-size: 3rem;
     text-align:center;
-    padding:20px;
+    padding:20px 0;
     color:#fff9e6;
 }
 
@@ -61,7 +61,9 @@ h2{
     justify-items: center;
     align-items: center;
     border-bottom: 1px solid #fff9e6;
+    text-align: center;
 }
+
 .fas, .fab, .far{
     color:#fff9e6;
     font-size: 1.6rem;
@@ -207,4 +209,70 @@ h1{
 /* hide the content with the class hide */
 .hide{
     display:none;
+}
+
+/* Media Queries start here */
+
+/* For screens of 700px wide and down */
+
+@media screen and (max-width:700px) {
+
+    /* global styles */
+
+    .info-bar {
+        grid-template-columns:min(50px) min(50px) auto min(80px) min(80px);
+    }
+
+    .fas, .fab, .far{
+        font-size: 1.2rem;
+        
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+
+    /* header styles */
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    /*unique styles for questions screen */
+
+    .question-text{
+        margin:30px 0;
+    }
+
+    .answer-btn{
+        font-size: 1.2rem;
+    }
+
+    .answer-btn-container button:nth-child(even){
+        margin-right:40px;
+    }
+    
+    .answer-btn-container button:nth-child(odd){
+        margin-left:40px;
+    }
+
+    .next-btn{
+        max-width:40%;
+    }
+
+    /*unique styles for results screen */
+
+    .results-content-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .results-content-container p {
+        font-size: 2.8rem;
+    }
+
+    .play-again-btn{
+        font-size: 1.6rem;
+        max-width: 60%;
+        padding: 20px 10px;
+    }
 }
