@@ -73,11 +73,11 @@ header{
     padding:10px;
     height:200px;
     display:grid;
-    grid-template-columns: min(200px) auto;
+    grid-template-columns: min(150px) auto;
 }
 
 h1{
-    font-size: 4.6rem;
+    font-size: 4rem;
     font-family:'Cinzel', sans-serif;
     color:#fff9e6;
     align-self:center;
