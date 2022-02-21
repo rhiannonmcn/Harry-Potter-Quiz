@@ -23,7 +23,7 @@
         </header>
         <section class="quiz-container">
             <!-- Start of game difficulty selection area -->
-            <section class="quiz-difficulty hide" id="quiz-difficulty">
+            <section class="quiz-difficulty" id="quiz-difficulty">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome "></i>
@@ -42,9 +42,9 @@
                         <h2>Select difficulty</h2>
                     </div>
                     <div class="difficulty-btn-container">
-                        <button class="difficulty-btn easy-difficulty">Easy</button>
-                        <button class="difficulty-btn medium-difficulty">Medium</button>
-                        <button class="difficulty-btn hard-difficulty">Hard</button>
+                        <button class="difficulty-btn easy-difficulty" id="easy-difficulty-btn">Easy</button>
+                        <button class="difficulty-btn medium-difficulty" id="medium-difficulty-btn">Medium</button>
+                        <button class="difficulty-btn hard-difficulty" id="hard-difficulty-btn">Hard</button>
                     </div>
                 </div>
             </section>
@@ -65,11 +65,11 @@
                 </div>
                 <div class="quiz-start-content">
                     <h2>Are you ready?</h2>
-                    <button class="start-button">Start</button>
+                    <button class="start-button" id="start-button">Start</button>
                 </div>
             </section>
             <!--Start of quiz questions area-->
-            <section class="quiz-questions-area" id="quiz-questions">
+            <section class="quiz-questions-area hide" id="quiz-questions">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome"></i>
@@ -133,6 +133,7 @@
         </section>
     </main>
 
+    <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
 
 </body>

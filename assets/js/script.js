@@ -1,26 +1,41 @@
+const easyDifficultyBtn = document.getElementById("easy-difficulty-btn");
+const mediumDifficultyBtn = document.getElementById("medium-difficulty-btn");
+const hardDifficultyBtn = document.getElementById("hard-difficulty-btn");
+const startBtn = document.getElementById('start-button');
 
+//Event listeners
 
-
+startBtn.addEventListener('click', runQuiz);
 
 //function to run quiz
 
-function runQuiz()
+function runQuiz(){
+   
+}
 
 //function to load next question
 
-function nextQuestion()
+function nextQuestion(){
+
+}
 
 //function to create random question list for each game
 
-function createQuizQuestions()
+function createQuizQuestions(){
+
+}
 
 //function to check for correct answer
 
-function checkAnswer()
+function checkAnswer(){
+
+}
 
 //function to increment score
 
-function incrementScore()
+function incrementScore(){
+
+}
 
 //optional
 
