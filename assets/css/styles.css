@@ -40,7 +40,7 @@ h2 {
 
 .quiz-container {
     background-color: rgba(0, 0, 0, 0.8);
-    border: 2px #fff9e6 solid;
+   /* border: 2px #fff9e6 solid;*/
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
     max-width: 80%;
@@ -68,7 +68,6 @@ h2 {
 .far {
     color: #fff9e6;
     font-size: 1.6rem;
-
 }
 
 /* header styles start here*/
@@ -165,10 +164,12 @@ h1 {
 
 /* unique styles for quiz questions screen */
 
+.question-number h3 {
+    text-align: center;
+}
 .question-text p {
     font-size: 1.5rem;
     text-align: center;
-    padding: 20px;
 }
 
 .answer-btn-container {
@@ -298,8 +299,7 @@ h1 {
 
     .quiz-container {
         max-width: 94%;
-        max-height: 500px;
-        height: 100%;
+        padding:0;
     }
 
     /*header styles*/
@@ -314,7 +314,7 @@ h1 {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h2 {
@@ -338,7 +338,7 @@ h1 {
 
     .question-text p {
         font-size: 1rem;
-        text-align: center;
+        padding: 5px;
     }
 
     .answer-btn-container {
@@ -364,6 +364,13 @@ h1 {
     .results-content-container h2 {
         font-size: 1rem;
         padding: 5px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 1rem;
     }
 
 }
