@@ -1,0 +1,1 @@
+//array for each of the different difficulty levels
