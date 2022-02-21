@@ -26,8 +26,9 @@ body {
 
 main {
     display: grid;
-    align-self:center;
+    align-self: center;
     grid-gap: 1rem;
+    justify-content: center;
 }
 
 h2 {
@@ -54,7 +55,7 @@ h2 {
     height: 50px;
     display: grid;
     width: 100%;
-    grid-template-columns: max(100px) max(100px) auto max(100px) max(100px);
+    grid-template-columns:repeat(4, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
@@ -76,6 +77,11 @@ header {
     margin-top: 10px;
     display: grid;
     grid-template-columns: min(150px) auto;
+}
+
+.hogwarts-logo {
+    justify-self: center;
+    align-self: center;
 }
 
 h1 {
@@ -227,11 +233,7 @@ h1 {
 @media screen and (max-width:700px) {
 
     /* global styles */
-
-    .info-bar {
-        grid-template-columns: min(50px) min(50px) auto min(80px) min(80px);
-    }
-
+    
     .fas,
     .fab,
     .far {
@@ -289,10 +291,15 @@ h1 {
 @media screen and (max-width:490px) {
 
     /*Global styles*/
-    
-    .quiz-container{
-        margin-top:20px;
-        max-width:90%;
+
+    .main {
+        grid-template-rows: auto;
+    }
+
+    .quiz-container {
+        max-width: 94%;
+        max-height: 500px;
+        height: 100%;
     }
 
     /*header styles*/
@@ -304,7 +311,6 @@ h1 {
     .hogwarts-logo {
         width: 100px;
         height: 100px;
-        justify-self: center;
     }
 
     h1 {
@@ -322,10 +328,10 @@ h1 {
     .answer-btn,
     .next-btn,
     .play-again-btn {
-        padding: 20px 10px;
-        margin-top: 12px;
+        padding: 14px 10px;
+        margin-top: 8px;
         font-size: 1rem;
-        width: 70%;
+        width: 80%;
     }
 
     /*unique styles for quiz questions screen */
@@ -333,7 +339,6 @@ h1 {
     .question-text p {
         font-size: 1rem;
         text-align: center;
-        padding: 10px 2px;
     }
 
     .answer-btn-container {
@@ -353,11 +358,12 @@ h1 {
         margin-left: unset;
     }
 
+
     /* unique styles for results page */
 
-    .results-content-container h2{
+    .results-content-container h2 {
         font-size: 1rem;
-        padding:5px;
+        padding: 5px;
     }
 
 }

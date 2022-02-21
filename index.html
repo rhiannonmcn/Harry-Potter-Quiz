@@ -17,15 +17,13 @@
 <body>
     <main>
         <header>
-            
-                <img class="hogwarts-logo" src="assets/images/Hogwarts-Crest.png"
-                    alt="An image of the Hogwarts school of witchcraft and wizardry crest" height="150" width="150">
-            
+            <img class="hogwarts-logo" src="assets/images/Hogwarts-Crest.png"
+                alt="An image of the Hogwarts school of witchcraft and wizardry crest" height="150" width="150">
             <h1>Harry Potter Book Quiz</h1>
         </header>
         <section class="quiz-container">
             <!-- Start of game difficulty selection area -->
-            <section class="quiz-difficulty hide" id="quiz-difficulty">
+            <section class="quiz-difficulty" id="quiz-difficulty">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome "></i>
@@ -71,7 +69,7 @@
                 </div>
             </section>
             <!--Start of quiz questions area-->
-            <section class="quiz-questions-area" id="quiz-questions">
+            <section class="quiz-questions-area hide" id="quiz-questions">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome"></i>
@@ -84,9 +82,6 @@
                             <i class="fas fa-volume-up"></i>
                         </div>
                     </div>
-                    <div class="question-number">
-                        <p>8/10</p>
-                    </div>
                     <div>
                         <div>
                             <i class="far fa-hourglass"> 20s </i>
@@ -97,6 +92,9 @@
                             <i class="fas fa-trophy"> 6 </i>
                         </div>
                     </div>
+                </div>
+                <div class="question-number">
+                    <p>8/10</p>
                 </div>
                 <div class="question-text">
                     <p>Question did not load, please reload and try again.</p>
