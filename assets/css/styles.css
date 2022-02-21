@@ -166,6 +166,7 @@ h1 {
 
 .question-number h3 {
     text-align: center;
+    margin-top: 6px;
 }
 .question-text p {
     font-size: 1.5rem;
