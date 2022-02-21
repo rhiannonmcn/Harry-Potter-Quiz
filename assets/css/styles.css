@@ -11,17 +11,16 @@
 }
 
 html {
-    background: url("../images/hp-bg-image2.jpg") no-repeat center center;
+    background: url("../images/hp-bg-image2.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 body {
     display: grid;
-    width: 100vw;
-    height: 100vh;
     font-family: 'Prata', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff9e6;
+    height: 100vh;
 }
 
 main {
@@ -40,7 +39,7 @@ h2 {
 
 .quiz-container {
     background-color: rgba(0, 0, 0, 0.8);
-   /* border: 2px #fff9e6 solid;*/
+    border: 2px #fff9e6 solid;
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
     max-width: 80%;
@@ -145,7 +144,6 @@ h1 {
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
     font-family: 'Prata', sans-serif;
-    letter-spacing: 2px;
 
 }
 
