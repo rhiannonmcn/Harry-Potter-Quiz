@@ -96,6 +96,8 @@ The **user** is any person who would like to test their Harry Potter book knowle
 
 ## Site Structure
 
+Harry Potter Online Quiz consists of a one page website with 4 different 'screens' that the user navigates to engage with the quiz. The difficulty page of the quiz is the default 'screen'. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with the number question they are on, out of the number of questions there are, a timer, counting down how long the user has to answer the questions and a score which tallies the user's point as they progress through the quiz.
+
 ## Design Choices
 
 ### Colour Scheme
