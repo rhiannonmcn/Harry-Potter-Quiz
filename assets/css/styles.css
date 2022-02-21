@@ -3,55 +3,55 @@
 
 /* Global styles */
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-size:16px;
+    font-size: 16px;
 }
 
-html{
-    background:url("../images/hp-bg-image2.jpg") no-repeat center center;
-    background-size:cover;
+html {
+    background: url("../images/hp-bg-image2.jpg") no-repeat center center;
+    background-size: cover;
 }
-body{
-    display:grid;
-    width:100vw;
-    height:100vh;
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Prata', sans-serif;
     letter-spacing: 3px;
-    color:#fff9e6;
+    color: #fff9e6;
 }
 
-main{
-    display:grid;
-    grid-template-rows: min(150px);
-    justify-content: center;
+main {
+    display: grid;
+    align-self:center;
     grid-gap: 1rem;
 }
 
-h2{
+h2 {
     font-size: 3rem;
-    text-align:center;
-    padding:20px 20px;
-    color:#fff9e6;
+    text-align: center;
+    padding: 20px 20px;
+    color: #fff9e6;
 }
 
-.quiz-container{
+.quiz-container {
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px #fff9e6 solid;
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
-    max-width:80%;
-    width:100%;
+    max-width: 80%;
+    width: 100%;
     justify-self: center;
-    align-self:center;
+    align-self: center;
     padding: 10px;
     box-shadow: 5px 5px 100px #fff9e6;
 }
 
-.info-bar{
-    height:50px;
+.info-bar {
+    height: 50px;
     display: grid;
     width: 100%;
     grid-template-columns: max(100px) max(100px) auto max(100px) max(100px);
@@ -62,24 +62,27 @@ h2{
     text-align: center;
 }
 
-.fas, .fab, .far{
-    color:#fff9e6;
+.fas,
+.fab,
+.far {
+    color: #fff9e6;
     font-size: 1.6rem;
-    
+
 }
 
 /* header styles start here*/
-header{
-    padding:10px;
-    display:grid;
+header {
+    padding: 10px;
+    margin-top: 10px;
+    display: grid;
     grid-template-columns: min(150px) auto;
 }
 
-h1{
+h1 {
     font-size: 4rem;
-    font-family:'Cinzel', sans-serif;
-    color:#fff9e6;
-    align-self:center;
+    font-family: 'Cinzel', sans-serif;
+    color: #fff9e6;
+    align-self: center;
     text-align: center;
     /* code for h1 3d effect can be found here: https://codepen.io/ryandsouza13/pen/yEBJQV */
     text-shadow: 1px 1px 1px #4a0600,
@@ -92,47 +95,62 @@ h1{
         1px 8px 1px #4a0600,
         1px 9px 1px #4a0600,
         1px 10px 1px #4a0600,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4); 
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 /* Same styles for quiz difficulty, quiz start screen, quiz questions screen and the results screen start here */
 
-.difficulty-btn-container, .quiz-start-content {
-    display:grid;
+.difficulty-btn-container,
+.quiz-start-content {
+    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.difficulty-btn-container, .quiz-start-content, .next-btn-container, .results-content-container {
+.difficulty-btn-container,
+.quiz-start-content,
+.next-btn-container,
+.results-content-container {
     margin-bottom: 20px;
 }
 
-.quiz-difficulty-container, .quiz-start-content, .question-text, .results-content-container {
+.quiz-difficulty-container,
+.quiz-start-content,
+.question-text,
+.results-content-container {
     margin-top: 10px;
 }
 
-.difficulty-btn, .start-button, .answer-btn, .next-btn, .play-again-btn{
-    padding:20px;
-    margin-top:12px;
-    background-color:#4a0600;
-    color:#fff9e6;
-    font-size:2rem;
-    width:50%;
+.difficulty-btn,
+.start-button,
+.answer-btn,
+.next-btn,
+.play-again-btn {
+    padding: 20px;
+    margin-top: 12px;
+    background-color: #4a0600;
+    color: #fff9e6;
+    font-size: 2rem;
+    width: 70%;
     border: 2px #fff9e6 solid;
     outline: 1px solid #fff9e6;
     outline-offset: -6px;
     font-family: 'Prata', sans-serif;
     letter-spacing: 2px;
-    
+
 }
 
-.difficulty-btn:hover, .start-button:hover,.answer-btn:hover, .next-btn:hover, .play-again-btn:hover{
-    background-color:#fff9e6;
-    color:#4a0600;
+.difficulty-btn:hover,
+.start-button:hover,
+.answer-btn:hover,
+.next-btn:hover,
+.play-again-btn:hover {
+    background-color: #fff9e6;
+    color: #4a0600;
     border: 2px #4a0600 solid;
     outline: 1px solid #4a0600;
     transform: scale(1.1);
@@ -141,42 +159,43 @@ h1{
 
 /* unique styles for quiz questions screen */
 
-.question-text p{
+.question-text p {
     font-size: 1.5rem;
     text-align: center;
-    padding:20px;
+    padding: 20px;
 }
 
-.answer-btn-container{
-    display:grid;
+.answer-btn-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+
 .answer-btn {
-    justify-self:center;
-    height:80px;
-    width:60%;
+    justify-self: center;
+    height: 80px;
+    width: 60%;
     font-size: 1.6rem;
-    padding:10px;
+    padding: 10px;
 }
 
-.answer-btn-container button:nth-child(even){
-    margin-right:100px;
+.answer-btn-container button:nth-child(even) {
+    margin-right: 100px;
 }
 
-.answer-btn-container button:nth-child(odd){
-    margin-left:100px;
+.answer-btn-container button:nth-child(odd) {
+    margin-left: 100px;
 }
 
-.next-btn-container{
-    display:grid;
+.next-btn-container {
+    display: grid;
     grid-template-columns: 1fr;
 }
 
-.next-btn{
-    width:100%;
-    max-width:20%;
-    justify-self:center;
+.next-btn {
+    width: 100%;
+    max-width: 20%;
+    justify-self: center;
     font-size: 1.8rem;
     padding: 10px;
 }
@@ -184,7 +203,7 @@ h1{
 /*unique styles for the results screen */
 
 .results-content-container {
-    display:grid;
+    display: grid;
     justify-items: center;
 }
 
@@ -197,8 +216,8 @@ h1{
 }
 
 /* hide the content with the class hide */
-.hide{
-    display:none;
+.hide {
+    display: none;
 }
 
 /* Media Queries start here */
@@ -210,15 +229,17 @@ h1{
     /* global styles */
 
     .info-bar {
-        grid-template-columns:min(50px) min(50px) auto min(80px) min(80px);
+        grid-template-columns: min(50px) min(50px) auto min(80px) min(80px);
     }
 
-    .fas, .fab, .far{
+    .fas,
+    .fab,
+    .far {
         font-size: 1.2rem;
-        
+
     }
 
-    h2{
+    h2 {
         font-size: 2.4rem;
     }
 
@@ -230,20 +251,20 @@ h1{
 
     /*unique styles for questions screen */
 
-    .answer-btn{
+    .answer-btn {
         font-size: 1.2rem;
     }
 
-    .answer-btn-container button:nth-child(even){
-        margin-right:40px;
-    }
-    
-    .answer-btn-container button:nth-child(odd){
-        margin-left:40px;
+    .answer-btn-container button:nth-child(even) {
+        margin-right: 40px;
     }
 
-    .next-btn{
-        max-width:40%;
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: 40px;
+    }
+
+    .next-btn {
+        max-width: 40%;
     }
 
     /*unique styles for results screen */
@@ -256,7 +277,7 @@ h1{
         font-size: 2.8rem;
     }
 
-    .play-again-btn{
+    .play-again-btn {
         font-size: 1.6rem;
         max-width: 60%;
         padding: 20px 10px;
@@ -265,27 +286,78 @@ h1{
 
 /* For screens of 490px wide and down */
 
-@media screen and (max-width:490px){
+@media screen and (max-width:490px) {
 
     /*Global styles*/
-
-    .main{
-        grid-template-rows: auto;
+    
+    .quiz-container{
+        margin-top:20px;
+        max-width:90%;
     }
 
     /*header styles*/
 
-    header{
+    header {
         grid-template-columns: 1fr;
     }
 
-    .hogwarts-logo{
-        width:100px;
-        height:100px;
+    .hogwarts-logo {
+        width: 100px;
+        height: 100px;
         justify-self: center;
     }
 
-    h1{
-        font-size:2rem;
+    h1 {
+        font-size: 2rem;
     }
-} 
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /*Same styles for quiz difficulty screen, quiz start screen, quiz questions screen and quiz results screen */
+
+    .difficulty-btn,
+    .start-button,
+    .answer-btn,
+    .next-btn,
+    .play-again-btn {
+        padding: 20px 10px;
+        margin-top: 12px;
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    /*unique styles for quiz questions screen */
+
+    .question-text p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px 2px;
+    }
+
+    .answer-btn-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .answer-btn {
+        height: unset;
+    }
+
+    .answer-btn-container button:nth-child(even) {
+        margin-right: unset;
+    }
+
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: unset;
+    }
+
+    /* unique styles for results page */
+
+    .results-content-container h2{
+        font-size: 1rem;
+        padding:5px;
+    }
+
+}
