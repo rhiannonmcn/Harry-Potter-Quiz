@@ -106,6 +106,10 @@ The final colour scheme chosen was a rich dark red colour, with a warm, cream co
 
 ### Typography
 
+The fonts chosen were Cinzel for the main heading text and Prata for the subsequent heading and body text. Sans-serif is the fallback font. 
+
+Both fonts are a serif font and tie nicely with the theme of the quiz. There is a slight vintage feel to both fonts, with the use of letter spacing to give it a clean feel.,
+
 [Back to top](<#contents>)
 
 # Features
