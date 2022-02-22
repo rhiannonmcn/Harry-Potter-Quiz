@@ -24,7 +24,7 @@ function areYouReady(){
 
 //function to run quiz
 
-function runQuiz(quizType){
+function runQuiz() {
 
 }
 
