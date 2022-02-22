@@ -7,13 +7,16 @@ const quizDifficultyScreen = document.getElementById('quiz-difficulty');
 //Event listeners
 
 startBtn.addEventListener('click', runQuiz);
-easyDifficultyBtn.addEventListener("click", areYouReady);
-mediumDifficultyBtn.addEventListener("click", areYouReady);
-hardDifficultyBtn.addEventListener("click", areYouReady);
+easyDifficultyBtn.addEventListener("click", () => {
+	alert('easy difficulty chosen');
+});
+mediumDifficultyBtn.addEventListener("click", () => {
+	alert('medium difficulty chosen');
+});
+hardDifficultyBtn.addEventListener("click", () => {
+	alert('hard difficulty chosen');
+});
 
-//function to hide difficulty area and load start game area
-
-quizDifficultyScreen.
 
 function areYouReady(){
 
@@ -21,8 +24,8 @@ function areYouReady(){
 
 //function to run quiz
 
-function runQuiz(){
-   
+function runQuiz(quizType){
+
 }
 
 //function to load next question
@@ -50,5 +53,3 @@ function incrementScore(){
 }
 
 //optional
-
-//add sound for correct and incorrect scores
