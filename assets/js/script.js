@@ -6,7 +6,9 @@ const quizDifficultyScreen = document.getElementById('quiz-difficulty-section');
 const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
 const questionElement = document.getElementById('question');
+const answerButtonElement = document.getElementById('answer-btn-container');
 
+let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 
@@ -45,24 +47,26 @@ function areYouReady(event){
 //function to run quiz
 
 function runQuiz() {
+    
+    console.log("quiz started");
+    console.log(randomQuestions);
 
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
-    console.log("get stored difficulty questions and display them");
-
-    console.log(randomQuestions);
+    currentQuestionIndex=0;
+    nextQuestion();
 }
 
 //function to load next question
 
 function nextQuestion(){
-
+    showQuizQuestions(randomQuestions[currentQuestionIndex]);
 }
 
 //show quiz questions
 
 function showQuizQuestions(question){
-    
+    questionElement.innerText = question.question;
 }
 
 //function to check for correct answer
