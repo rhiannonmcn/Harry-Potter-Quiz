@@ -29,15 +29,17 @@ function areYouReady(event){
     if (target.id === "easy-difficulty-btn"){
         randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
         console.log('you have picked easy');
+        console.log(randomQuestions)
     } else if (target.id === "medium-difficulty-btn"){
         randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
         console.log('you have picked medium');
+        console.log(randomQuestions)
     } else if (target.id === "hard-difficulty-btn"){
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
         console.log('you have picked hard');
+        console.log(randomQuestions)
     }
 
-    console.log(randomQuestions)
 }
 
 //function to run quiz
@@ -48,8 +50,7 @@ function runQuiz() {
     quizQuestionsScreen.classList.remove("hide");
     console.log("get stored difficulty questions and display them");
 
-    let quizDifficulty = randomQuestions;
-    console.log(quizDifficulty);
+    console.log(randomQuestions);
 }
 
 //function to load next question
