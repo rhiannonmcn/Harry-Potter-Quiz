@@ -1,4 +1,8 @@
-# **_Harry Potter Quiz - Project Portfolio 2 - Javascript_**
+# **Harry Potter Book Quiz - Project Portfolio 2 - Javascript**
+
+Harry Potter Book Quiz is an interactive online quiz for users who would like to test their book knowledge of the Harry Potter universe in a fun, and challenging way, with a means to choice the quiz difficulty and caluclate the score.
+
+You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-Potter-Quiz/" target="_blank"> Harry Potter Book Quiz </a>
 
 # Contents
 
