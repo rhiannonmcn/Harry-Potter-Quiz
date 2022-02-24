@@ -6,7 +6,13 @@ const quizDifficultyScreen = document.getElementById('quiz-difficulty-section');
 const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
 const questionElement = document.getElementById('question');
-const answerButtonElement = document.getElementById('answer-btn-container');
+const answerButton1 = document.getElementById('answer-btn-1');
+const answerButton2 = document.getElementById('answer-btn-2');
+const answerButton3 = document.getElementById('answer-btn-3');
+const answerButton4 = document.getElementById('answer-btn-4');
+
+
+
 
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
@@ -66,6 +72,10 @@ function runQuiz() {
 
 function renderQuestions(question){
     questionElement.innerText = question.question;
+    answerButton1.innerText = question.answers[0].text;
+    answerButton2.innerText = question.answers[1].text;
+    answerButton3.innerText = question.answers[2].text;
+    answerButton4.innerText = question.answers[3].text;
 }
 
 //function to check for correct answer

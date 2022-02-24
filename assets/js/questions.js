@@ -11,7 +11,7 @@ const easyQuestions = [{
 },
 {
     question: "What was the Lily Potter's surname before she marries James Potter?",
-    answer: [
+    answers: [
         {text: "Evans", correct: true},
         {text: "Smith", correct: false},
         {text: "Peters", correct: false},
@@ -30,7 +30,7 @@ const mediumQuestions = [{
 },
 {
     question: "What is the name of Ginny Weasley's Pygmy Puff?",
-    answer: [
+    answers: [
         {text: "Hugo", correct: false},
         {text: "Barry", correct: false},
         {text: "Arnold", correct: true},
@@ -41,16 +41,16 @@ const mediumQuestions = [{
 
 const hardQuestions = [{
     question: "What does Viktor Krum's wand contain?",
-    answer: [
+    answers: [
         {text: "Dragon Heartstring", correct: true},
-        {text: "Dragon Heartstring", correct: false},
-        {text: "Dragon Heartstring", correct: false},
-        {text: "Dragon Heartstring", correct: false}
+        {text: "Thestral Hair", correct: false},
+        {text: "Phoenix Feather", correct: false},
+        {text: "Unicorn Hair", correct: false}
     ]
 },
 {
     question: "Who does Draco Malfoy marry in the epilogue?",
-    answer: [
+    answers: [
         {text: "Pansy Parkinson", correct: false},
         {text: "Astoria Greengrass", correct: false},
         {text: "Georgina Goyle", correct: true},
