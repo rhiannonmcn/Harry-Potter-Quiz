@@ -54,18 +54,17 @@ function runQuiz() {
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
     currentQuestionIndex=0;
-    nextQuestion();
-}
-
-//function to load next question
-
-function nextQuestion(){
-    showQuizQuestions(randomQuestions[currentQuestionIndex]);
+    renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
+    nextBtn = document.getElementById('next-question-btn');
+    nextBtn.addEventListener('click', () => {
+        currentQuestionIndex++;
+        renderQuestions(randomQuestions[currentQuestionIndex]);
+    });
 }
 
 //show quiz questions
 
-function showQuizQuestions(question){
+function renderQuestions(question){
     questionElement.innerText = question.question;
 }
 
