@@ -15,13 +15,13 @@ let difficultyChosen; //value defined in runQuiz function
 //Event listeners
 
 startBtn.addEventListener('click', runQuiz);
-easyDifficultyBtn.addEventListener("click", areYouReady);
-mediumDifficultyBtn.addEventListener("click", areYouReady);
-hardDifficultyBtn.addEventListener("click", areYouReady);
+easyDifficultyBtn.addEventListener("click", chooseDifficulty);
+mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
+hardDifficultyBtn.addEventListener("click", chooseDifficulty);
 
 //function to store questions based on difficulty chosen and hide difficulty screen and go to the start screen
 
-function areYouReady(event){
+function chooseDifficulty(event){
    
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
