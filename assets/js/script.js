@@ -32,31 +32,20 @@ function chooseDifficulty(event){
    
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
-
     let target = event.target;
-
     if (target.id === "easy-difficulty-btn"){
         randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
-        console.log('you have picked easy');
-        console.log(randomQuestions)
     } else if (target.id === "medium-difficulty-btn"){
         randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
         console.log('you have picked medium');
-        console.log(randomQuestions)
     } else if (target.id === "hard-difficulty-btn"){
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
-        console.log('you have picked hard');
-        console.log(randomQuestions)
     }
-
 }
 
 //function to run quiz
 
 function runQuiz() {
-    
-    console.log("quiz started");
-    console.log(randomQuestions);
 
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
