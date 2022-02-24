@@ -5,6 +5,7 @@ const startBtn = document.getElementById('start-btn');
 const quizDifficultyScreen = document.getElementById('quiz-difficulty-section');
 const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
+const quizResultsScreen = document.getElementById('quiz-results-section');
 const questionElement = document.getElementById('question');
 const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
@@ -13,7 +14,7 @@ const answerButton4 = document.getElementById('answer-btn-4');
 
 
 
-
+let quizLength = 9;
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
@@ -63,8 +64,13 @@ function runQuiz() {
     renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn = document.getElementById('next-question-btn');
     nextBtn.addEventListener('click', () => {
+        if (currentQuestionIndex >= quizLength){
+            quizQuestionsScreen.classList.add('hide');
+            quizResultsScreen.classList.remove('hide');
+        } else {
         currentQuestionIndex++;
         renderQuestions(randomQuestions[currentQuestionIndex]);
+        }
     });
 }
 
