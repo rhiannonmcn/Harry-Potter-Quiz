@@ -62,7 +62,7 @@ h2 {
     text-align: center;
 }
 
-.user-score-container{
+.user-score-container, .timer-container{
     display:flex;
 }
 

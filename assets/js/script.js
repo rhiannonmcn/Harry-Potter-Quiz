@@ -13,12 +13,15 @@ const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
 const userResult = document.getElementById("user-score");
+const timerElement = document.getElementById('timer');
 
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
 let userScore = 0; //value defined by increment score function 
+let timeleft;
+let timer; 
 
 //Event listeners
 
@@ -77,6 +80,8 @@ function renderQuestions(question){
     answerButton2.onclick = checkAnswer;
     answerButton3.onclick = checkAnswer;
     answerButton4.onclick = checkAnswer;
+    startTimer();
+    
 }
 
 //function to check for correct answer
@@ -101,9 +106,11 @@ function checkAnswer(event){
     if (userAnswer === rightAnswer){
         selectedButton.classList.add('correct');
         incrementScore();
+        clearInterval(timer);
         console.log('you are right');
     } else {
         selectedButton.classList.add('wrong');
+        clearInterval(timer);
         console.log('you are wrong');
     }   
 }
@@ -122,7 +129,8 @@ function resetQuestionState(){
     answerButton1.removeAttribute("disabled", "disabled");
     answerButton2.removeAttribute("disabled", "disabled");
     answerButton3.removeAttribute("disabled", "disabled");
-    answerButton4.removeAttribute("disabled", "disabled");    
+    answerButton4.removeAttribute("disabled", "disabled");
+      
 }
 //function to increment score
 
