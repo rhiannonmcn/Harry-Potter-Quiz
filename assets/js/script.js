@@ -19,7 +19,7 @@ let quizLength = 9;
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
-let selectedAnswer; //value definied in checkAnswer function
+let selectedButton; //value definied in checkAnswer function
 
 //Event listeners
 
@@ -61,6 +61,7 @@ function runQuiz() {
         } else {
         currentQuestionIndex++;
         renderQuestions(randomQuestions[currentQuestionIndex]);
+        resetQuestionState();
         }
     });
 }
@@ -82,7 +83,8 @@ function renderQuestions(question){
 //function to check for correct answer
 
 function checkAnswer(event){
-    let selectedButton = event.target;
+
+    selectedButton = event.target;
     let userAnswer = selectedButton.innerText;
     let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer;
 
@@ -102,11 +104,25 @@ function checkAnswer(event){
         console.log('you are right');
     } else {
         selectedButton.classList.add('wrong');
-
-
         console.log('you are wrong');
-    }
-    
+    }   
+}
+
+//function to reset the question states on next button click
+
+function resetQuestionState(){
+    selectedButton.classList.remove('correct');
+    selectedButton.classList.remove('wrong');
+    //enable hover effects 
+    answerButton1.classList.add("answer-btn-hover");
+    answerButton2.classList.add("answer-btn-hover");
+    answerButton3.classList.add("answer-btn-hover");
+    answerButton4.classList.add("answer-btn-hover");
+    //resets answer button attributes
+    answerButton1.removeAttribute("disabled", "disabled");
+    answerButton2.removeAttribute("disabled", "disabled");
+    answerButton3.removeAttribute("disabled", "disabled");
+    answerButton4.removeAttribute("disabled", "disabled");    
 }
 //function to increment score
 
