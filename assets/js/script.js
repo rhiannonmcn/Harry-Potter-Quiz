@@ -135,4 +135,3 @@ function incrementScore(){
         userResult.innerText = userScore += 3 ;
     }
 }
-
