@@ -12,14 +12,13 @@ const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
+const userResult = document.getElementById("user-score");
 
-
-
-let quizLength = 9;
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
+let userScore = 0; //value defined by increment score function 
 
 //Event listeners
 
@@ -48,7 +47,7 @@ function chooseDifficulty(event){
 //function to run quiz
 
 function runQuiz() {
-
+    let quizLength = 9;
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
     currentQuestionIndex=0;
@@ -101,6 +100,7 @@ function checkAnswer(event){
     
     if (userAnswer === rightAnswer){
         selectedButton.classList.add('correct');
+        incrementScore();
         console.log('you are right');
     } else {
         selectedButton.classList.add('wrong');
@@ -127,6 +127,12 @@ function resetQuestionState(){
 //function to increment score
 
 function incrementScore(){
-
+    if (randomQuestions === easyQuestions){
+        userResult.innerText = userScore += 1 ;
+    } else if (randomQuestions === mediumQuestions){
+        userResult.innerText = userScore += 2 ;
+    } else if (randomQuestions === hardQuestions){
+        userResult.innerText = userScore += 3 ;
+    }
 }
 
