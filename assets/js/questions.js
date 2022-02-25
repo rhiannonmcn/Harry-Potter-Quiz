@@ -47,7 +47,7 @@ const easyQuestions = [{
         {text: "Dog"},
         {text: "Cat"},
         {text: "Rat"}
-    ]
+    ],
     correctAnswer: "Cat"
 },
 {

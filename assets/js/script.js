@@ -27,10 +27,6 @@ startBtn.addEventListener('click', runQuiz);
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
 hardDifficultyBtn.addEventListener("click", chooseDifficulty);
-answerButton1.addEventListener('click', checkAnswer);
-answerButton2.addEventListener('click', checkAnswer);
-answerButton3.addEventListener('click', checkAnswer);
-answerButton4.addEventListener('click', checkAnswer);
 
 //function to store questions based on difficulty chosen and hide difficulty screen and go to the start screen
 
@@ -77,24 +73,27 @@ function renderQuestions(question){
     answerButton2.innerText = question.answers[1].text;
     answerButton3.innerText = question.answers[2].text;
     answerButton4.innerText = question.answers[3].text;
+    answerButton1.onclick = checkAnswer;
+    answerButton2.onclick = checkAnswer;
+    answerButton3.onclick = checkAnswer;
+    answerButton4.onclick = checkAnswer;
 }
 
 //function to check for correct answer
 
-function checkAnswer(){
+function checkAnswer(event){
+    let selectedButton = event.target;
+    let userAnswer = selectedButton.innerText;
+    let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer;
     
-    Object.values(randomQuestions[currentQuestionIndex].answers).forEach(val =>{
-        selectedAnswer = val.correct; // create a new array that can be iterated through for the correct answers
-        console.log(selectedAnswer);
-    });
-
-
+    if (userAnswer === rightAnswer){
+        selectedButton.classList.add('correct');
+        console.log('you are right');
+    } else {
+        selectedButton.classList.add('wrong');
+        console.log('you are wrong');
+    }
     
-
-    
-    
-    
-
 }
 //function to increment score
 

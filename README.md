@@ -142,6 +142,7 @@ Both fonts are a serif font and tie nicely with the theme of the quiz. There is 
 ## Manual Testing
 
 ## Bugs Fixed
+https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
 
 [Back to top](<#contents>)
 
@@ -162,6 +163,7 @@ The website was deployed to GitHub pages via the following methods:
 
 * [Hogwarts Crest image](https://commons.wikimedia.org/wiki/File:Hogwarts-Crest.png)
 *[3D CSS effect in h1](https://codepen.io/ryandsouza13/pen/yEBJQV)
+https://www.sitepoint.com/simple-javascript-quiz/
 
 [Back to top](<#contents>)
 
