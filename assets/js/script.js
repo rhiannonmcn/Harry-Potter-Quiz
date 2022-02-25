@@ -85,12 +85,25 @@ function checkAnswer(event){
     let selectedButton = event.target;
     let userAnswer = selectedButton.innerText;
     let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer;
+
+    //disable hover effects once answer is clicked
+    answerButton1.classList.remove("answer-btn-hover");
+    answerButton2.classList.remove("answer-btn-hover");
+    answerButton3.classList.remove("answer-btn-hover");
+    answerButton4.classList.remove("answer-btn-hover");
+    //disable the ability to click on answer buttons once user picks their answer
+    answerButton1.setAttribute("disabled", "disabled");
+    answerButton2.setAttribute("disabled", "disabled");
+    answerButton3.setAttribute("disabled", "disabled");
+    answerButton4.setAttribute("disabled", "disabled");
     
     if (userAnswer === rightAnswer){
         selectedButton.classList.add('correct');
         console.log('you are right');
     } else {
         selectedButton.classList.add('wrong');
+
+
         console.log('you are wrong');
     }
     
