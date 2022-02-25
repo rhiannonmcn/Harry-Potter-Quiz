@@ -226,6 +226,16 @@ h1 {
     display: none;
 }
 
+/* styles for wrong and right answers for the answer buttons */
+
+.correct{
+    background-color: #064d00;
+}
+
+.wrong{
+        background-color: #b30f00;
+}
+
 /* Media Queries start here */
 
 /* For screens of 700px wide and down */

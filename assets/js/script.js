@@ -7,6 +7,7 @@ const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
 const quizResultsScreen = document.getElementById('quiz-results-section');
 const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-btn-container');
 const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');
@@ -18,6 +19,7 @@ let quizLength = 9;
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
+let selectedAnswer; //value definied in checkAnswer function
 
 //Event listeners
 
@@ -25,6 +27,10 @@ startBtn.addEventListener('click', runQuiz);
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
 hardDifficultyBtn.addEventListener("click", chooseDifficulty);
+answerButton1.addEventListener('click', checkAnswer);
+answerButton2.addEventListener('click', checkAnswer);
+answerButton3.addEventListener('click', checkAnswer);
+answerButton4.addEventListener('click', checkAnswer);
 
 //function to store questions based on difficulty chosen and hide difficulty screen and go to the start screen
 
@@ -76,9 +82,20 @@ function renderQuestions(question){
 //function to check for correct answer
 
 function checkAnswer(){
+    
+    Object.values(randomQuestions[currentQuestionIndex].answers).forEach(val =>{
+        selectedAnswer = val.correct; // create a new array that can be iterated through for the correct answers
+        console.log(selectedAnswer);
+    });
+
+
+    
+
+    
+    
+    
 
 }
-
 //function to increment score
 
 function incrementScore(){
