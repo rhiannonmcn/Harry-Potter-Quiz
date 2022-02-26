@@ -29,7 +29,6 @@ let timer; //value defined in timer.js
 
 
 //Event listeners
-
 startBtn.addEventListener('click', runQuiz);
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
