@@ -1,3 +1,4 @@
+//Variables
 const easyDifficultyBtn = document.getElementById("easy-difficulty-btn");
 const mediumDifficultyBtn = document.getElementById("medium-difficulty-btn");
 const hardDifficultyBtn = document.getElementById("hard-difficulty-btn");
@@ -23,8 +24,8 @@ let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
 let userScore = 0; //value defined by increment score function 
-let timeleft;
-let timer;
+let timeleft; //value defined in timer.js
+let timer; //value defined in timer.js
 
 
 //Event listeners
@@ -34,8 +35,12 @@ easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
 hardDifficultyBtn.addEventListener("click", chooseDifficulty);
 
-//function to store questions based on difficulty chosen and hide difficulty screen and go to the start screen
-
+/**
+ * Depending on the user's choice of difficulty this function shuffles the questions randomly
+ * Creates the question pool for the user
+ * removes the difficulty screen and shows the start screen
+ * @param {target the user's button click} event 
+ */
 function chooseDifficulty(event){
    
     quizDifficultyScreen.classList.add("hide");
@@ -51,8 +56,13 @@ function chooseDifficulty(event){
     }
 }
 
-//function to run quiz
-
+/**
+ * This function starts the quiz by removing the start screen and showing the questions screen
+ * It calls the renderQuestions() with parameters to display the first question of the current question pool index
+ * On the next button click it checks if the current question index is greater than or less than 10 questions
+ * It will loop through the question index until 10 questions
+ * It will then hide the question screen and load the results screen
+ */
 function runQuiz() {
     let quizLength = 9;
     quizStartScreen.classList.add("hide");
@@ -71,7 +81,14 @@ function runQuiz() {
     });
 }
 
-//show quiz questions
+/**
+ * Displays the question and answer text in the html
+ * Once an answer is clicked, calls the checkAnswer function
+ * Disables the next button functionality until an answer is chosen
+ * increments the displayed question number in the html
+ * startTimer function is called once the question is called 
+ * @param {*} question 
+ */
 
 function renderQuestions(question){
     questionElement.innerText = question.question;
@@ -91,7 +108,14 @@ function renderQuestions(question){
     
 }
 
-//function to check for correct answer
+/**
+ * Checks the user's button click text value against the text value of the correct answer of the current question
+ * If it is equal it means answer is correct and calls incrementScore() and stops the timer and adds a green background to correct answer
+ * If it is not equal the answer is wrong, stops timer and addds a red background to the answer
+ * Disables the answers button hover effects and ability to choose another answer once button is clicked
+ * Enables the next buttons hover effects and ability to be clicked on once answer button is clicked
+ * @param {target the user's button click} event 
+ */
 
 function checkAnswer(event){
 
@@ -114,18 +138,19 @@ function checkAnswer(event){
         selectedButton.classList.add('correct');
         incrementScore();
         clearInterval(timer);
-        console.log('you are right');
     } else {
         selectedButton.classList.add('wrong');
         clearInterval(timer);
-        console.log('you are wrong');
     }   
 
     nextBtn.classList.add("next-btn-hover");
     nextBtn.removeAttribute("disabled", "disabled");
 }
 
-//function to reset the question states on next button click
+/**
+ * Resets the question button states once called upon
+ * Answer button hover effects enabled again as well as the ability to click the answer button
+ */
 
 function resetQuestionState(){
     selectedButton.classList.remove('correct');
@@ -143,12 +168,15 @@ function resetQuestionState(){
     //resets answer button attributes if timer runs out
     let answerButtons = document.getElementsByClassName("answer-btn");
     for (let i = 0; i < answerButtons.length; i++) {
-            answerButtons[i].classList.remove("correct");
-            answerButtons[i].classList.remove("wrong");
-          }  
+        answerButtons[i].classList.remove("correct");
+        answerButtons[i].classList.remove("wrong");
+    }  
 }
-//function to increment score
 
+/**
+ * Checks what difficulty questions is set for the user currently
+ * Depending on the choice, the score is incremented by a certain value
+ */
 function incrementScore(){
     if (randomQuestions === easyQuestions){
         userResult.innerText = userScore += 1 ;
