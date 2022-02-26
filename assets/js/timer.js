@@ -23,6 +23,9 @@ function countdown() {
         answerButton2.setAttribute("disabled", "disabled");
         answerButton3.setAttribute("disabled", "disabled");
         answerButton4.setAttribute("disabled", "disabled");
+
+        nextBtn.classList.add("next-btn-hover");
+        nextBtn.removeAttribute("disabled", "disabled");
     } else {
         timer.innerText = timeLeft;
         timeLeft--;

@@ -154,7 +154,7 @@ h1 {
 .difficulty-btn:hover,
 .start-button:hover,
 .answer-btn-hover:hover,
-.next-btn:hover,
+.next-btn-hover,
 .play-again-btn:hover {
     background-color: #fff9e6;
     color: #4a0600;

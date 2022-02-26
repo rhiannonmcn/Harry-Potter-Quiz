@@ -14,6 +14,7 @@ const answerButton3 = document.getElementById('answer-btn-3');
 const answerButton4 = document.getElementById('answer-btn-4');
 const userResult = document.getElementById("user-score");
 const timerElement = document.getElementById('timer');
+const nextBtn = document.getElementById('next-question-btn');
 
 let currentQuestionIndex;
 let randomQuestions; //value defined by areYouReady function
@@ -54,9 +55,8 @@ function runQuiz() {
     let quizLength = 9;
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
-    currentQuestionIndex=0;
+    currentQuestionIndex = 0;
     renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
-    nextBtn = document.getElementById('next-question-btn');
     nextBtn.addEventListener('click', () => {
         if (currentQuestionIndex >= quizLength){
             quizQuestionsScreen.classList.add('hide');
@@ -82,6 +82,8 @@ function renderQuestions(question){
     answerButton3.onclick = checkAnswer;
     answerButton4.onclick = checkAnswer;
     startTimer();
+    nextBtn.classList.remove("next-btn-hover");
+    nextBtn.setAttribute("disabled", "disabled");
     
 }
 
@@ -114,6 +116,9 @@ function checkAnswer(event){
         clearInterval(timer);
         console.log('you are wrong');
     }   
+
+    nextBtn.classList.add("next-btn-hover");
+    nextBtn.removeAttribute("disabled", "disabled");
 }
 
 //function to reset the question states on next button click
@@ -136,8 +141,7 @@ function resetQuestionState(){
     for (let i = 0; i < answerButtons.length; i++) {
             answerButtons[i].classList.remove("correct");
             answerButtons[i].classList.remove("wrong");
-          }
-      
+          }  
 }
 //function to increment score
 
