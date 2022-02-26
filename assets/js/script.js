@@ -19,12 +19,14 @@ const nextBtn = document.getElementById('next-question-btn');
 const questionNumberDisplayed = document.getElementById("question-nbr");
 const playButton = document.getElementById('play-again-button');
 const userFinalScore = document.getElementById("user-result");
+const userCorrectQuestions = document.getElementById('user-result-text');
 let currentQuestionIndex;
 let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
-let userScore = 0; //value defined by increment score function 
+let userScore = 0;
+let correctQuestions = 0; //value defined by increment score function 
 let timeleft; //value defined in timer.js
 let timer; //value defined in timer.js
 
@@ -77,6 +79,7 @@ function runQuiz() {
                 quizDifficultyScreen.classList.remove('hide');
                 window.location.reload();   
             })
+        userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
         userFinalScore.innerText = userScore;
         } else {
         currentQuestionIndex++;
@@ -185,9 +188,12 @@ function resetQuestionState(){
 function incrementScore(){
     if (randomQuestions === easyQuestions){
         userResult.innerText = userScore += 1 ;
+        correctQuestions++;
     } else if (randomQuestions === mediumQuestions){
         userResult.innerText = userScore += 2 ;
+        correctQuestions++;
     } else if (randomQuestions === hardQuestions){
         userResult.innerText = userScore += 3 ;
+        correctQuestions++;
     }
 }
