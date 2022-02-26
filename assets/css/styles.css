@@ -37,43 +37,7 @@ h2 {
     color: #fff9e6;
 }
 
-.quiz-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px #fff9e6 solid;
-    outline: 1px solid #fff9e6;
-    outline-offset: -6px;
-    max-width: 80%;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-    padding: 10px;
-    box-shadow: 5px 5px 100px #fff9e6;
-}
-
-.info-bar {
-    height: 50px;
-    display: grid;
-    width: 100%;
-    grid-template-columns:repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    border-bottom: 1px solid #fff9e6;
-    text-align: center;
-}
-
-.user-score-container, .timer-container{
-    display:flex;
-}
-
-.fas,
-.fab,
-.far {
-    color: #fff9e6;
-    font-size: 1.6rem;
-}
-
-/* header styles start here*/
+/* header styles*/
 header {
     padding: 10px;
     margin-top: 10px;
@@ -107,6 +71,49 @@ h1 {
         1px 22px 10px rgba(16, 16, 16, 0.2),
         1px 25px 35px rgba(16, 16, 16, 0.2),
         1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+/* Quiz container styles */
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
+    max-width: 80%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    box-shadow: 5px 5px 100px #fff9e6;
+}
+
+.info-bar {
+    height: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid #fff9e6;
+    text-align: center;
+}
+
+.user-score-container, .timer-container{
+    display:flex;
+}
+
+#user-score, #timer{
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+
+.fas,
+.fab,
+.far {
+    color: #fff9e6;
+    font-size: 1.6rem;
 }
 
 /* Same styles for quiz difficulty, quiz start screen, quiz questions screen and the results screen start here */
@@ -245,8 +252,14 @@ h1 {
 /* For screens of 700px wide and down */
 
 @media screen and (max-width:700px) {
+ /* header styles */
 
-    /* global styles */
+ h1 {
+    font-size: 3rem;
+}
+
+
+/* Quiz container styles */
     
     .fas,
     .fab,
@@ -255,14 +268,12 @@ h1 {
 
     }
 
-    h2 {
-        font-size: 2.4rem;
+    #user-score, #timer{
+        font-size: 1.2rem;
     }
 
-    /* header styles */
-
-    h1 {
-        font-size: 3rem;
+    h2 {
+        font-size: 2.4rem;
     }
 
     /*unique styles for questions screen */
@@ -304,17 +315,6 @@ h1 {
 
 @media screen and (max-width:490px) {
 
-    /*Global styles*/
-
-    .main {
-        grid-template-rows: auto;
-    }
-
-    .quiz-container {
-        max-width: 94%;
-        padding:0;
-    }
-
     /*header styles*/
 
     header {
@@ -330,6 +330,22 @@ h1 {
         font-size: 1.6rem;
     }
 
+    /* Quiz container styles */
+
+    #user-score, #timer{
+        font-size: 1rem;
+    }
+
+    .main {
+        grid-template-rows: auto;
+    }
+
+    .quiz-container {
+        max-width: 94%;
+        padding:0;
+    }
+
+    
     h2 {
         font-size: 1.8rem;
     }

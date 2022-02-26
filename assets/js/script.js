@@ -15,8 +15,10 @@ const answerButton4 = document.getElementById('answer-btn-4');
 const userResult = document.getElementById("user-score");
 const timerElement = document.getElementById('timer');
 const nextBtn = document.getElementById('next-question-btn');
+const questionNumberDisplayed = document.getElementById("question-nbr");
 
 let currentQuestionIndex;
+let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
@@ -84,6 +86,8 @@ function renderQuestions(question){
     startTimer();
     nextBtn.classList.remove("next-btn-hover");
     nextBtn.setAttribute("disabled", "disabled");
+    questionNumber++;
+    questionNumberDisplayed.innerText = questionNumber + '/' + '10';    
     
 }
 
