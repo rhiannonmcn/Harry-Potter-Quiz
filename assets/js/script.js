@@ -17,6 +17,7 @@ const userResult = document.getElementById("user-score");
 const timerElement = document.getElementById('timer');
 const nextBtn = document.getElementById('next-question-btn');
 const questionNumberDisplayed = document.getElementById("question-nbr");
+const playButton = document.getElementById('play-again-button');
 
 let currentQuestionIndex;
 let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
@@ -72,6 +73,11 @@ function runQuiz() {
         if (currentQuestionIndex >= quizLength){
             quizQuestionsScreen.classList.add('hide');
             quizResultsScreen.classList.remove('hide');
+            playButton.addEventListener('click', () =>{
+                quizResultsScreen.classList.add('hide');
+                quizDifficultyScreen.classList.remove('hide');
+                window.location.reload();   
+            })
         } else {
         currentQuestionIndex++;
         renderQuestions(randomQuestions[currentQuestionIndex]);
