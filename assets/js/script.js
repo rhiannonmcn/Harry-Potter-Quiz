@@ -21,7 +21,8 @@ let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
 let userScore = 0; //value defined by increment score function 
 let timeleft;
-let timer; 
+let timer;
+
 
 //Event listeners
 
@@ -63,7 +64,7 @@ function runQuiz() {
         } else {
         currentQuestionIndex++;
         renderQuestions(randomQuestions[currentQuestionIndex]);
-        resetQuestionState();
+        resetQuestionState(); //resets question state once next button click
         }
     });
 }
@@ -130,6 +131,12 @@ function resetQuestionState(){
     answerButton2.removeAttribute("disabled", "disabled");
     answerButton3.removeAttribute("disabled", "disabled");
     answerButton4.removeAttribute("disabled", "disabled");
+    //resets answer button attributes if timer runs out
+    let answerButtons = document.getElementsByClassName("answer-btn");
+    for (let i = 0; i < answerButtons.length; i++) {
+            answerButtons[i].classList.remove("correct");
+            answerButtons[i].classList.remove("wrong");
+          }
       
 }
 //function to increment score

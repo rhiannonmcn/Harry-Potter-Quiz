@@ -11,7 +11,7 @@ const easyQuestions = [{
     correctAnswer: "Hedwig"
 },
 {
-    question: "What was the Lily Potter's surname before she marries James Potter?",
+    question: "What was Lily Potter's surname before she marries James Potter?",
     answers: [
         {text: "Evans"},
         {text: "Smith"},
@@ -71,7 +71,7 @@ const easyQuestions = [{
     correctAnswer: "Slytherin"
 },
 {
-    question: "What is the name of the Cerebeus thatbguards the trapdoor to the philosopher's stone?",
+    question: "What is the name of the Cerebeus that guards the trapdoor to the philosopher's stone?",
     answers: [
         {text: "Sooty"},
         {text: "Smiley"},
@@ -91,7 +91,7 @@ const easyQuestions = [{
     correctAnswer: "Mischief Managed"
 },
 {
-    question: "What was the Lily Potter's surname before she marries James Potter?",
+    question: "What was Lily Potter's surname before she marries James Potter?",
     answers: [
         {text: "Evans"},
         {text: "Smith"},
@@ -121,14 +121,14 @@ const easyQuestions = [{
     correctAnswer: "Mouth"
 },
 {
-    question: "Who was hexing Harry Potter's broom in his first quidditch game ever?",
+    question: "Who hexed Harry Potter's broom in his first quidditch game ever?",
     answers: [
         {text: "Severus Snape"},
         {text: "Voldemort"},
         {text: "Quirinus Quirrell"},
         {text: "Peter Pettigrew"}
     ],
-    correctAnswer: "Quirinus Quirell"
+    correctAnswer: "Quirinus Quirrell"
 },
 {
     question: "What animal can you speak to and undestand as a parselmouth?",
