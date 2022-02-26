@@ -10,7 +10,6 @@ function startTimer() {
 function countdown() {
      let answerButtons = document.getElementsByClassName("answer-btn");
     
-
     if (timeLeft === 0) {
         clearInterval(timer);
         //disable hover effects once answer is clicked

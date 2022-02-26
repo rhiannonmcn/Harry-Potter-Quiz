@@ -56,7 +56,7 @@ const easyQuestions = [{
         {text: "Igor Karkoroff "},
         {text: "Mad Eye Moody"},
         {text: "Severus Snape"},
-        {text: "Bartemius Crouch JR"}
+        {text: "Barty Crouch JR"}
     ],
     correctAnswer: "Bartemius Crouch JR"
 },
@@ -300,7 +300,7 @@ const easyQuestions = [{
     ],
     correctAnswer: "Mrs. Norris"
 }
-];
+]
 
 const mediumQuestions = [{
     question: "What is Fleur Delacour's sister's name?",
@@ -334,7 +334,7 @@ const mediumQuestions = [{
     correctAnswer: "Frank & Alice"
 },
 {
-    question: "What ahouse was Sirius Black sorted into?",
+    question: "What house was Sirius Black sorted into?",
     answers: [
         {text: "Slytherin"},
         {text: "Ravenclaw"},
@@ -614,7 +614,7 @@ const mediumQuestions = [{
     ],
     correctAnswer: "Aurora Sinistra"
 }
-];
+]
 
 const hardQuestions = [{
     question: "What does Viktor Krum's wand contain?",
@@ -918,4 +918,4 @@ const hardQuestions = [{
     ],
     correctAnswer: "Rapier"
 }
-];
+]

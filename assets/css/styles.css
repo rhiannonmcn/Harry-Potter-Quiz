@@ -279,7 +279,7 @@ h1 {
     /*unique styles for questions screen */
 
     .answer-btn {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .answer-btn-container button:nth-child(even) {
