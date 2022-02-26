@@ -11,7 +11,7 @@ const easyQuestions = [{
     correctAnswer: "Hedwig"
 },
 {
-    question: "What was Lily Potter's surname before she marries James Potter?",
+    question: "What was Lily Potter's surname before she married James Potter?",
     answers: [
         {text: "Evans"},
         {text: "Smith"},
@@ -58,7 +58,7 @@ const easyQuestions = [{
         {text: "Severus Snape"},
         {text: "Barty Crouch JR"}
     ],
-    correctAnswer: "Bartemius Crouch JR"
+    correctAnswer: "Barty Crouch JR"
 },
 {
     question: "What Hogwarts house was Harry Potter nearly sorted into?",
@@ -101,7 +101,7 @@ const easyQuestions = [{
     correctAnswer: "Gillyweed"
 },
 {
-    question: "What was 'prongs' real name?",
+    question: "What was prongs' real name?",
     answers: [
         {text: "Sirius Black"},
         {text: "Peter Pettigrew"},
@@ -181,7 +181,7 @@ const easyQuestions = [{
     correctAnswer: "Seeker"
 },
 {
-    question: "Who is the Bulgarian Quidditch teams seeker?",
+    question: "Who is the Bulgarian Quidditch team's seeker?",
     answers: [
         {text: "Viktor Krum"},
         {text: "Aidan Lynch"},
@@ -201,7 +201,7 @@ const easyQuestions = [{
     correctAnswer: "Hagrid"
 },
 {
-    question: "Who is Hermion Granger's halk kneazle's name?",
+    question: "What is Hermione Granger's half kneazle's name?",
     answers: [
         {text: "Crookshanks"},
         {text: "Trevor"},
@@ -211,7 +211,7 @@ const easyQuestions = [{
     correctAnswer: "Crookshanks"
 },
 {
-    question: "Who gifts Haryy Potter his Firebolt broom?",
+    question: "Who gifts Harry Potter his Firebolt broom?",
     answers: [
         {text: "Albus Dumbledore"},
         {text: "Minerva McGonagall"},
@@ -261,7 +261,7 @@ const easyQuestions = [{
     correctAnswer: "6"
 },
 {
-    question: "What does Hagrid name his baby dragon ?",
+    question: "What does Hagrid name his baby dragon?",
     answers: [
         {text: "Norbert"},
         {text: "Fluffy"},
@@ -327,7 +327,7 @@ const mediumQuestions = [{
     question: "What are Neville Longbottom's parent's names?",
     answers: [
         {text: "Frank & Alice"},
-        {text: "Arnold & Louise"},
+        {text: "Arnie & Louise"},
         {text: "Mike & Jane"},
         {text: "James & Dot"}
     ],
@@ -445,7 +445,7 @@ const mediumQuestions = [{
     correctAnswer: "Jack Russell Terrier"
 },
 {
-    question: "What is the name of the centaur who became a divination teacher in Haryy Potter's 6th year",
+    question: "What is the name of the centaur who became a divination teacher in Harry Potter's 6th year",
     answers: [
         {text: "Magorian"},
         {text: "Bane"},
@@ -465,7 +465,7 @@ const mediumQuestions = [{
     correctAnswer: "Old boot"
 },
 {
-    question: "How did Moaning Myrtle die",
+    question: "How did Moaning Myrtle die?",
     answers: [
         {text: "Mountain troll"},
         {text: "Killing Curse"},
@@ -515,7 +515,7 @@ const mediumQuestions = [{
     correctAnswer: "Goat's stomach"
 },
 {
-    question: "What other wicth/wizard could the prophecy have been about?",
+    question: "What other witch/wizard could the prophecy have been about?",
     answers: [
         {text: "Dean Thomas"},
         {text: "Luna Lovegood"},
@@ -585,7 +585,7 @@ const mediumQuestions = [{
     correctAnswer: "16"
 },
 {
-    question: "In what year did Harry Potter go on  a date with Cho Chang?",
+    question: "In what year did Harry Potter go on a date with Cho Chang?",
     answers: [
         {text: "4th year"},
         {text: "5th year"},
@@ -598,9 +598,9 @@ const mediumQuestions = [{
     question: "What spell is a full body bind?",
     answers: [
         {text: "Alohomora"},
-        {text: "Expecto Patronun"},
+        {text: "Expecto Patronum"},
         {text: "Lumos"},
-        {text: "Petrifiuc Totalus"}
+        {text: "Petrificus Totalus"}
     ],
     correctAnswer: "Petrificus Totalus"
 },
@@ -725,10 +725,10 @@ const hardQuestions = [{
         {text: "Aunt in Law"},
         {text: "2nd Cousin"}
     ],
-    correctAnswer: "Cousin"
+    correctAnswer: "Aunt"
 },
 {
-    question: "How many staircases are their in Hogwarts?",
+    question: "How many staircases are there in Hogwarts?",
     answers: [
         {text: "140"},
         {text: "141"},
@@ -809,17 +809,17 @@ const hardQuestions = [{
     correctAnswer: "Merope Riddle"
 },
 {
-    question: "During their first trip to Diagon Alley, what flavour ice cream did Hagrid buy Harry Potter?",
+    question: "What was the name of the caretaker of the Riddle House in the Goblet of Fire?",
     answers: [
-        {text: "Chocolate mint"},
-        {text: "Chocolate & Raspberry"},
-        {text: "Raspberry"},
-        {text: "Treacle"}
+        {text: "Francis Burns"},
+        {text: "Frank Bryce"},
+        {text: "Barry Fitz"},
+        {text: "Brian Fuller"}
     ],
-    correctAnswer: "Chocolate & Raspberry"
+    correctAnswer: "Frank Bryce"
 },
 {
-    question: "What is the name of the orphange Tom Riddle was left at?",
+    question: "What is the name of the orphanage Tom Riddle was left at?",
     answers: [
         {text: "St. Brutus"},
         {text: "Smeltings"},
@@ -849,7 +849,7 @@ const hardQuestions = [{
     correctAnswer: "Willow"
 },
 {
-    question: "How old was Nicholas Flamel when destroyed the Philosopher's stone?",
+    question: "How old was Nicholas Flamel when the Philosopher's stone destroyed?",
     answers: [
         {text: "663"},
         {text: "664"},
