@@ -97,7 +97,6 @@ function runQuiz() {
  * startTimer function is called once the question is called 
  * @param {*} question 
  */
-
 function renderQuestions(question){
     questionElement.innerText = question.question;
     answerButton1.innerText = question.answers[0].text;
@@ -148,6 +147,15 @@ function checkAnswer(event){
         clearInterval(timer);
     } else {
         selectedButton.classList.add('wrong');
+        if(answerButton1.innerText === rightAnswer){
+            answerButton1.classList.add('correct');
+        } else if (answerButton2.innerText === rightAnswer){
+            answerButton2.classList.add('correct');
+        } else if (answerButton3.innerText === rightAnswer){
+            answerButton3.classList.add('correct');
+        } else if (answerButton4.innerText === rightAnswer){
+            answerButton4.classList.add('correct');
+        }
         clearInterval(timer);
     }   
 
