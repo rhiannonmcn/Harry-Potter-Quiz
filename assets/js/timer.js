@@ -1,5 +1,13 @@
 function startTimer() {
-    timeLeft = 20; 
+    
+   if (randomQuestions === easyQuestions){
+        timeLeft = 20;
+    } else if (randomQuestions === mediumQuestions){
+        timeLeft = 15;
+    } else if (randomQuestions === hardQuestions){
+        timeLeft = 10;
+    }
+    timeLeft;
     timer = setInterval(function() {
         countdown();
         timerElement.innerText = timeLeft + 's';
@@ -26,7 +34,6 @@ function countdown() {
         nextBtn.classList.add("next-btn-hover");
         nextBtn.removeAttribute("disabled", "disabled");
     } else {
-        timer.innerText = timeLeft;
         timeLeft--;
     }
 

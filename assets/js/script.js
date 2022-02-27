@@ -27,7 +27,7 @@ let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
 let userScore = 0;
 let correctQuestions = 0; //value defined by increment score function 
-let timeleft; //value defined in timer.js
+let timeLeft; //value defined in timer.js
 let timer; //value defined in timer.js
 
 //Event listeners
@@ -195,13 +195,13 @@ function resetQuestionState(){
  */
 function incrementScore(){
     if (randomQuestions === easyQuestions){
-        userResult.innerText = userScore += 1 ;
+        userResult.innerText = userScore += 1;
         correctQuestions++;
     } else if (randomQuestions === mediumQuestions){
-        userResult.innerText = userScore += 2 ;
+        userResult.innerText = userScore += 2;
         correctQuestions++;
     } else if (randomQuestions === hardQuestions){
-        userResult.innerText = userScore += 3 ;
+        userResult.innerText = userScore += 3 + timeLeft;
         correctQuestions++;
     }
 }
