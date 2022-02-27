@@ -7,6 +7,7 @@ const quizDifficultyScreen = document.getElementById('quiz-difficulty-section');
 const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
 const quizResultsScreen = document.getElementById('quiz-results-section');
+const quizHighScoresScreen = document.getElementById('highscores-section');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-btn-container');
 const answerButton1 = document.getElementById('answer-btn-1');
@@ -77,7 +78,7 @@ function runQuiz() {
             quizResultsScreen.classList.remove('hide');
             userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
             userFinalScore.innerText = userScore;
-            saveButton.addEventListener('click', saveHighScore);
+            saveButton.addEventListener('click', (saveHighScore));
             localStorage.setItem('userRecentScore', userScore);
             playButton.addEventListener('click', () => {
                 quizResultsScreen.classList.add('hide');
