@@ -178,7 +178,7 @@ h1 {
     margin-top: 6px;
 }
 .question-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -192,7 +192,7 @@ h1 {
     justify-self: center;
     height: 80px;
     width: 60%;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 10px;
 }
 
@@ -213,7 +213,7 @@ h1 {
     width: 100%;
     max-width: 20%;
     justify-self: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 10px;
 }
 
@@ -345,7 +345,6 @@ h1 {
         padding:0;
     }
 
-    
     h2 {
         font-size: 1.8rem;
     }
