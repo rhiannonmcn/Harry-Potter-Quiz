@@ -195,13 +195,13 @@ function resetQuestionState(){
  */
 function incrementScore(){
     if (randomQuestions === easyQuestions){
-        userResult.innerText = userScore += 1;
-        correctQuestions++;
-    } else if (randomQuestions === mediumQuestions){
         userResult.innerText = userScore += 2;
         correctQuestions++;
+    } else if (randomQuestions === mediumQuestions){
+        userResult.innerText = userScore += 5;
+        correctQuestions++;
     } else if (randomQuestions === hardQuestions){
-        userResult.innerText = userScore += 3 + timeLeft;
+        userResult.innerText = timeLeft;
         correctQuestions++;
     }
 }
