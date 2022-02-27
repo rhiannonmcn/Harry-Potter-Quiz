@@ -261,7 +261,7 @@ h1 {
     width: 100%;
 }
 
-input#username{
+input#username {
     padding: 0 4px;
     margin-top: 12px;
     background-color: #fff9e6;
@@ -342,6 +342,18 @@ input#username{
 
     .results-content-container p {
         font-size: 2.2rem;
+    }
+
+    .play-again-btn,
+    .save-button {
+        width: 100%;
+        max-width: 90%;
+
+    }
+
+    .input-container {
+        max-width: 70%;
+        width: 100%;
     }
 }
 
