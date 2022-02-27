@@ -18,7 +18,7 @@ html {
 body {
     display: grid;
     font-family: 'Prata', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff9e6;
     height: 100vh;
 }
@@ -261,6 +261,17 @@ h1 {
     width: 100%;
 }
 
+input#username{
+    padding: 0 4px;
+    margin-top: 12px;
+    background-color: #fff9e6;
+    color: #4a0600;
+    font-size: 2rem;
+    border: 2px #4a0600 solid;
+    font-family: 'Prata', sans-serif;
+    width: 90%;
+}
+
 /* hide the content with the class hide */
 .hide {
     display: none;
@@ -390,7 +401,6 @@ h1 {
     .question-text p {
         font-size: 1rem;
         padding: 5px;
-        letter-spacing: unset;
     }
 
     .answer-btn-container {
