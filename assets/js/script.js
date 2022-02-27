@@ -33,7 +33,7 @@ let timer; //value defined in timer.js
 //Event listeners
 startBtn.addEventListener('click', runQuiz);
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
-mediumDifficultyBtn.addEventListener("click",chooseDifficulty);
+mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
 hardDifficultyBtn.addEventListener("click", chooseDifficulty);
 
 /**
@@ -42,17 +42,17 @@ hardDifficultyBtn.addEventListener("click", chooseDifficulty);
  * removes the difficulty screen and shows the start screen
  * @param {target the user's button click} event 
  */
-function chooseDifficulty(event){
-   
+function chooseDifficulty(event) {
+
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
     let target = event.target;
-    if (target.id === "easy-difficulty-btn"){
+    if (target.id === "easy-difficulty-btn") {
         randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
-    } else if (target.id === "medium-difficulty-btn"){
+    } else if (target.id === "medium-difficulty-btn") {
         randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
         console.log('you have picked medium');
-    } else if (target.id === "hard-difficulty-btn"){
+    } else if (target.id === "hard-difficulty-btn") {
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     }
 }
@@ -71,20 +71,20 @@ function runQuiz() {
     currentQuestionIndex = 0;
     renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn.addEventListener('click', () => {
-        if (currentQuestionIndex >= quizLength){
+        if (currentQuestionIndex >= quizLength) {
             quizQuestionsScreen.classList.add('hide');
             quizResultsScreen.classList.remove('hide');
-            playButton.addEventListener('click', () =>{
+            playButton.addEventListener('click', () => {
                 quizResultsScreen.classList.add('hide');
                 quizDifficultyScreen.classList.remove('hide');
-                window.location.reload();   
+                window.location.reload();
             })
-        userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
-        userFinalScore.innerText = userScore;
+            userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
+            userFinalScore.innerText = userScore;
         } else {
-        currentQuestionIndex++;
-        renderQuestions(randomQuestions[currentQuestionIndex]);
-        resetQuestionState(); //resets question state once next button click
+            currentQuestionIndex++;
+            renderQuestions(randomQuestions[currentQuestionIndex]);
+            resetQuestionState(); //resets question state once next button click
         }
     });
 }
@@ -97,7 +97,7 @@ function runQuiz() {
  * startTimer function is called once the question is called 
  * @param {*} question 
  */
-function renderQuestions(question){
+function renderQuestions(question) {
     questionElement.innerText = question.question;
     answerButton1.innerText = question.answers[0].text;
     answerButton2.innerText = question.answers[1].text;
@@ -111,8 +111,8 @@ function renderQuestions(question){
     nextBtn.classList.remove("next-btn-hover");
     nextBtn.setAttribute("disabled", "disabled");
     questionNumber++;
-    questionNumberDisplayed.innerText = questionNumber + '/' + '10';    
-    
+    questionNumberDisplayed.innerText = questionNumber + '/' + '10';
+
 }
 
 /**
@@ -124,7 +124,7 @@ function renderQuestions(question){
  * @param {target the user's button click} event 
  */
 
-function checkAnswer(event){
+function checkAnswer(event) {
 
     selectedButton = event.target;
     let userAnswer = selectedButton.innerText;
@@ -140,24 +140,32 @@ function checkAnswer(event){
     answerButton2.setAttribute("disabled", "disabled");
     answerButton3.setAttribute("disabled", "disabled");
     answerButton4.setAttribute("disabled", "disabled");
-    
-    if (userAnswer === rightAnswer){
+
+    if (userAnswer === rightAnswer) {
         selectedButton.classList.add('correct');
         incrementScore();
         clearInterval(timer);
     } else {
         selectedButton.classList.add('wrong');
-        if(answerButton1.innerText === rightAnswer){
+        if (answerButton1.innerText === rightAnswer) {
             answerButton1.classList.add('correct');
-        } else if (answerButton2.innerText === rightAnswer){
+        } else if (answerButton2.innerText === rightAnswer) {
             answerButton2.classList.add('correct');
-        } else if (answerButton3.innerText === rightAnswer){
+        } else if (answerButton3.innerText === rightAnswer) {
             answerButton3.classList.add('correct');
-        } else if (answerButton4.innerText === rightAnswer){
+        } else if (answerButton4.innerText === rightAnswer) {
             answerButton4.classList.add('correct');
         }
+
+        //Subtracts from user score depending on the difficulty chosen if user gets answer wrong
+        if (randomQuestions === mediumQuestions) {
+            userResult.innerText = userScore -= 3;
+        } else if (randomQuestions === hardQuestions) {
+            userResult.innerText = userScore -= 5;
+        }
+
         clearInterval(timer);
-    }   
+    }
 
     nextBtn.classList.add("next-btn-hover");
     nextBtn.removeAttribute("disabled", "disabled");
@@ -168,7 +176,7 @@ function checkAnswer(event){
  * Answer button hover effects enabled again as well as the ability to click the answer button
  */
 
-function resetQuestionState(){
+function resetQuestionState() {
     selectedButton.classList.remove('correct');
     selectedButton.classList.remove('wrong');
     //enable hover effects 
@@ -186,21 +194,21 @@ function resetQuestionState(){
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("correct");
         answerButtons[i].classList.remove("wrong");
-    }  
+    }
 }
 
 /**
  * Checks what difficulty questions is set for the user currently
  * Depending on the choice, the score is incremented by a certain value
  */
-function incrementScore(){
-    if (randomQuestions === easyQuestions){
+function incrementScore() {
+    if (randomQuestions === easyQuestions) {
         userResult.innerText = userScore += 2;
         correctQuestions++;
-    } else if (randomQuestions === mediumQuestions){
+    } else if (randomQuestions === mediumQuestions) {
         userResult.innerText = userScore += 5;
         correctQuestions++;
-    } else if (randomQuestions === hardQuestions){
+    } else if (randomQuestions === hardQuestions) {
         userResult.innerText = timeLeft;
         correctQuestions++;
     }
