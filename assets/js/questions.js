@@ -697,7 +697,7 @@ const hardQuestions = [{
     correctAnswer: "April 1st"
 },
 {
-    question: "What house was Tonks sortede into?",
+    question: "What house was Tonks sorted into?",
     answers: [
         {text: "Hufflepuff"},
         {text: "Gryffindor"},
