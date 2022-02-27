@@ -209,7 +209,7 @@ function incrementScore() {
         userResult.innerText = userScore += 5;
         correctQuestions++;
     } else if (randomQuestions === hardQuestions) {
-        userResult.innerText = timeLeft;
+        userResult.innerText = userScore +=2 + timeLeft;
         correctQuestions++;
     }
 }
