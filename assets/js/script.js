@@ -20,6 +20,7 @@ const questionNumberDisplayed = document.getElementById("question-nbr");
 const playButton = document.getElementById('play-again-button');
 const userFinalScore = document.getElementById("user-result");
 const userCorrectQuestions = document.getElementById('user-result-text');
+
 let currentQuestionIndex;
 let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
 let randomQuestions; //value defined by areYouReady function
@@ -74,13 +75,16 @@ function runQuiz() {
         if (currentQuestionIndex >= quizLength) {
             quizQuestionsScreen.classList.add('hide');
             quizResultsScreen.classList.remove('hide');
+            userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
+            userFinalScore.innerText = userScore;
+            saveButton.addEventListener('click', saveHighScore);
+            localStorage.setItem('userRecentScore', userScore);
             playButton.addEventListener('click', () => {
                 quizResultsScreen.classList.add('hide');
                 quizDifficultyScreen.classList.remove('hide');
                 window.location.reload();
             })
-            userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
-            userFinalScore.innerText = userScore;
+            
         } else {
             currentQuestionIndex++;
             renderQuestions(randomQuestions[currentQuestionIndex]);

@@ -163,7 +163,7 @@ h1 {
 .start-button:hover,
 .answer-btn-hover:hover,
 .next-btn-hover,
-.save-button:hover,
+/*.save-button-hover,*/
 .play-again-btn:hover {
     background-color: #fff9e6;
     color: #4a0600;
