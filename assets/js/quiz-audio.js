@@ -5,6 +5,11 @@ const backgroundMusic = new Audio("assets/sounds/background-music");
 const audioOnButton = document.getElementsByClassName("audio-on");
 const audioOffButton = document.getElementsByClassName("audio-off");
 let audioPlaying = true;
+let audioIconButton = document.getElementsByClassName('audio-icon-button');
+
+for(let i = 0; i < audioIconButton.length; i++){
+    audioIconButton[i].addEventListener('click', toggleAudio);
+}
 
 /**
  * Let's the player choose to have sounds on or not
@@ -24,6 +29,7 @@ function toggleAudio(){
         }
     }
 }
+
 /**
  * Gets the sound for when a player clicks a button if sound is on otherwise it pauses it
  */
