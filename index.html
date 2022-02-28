@@ -8,7 +8,7 @@
     <meta name="description" content="An interactive Harry Potter quiz based off the books of the same name" />
     <meta name="keywords"
         content="Harry Potter, books, Harry Potter Quiz, Harry Potter Books, Harry Potter Questions" />
-
+    <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Harry Potter Book Quiz</title>
@@ -29,12 +29,8 @@
                         <i class="fab fa-fort-awesome "></i>
                     </div>
                     <div>
-                        <div>
-                            <i class="fas fa-volume-mute "></i>
-                        </div>
-                        <div class="hide">
-                            <i class="fas fa-volume-up "></i>
-                        </div>
+                        <i class="fas fa-volume-mute audio-off "></i>
+                        <i class="fas fa-volume-up audio-on hide"></i>
                     </div>
                 </div>
                 <div class="quiz-difficulty-container">
@@ -55,12 +51,8 @@
                         <i class="fab fa-fort-awesome"></i>
                     </div>
                     <div>
-                        <div>
-                            <i class="fas fa-volume-mute"></i>
-                        </div>
-                        <div class="hide">
-                            <i class="fas fa-volume-up"></i>
-                        </div>
+                        <i class="fas fa-volume-mute audio-off "></i>
+                        <i class="fas fa-volume-up audio-on hide"></i>
                     </div>
                 </div>
                 <div class="quiz-start-content">
@@ -76,10 +68,8 @@
                     </div>
                     <div>
                         <div>
-                            <i class="fas fa-volume-mute"></i>
-                        </div>
-                        <div class="hide">
-                            <i class="fas fa-volume-up"></i>
+                            <i class="fas fa-volume-mute audio-off "></i>
+                            <i class="fas fa-volume-up audio-on hide"></i>
                         </div>
                     </div>
                     <div class="timer-container">
@@ -114,12 +104,8 @@
                         <i class="fab fa-fort-awesome"></i>
                     </div>
                     <div>
-                        <div>
-                            <i class="fas fa-volume-mute"></i>
-                        </div>
-                        <div class="hide">
-                            <i class="fas fa-volume-up"></i>
-                        </div>
+                        <i class="fas fa-volume-mute audio-off "></i>
+                        <i class="fas fa-volume-up audio-on hide"></i>
                     </div>
                 </div>
                 <div class="results-content-container">
@@ -128,25 +114,22 @@
                     <div class="input-container">
                         <form id="username-container">
                             <input type="text" name="username" id="username" placeholder="username" />
-                            <button type="submit" onclick="saveHighScore(event)" class="save-button save-button-hover" id="save-score-btn" disabled>Save High Score</button>
+                            <button type="submit" onclick="saveHighScore(event)" class="save-button save-button-hover"
+                                id="save-score-btn" disabled>Save High Score</button>
                         </form>
                         <button id="play-again-button" class="play-again-btn">Play again?</button>
                     </div>
                 </div>
             </section>
-            <!--Start of results section area-->
+            <!--Start of highscores section area-->
             <section class="highscores hide" id="highscores-section">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome"></i>
                     </div>
                     <div>
-                        <div>
-                            <i class="fas fa-volume-mute"></i>
-                        </div>
-                        <div class="hide">
-                            <i class="fas fa-volume-up"></i>
-                        </div>
+                        <i class="fas fa-volume-mute audio-off "></i>
+                        <i class="fas fa-volume-up audio-on hide"></i>
                     </div>
                 </div>
                 <div class="highscores-content-container">
@@ -162,9 +145,8 @@
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/timer.js"></script>
     <script src="assets/js/high-scores.js"></script>
-    <script src ="assets/js/quiz-audio.js"></script>
-    <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
-    
+    <script src="assets/js/quiz-audio.js"></script>
+
 </body>
 
 </html>
