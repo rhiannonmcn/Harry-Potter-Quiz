@@ -3,7 +3,6 @@ const username = document.getElementById('username');
 const saveButton = document.getElementById('save-score-btn');
 const playButtonHighScores = document.getElementById('play-again-button-highscores');
 const highScores = JSON.parse(localStorage.getItem('highscores')) || []; // variable that creates an array for the most recent high scores
-const userRecentScore = localStorage.getItem('userRecentScore');
 const highScoresList = document.getElementById('high-scores-list');
 
 //Event Listeners
@@ -30,7 +29,7 @@ function saveHighScore(event) {
 
     //add our array value to highScores variable
     const storedHighScore = {
-        score: userRecentScore,
+        score: userScore,
         name: username.value
     };
     highScores.push(storedHighScore);
