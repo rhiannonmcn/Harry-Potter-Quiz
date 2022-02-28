@@ -42,7 +42,7 @@ function toggleAudioOff() {
     audioPlaying = false;
     for (let i = 0; i < audioOnButton.length && audioOffButton.length; i++) {
         audioOnButton[i].classList.add('hide');
-        audioOnButton[i].classList.remove('hide');
+        audioOffButton[i].classList.remove('hide');
         backgroundMusic.pause();
     }
 }
