@@ -17,6 +17,7 @@ function startTimer() {
 
 function countdown() {
     let answerButtons = document.getElementsByClassName("answer-btn");
+
     if (timeLeft <= 20 && timeLeft >= 11) {
         timerSounds.pause();
         timerElement.style.color = '#fff9e6';
@@ -25,19 +26,12 @@ function countdown() {
         timerElement.style.color = 'gold';
     }
 
-
     if (timeLeft === 0) {
         timerSounds.pause();
         wrongSoundEffects();
         clearInterval(timer);
         nextBtn.classList.add("next-btn-hover");
         nextBtn.removeAttribute("disabled", "disabled");
-        //If user lets timer run down, subtract from user score depending on difficulty chosen
-        if (randomQuestions === mediumQuestions) {
-            userResult.innerText = userScore -= 3;
-        } else if (randomQuestions === hardQuestions) {
-            userResult.innerText = userScore -= 5;
-        }
         //disable hover effects once answer is clicked
         answerButton1.classList.remove("answer-btn-hover");
         answerButton2.classList.remove("answer-btn-hover");
@@ -48,9 +42,6 @@ function countdown() {
         answerButton2.setAttribute("disabled", "disabled");
         answerButton3.setAttribute("disabled", "disabled");
         answerButton4.setAttribute("disabled", "disabled");
-
-        nextBtn.classList.add("next-btn-hover");
-        nextBtn.removeAttribute("disabled", "disabled");
         //If user lets timer run down, subtract from user score depending on difficulty chosen
         if (randomQuestions === mediumQuestions) {
             userResult.innerText = userScore -= 3;

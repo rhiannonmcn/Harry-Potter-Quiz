@@ -90,7 +90,6 @@ function runQuiz() {
                 quizDifficultyScreen.classList.remove('hide');
                 window.location.reload();
             })
-
         } else {
             currentQuestionIndex++;
             renderQuestions(randomQuestions[currentQuestionIndex]);
@@ -192,10 +191,13 @@ function checkAnswer(event) {
  * Resets the question button states once called upon
  * Answer button hover effects enabled again as well as the ability to click the answer button
  */
-
 function resetQuestionState() {
-    selectedButton.classList.remove('correct');
-    selectedButton.classList.remove('wrong');
+    if (selectedButton) {
+        selectedButton.classList.remove('correct');
+        selectedButton.classList.remove('wrong');
+    }
+
+
     //enable hover effects 
     answerButton1.classList.add("answer-btn-hover");
     answerButton2.classList.add("answer-btn-hover");
