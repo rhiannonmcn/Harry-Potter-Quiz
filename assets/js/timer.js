@@ -9,8 +9,8 @@ function startTimer() {
     }
     timeLeft;
     timer = setInterval(function () {
-        countdown();
         timerElement.innerText = timeLeft + 's';
+        countdown();
     }, 1000);
 }
 
