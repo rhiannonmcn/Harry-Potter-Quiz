@@ -163,7 +163,6 @@ h1 {
 .start-button:hover,
 .answer-btn-hover:hover,
 .next-btn-hover,
-/*.save-button-hover,*/
 .play-again-btn:hover {
     background-color: #fff9e6;
     color: #4a0600;
@@ -356,6 +355,15 @@ li.high-score:first-child {
     .next-btn {
         max-width: 40%;
     }
+
+    .next-btn-hover {
+    background-color: #fff9e6;
+    color: #4a0600;
+    border: 2px #4a0600 solid;
+    outline: 1px solid #4a0600;
+    transform: none;
+    transition: none;
+}
 
     /*unique styles for results screen */
 
