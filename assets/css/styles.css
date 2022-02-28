@@ -272,6 +272,29 @@ input#username {
     width: 90%;
 }
 
+/* Styles for highscores screen */
+.highscores-content-container {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ul#high-scores-list {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+}
+
+li.high-score {
+    font-size: 1.6rem;
+    padding: 2px;
+}
+
+li.high-score:first-child {
+    font-size:1.8rem;
+    color: gold;
+}
+
 /* hide the content with the class hide */
 .hide {
     display: none;
