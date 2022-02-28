@@ -18,8 +18,10 @@ username.addEventListener('keyup', () => {
 });
 
 /**
- * 
- * @param {*} event 
+ * Takes the value of the userScore and the value of the username input at the end of the quiz to create an array
+ * Array is pushed, then sorted and spliced to the const highScores which uses local storage
+ * Value of highScores is then converted via map to display in the relevant html
+ * @param {*Takes the users button click on Save Highscore} event 
  */
 function saveHighScore(event) {
     event.preventDefault();
