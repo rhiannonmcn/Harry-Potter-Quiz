@@ -12,6 +12,35 @@ function toggleAudio(){
             audioOnButton[i].classList.remove('hide');
             audioOffButton[i].classList.add('hide');
         }
+    } else if (audioPlaying = false){
+        for(let i=0; i < audioOnButton.length && audioOffButton.length; i++){
+            audioOnButton[i].classList.add('hide');
+            audioOnButton[i].classList.remove('hide');
+        }
+    }
+}
+
+function buttonSoundEffects(){
+    if(audioPlaying){
+        buttonClick.play();
+    } else {
+        buttonClick.pause();
+    }
+}
+
+function rightSoundEffects(){
+    if(audioPlaying){
+        questionRightSound.play();
+    } else {
+        questionRightSound.pause();
+    }
+}
+
+function wrongSoundEffects(){
+    if(audioPlaying){
+        questionWrongSound.play();
+    } else {
+        questionWrongSound.pause();
     }
 }
 
