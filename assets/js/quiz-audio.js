@@ -53,6 +53,7 @@ function toggleAudioOff() {
 function buttonSoundEffects() {
     if (audioPlaying) {
         buttonClick.play();
+        buttonClick.volume = 0.3;
     } else {
         buttonClick.pause();
     }
@@ -64,6 +65,7 @@ function buttonSoundEffects() {
 function rightSoundEffects() {
     if (audioPlaying) {
         questionRightSound.play();
+        questionRightSound.volume = 0.3;
     } else {
         questionRightSound.pause();
     }
@@ -75,6 +77,7 @@ function rightSoundEffects() {
 function wrongSoundEffects() {
     if (audioPlaying) {
         questionWrongSound.play();
+        questionWrongSound.volume = 0.3;
     } else {
         questionWrongSound.pause();
     }
