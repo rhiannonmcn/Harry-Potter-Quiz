@@ -28,19 +28,19 @@ function saveHighScore(event) {
     quizResultsScreen.classList.add('hide');
     quizHighScoresScreen.classList.remove('hide');
 
-    const userLastScore = {
+    //add our array value to highScores variable
+    const storedHighScore = {
         score: userRecentScore,
         name: username.value
-    }
+    };
+    highScores.push(storedHighScore);
+    highScores.sort((one, two) => two.score - one.score); //sorts score in descending order
+    highScores.splice(5);
+    localStorage.setItem("highscores", JSON.stringify(highScores));
 
-    //adds the new score array to highscores variable created
-    highScores.push(userLastScore);
-    //highScores.sort((one, two) => two.score - one.score); //sorts score in descending order
-    //highScores.splice(5);
-    //updates the local storage with our highScore
-    localStorage.setItem('highScores', JSON.stringify(highScores));
     //takes our highScore array and converts it to a string html
-    highScoresList.innerHTML = highScores.map(score => {
-        return `<li class="high-score">${userLastScore.name} - ${userLastScore.score}</li>`;
+    highScoresList.innerHTML = highScores.map(highScores => {
+        return `<li class="high-score">${highScores.name} - ${highScores.score}</li>`;
     }).join("");
+    console.log(highScores);
 }
