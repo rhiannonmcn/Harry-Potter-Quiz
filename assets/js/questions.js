@@ -632,7 +632,7 @@ const hardQuestions = [{
         {text: "Pansy Parkinson"},
         {text: "Astoria Greengrass"},
         {text: "Georgina Goyle"},
-        {text: "Richard"}
+        {text: "Millicent Bulstrode"}
     ],
     correctAnswer: "Astoria Greengrass"
 },
