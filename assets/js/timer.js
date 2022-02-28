@@ -17,11 +17,11 @@ function startTimer() {
 
 function countdown() {
      let answerButtons = document.getElementsByClassName("answer-btn");
-     
+
      if(timeLeft < 11 ){
         timerElement.style.color = 'gold';
     } else {
-        timerElement.style.color = 'white';
+        timerElement.style.color = '#fff9e6';
     }
     
     if (timeLeft === 0) {
