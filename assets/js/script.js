@@ -90,7 +90,7 @@ function runQuiz() {
                 quizDifficultyScreen.classList.remove('hide');
                 window.location.reload();
             })
-            
+
         } else {
             currentQuestionIndex++;
             renderQuestions(randomQuestions[currentQuestionIndex]);
@@ -156,6 +156,9 @@ function checkAnswer(event) {
         rightSoundEffects();
         incrementScore();
         clearInterval(timer);
+        if (timeLeft < 11) {
+            timerSounds.pause();
+        }
     } else {
         selectedButton.classList.add('wrong');
         wrongSoundEffects();
@@ -175,7 +178,9 @@ function checkAnswer(event) {
         } else if (randomQuestions === hardQuestions) {
             userResult.innerText = userScore -= 5;
         }
-
+        if (timeLeft < 11) {
+            timerSounds.pause();
+        }
         clearInterval(timer);
     }
 
@@ -221,7 +226,7 @@ function incrementScore() {
         userResult.innerText = userScore += 5;
         correctQuestions++;
     } else if (randomQuestions === hardQuestions) {
-        userResult.innerText = userScore +=2 + timeLeft;
+        userResult.innerText = userScore += 2 + timeLeft;
         correctQuestions++;
     }
 }
