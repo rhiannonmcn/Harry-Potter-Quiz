@@ -4,11 +4,12 @@ const buttonClick = new Audio("assets/sounds/button-click.mp3");
 const backgroundMusic = new Audio("assets/sounds/background-music");
 const audioOnButton = document.getElementsByClassName("audio-on");
 const audioOffButton = document.getElementsByClassName("audio-off");
-let audioPlaying = true;
 let audioIconButton = document.getElementsByClassName('audio-icon-button');
 
 for(let i = 0; i < audioIconButton.length; i++){
-    audioIconButton[i].addEventListener('click', toggleAudio);
+    audioIconButton[i].addEventListener('click', () =>{
+        toggleAudio();
+    });
 }
 
 /**
@@ -18,11 +19,13 @@ for(let i = 0; i < audioIconButton.length; i++){
  */
 function toggleAudio(){
     if(audioPlaying = true){
+        audioPlaying = true;
         for(let i =0; i < audioOnButton.length && audioOffButton.length; i++){
             audioOnButton[i].classList.remove('hide');
             audioOffButton[i].classList.add('hide');
         }
     } else if (audioPlaying = false){
+        audioPlaying = false;
         for(let i=0; i < audioOnButton.length && audioOffButton.length; i++){
             audioOnButton[i].classList.add('hide');
             audioOnButton[i].classList.remove('hide');

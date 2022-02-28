@@ -31,9 +31,13 @@ let userScore = 0;
 let correctQuestions = 0; //value defined by increment score function 
 let timeLeft; //value defined in timer.js
 let timer; //value defined in timer.js
+let audioPlaying = false;
 
 //Event listeners
-startBtn.addEventListener('click', runQuiz);
+startBtn.addEventListener('click', () => {
+    buttonSoundEffects();
+    runQuiz()
+});
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
 hardDifficultyBtn.addEventListener("click", chooseDifficulty);
@@ -57,6 +61,8 @@ function chooseDifficulty(event) {
     } else if (target.id === "hard-difficulty-btn") {
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     }
+
+    buttonSoundEffects();
 }
 
 /**
@@ -73,6 +79,7 @@ function runQuiz() {
     currentQuestionIndex = 0;
     renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn.addEventListener('click', () => {
+        buttonSoundEffects();
         if (currentQuestionIndex >= quizLength) {
             quizQuestionsScreen.classList.add('hide');
             quizResultsScreen.classList.remove('hide');
@@ -146,10 +153,12 @@ function checkAnswer(event) {
 
     if (userAnswer === rightAnswer) {
         selectedButton.classList.add('correct');
+        rightSoundEffects();
         incrementScore();
         clearInterval(timer);
     } else {
         selectedButton.classList.add('wrong');
+        wrongSoundEffects();
         if (answerButton1.innerText === rightAnswer) {
             answerButton1.classList.add('correct');
         } else if (answerButton2.innerText === rightAnswer) {

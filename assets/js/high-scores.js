@@ -9,6 +9,7 @@ const highScoresList = document.getElementById('high-scores-list');
 playButtonHighScores.addEventListener('click', () => {
     quizDifficultyScreen.classList.remove('hide');
     quizHighScoresScreen.classList.add('hide');
+    buttonSoundEffects();
     window.location.reload();
     resetQuestionState();
 })
@@ -25,6 +26,7 @@ username.addEventListener('keyup', () => {
  */
 function saveHighScore(event) {
     event.preventDefault();
+    buttonSoundEffects();
 
     quizResultsScreen.classList.add('hide');
     quizHighScoresScreen.classList.remove('hide');
