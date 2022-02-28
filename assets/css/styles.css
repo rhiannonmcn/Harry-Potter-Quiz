@@ -276,7 +276,7 @@ input#username {
 .highscores-content-container {
     display: grid;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 
 ul#high-scores-list {
@@ -287,7 +287,7 @@ ul#high-scores-list {
 
 li.high-score {
     font-size: 1.6rem;
-    padding: 2px;
+    padding: 5px 16px;
 }
 
 li.high-score:first-child {
@@ -466,6 +466,19 @@ li.high-score:first-child {
 
     .input-container {
         max-width: 98%;
+    }
+
+    /* Styles for highscores screen */
+
+    .highscores-content-container h2{
+        font-size: 2rem;
+    }
+    li.high-score {
+        font-size: 1rem;
+    }
+    
+    li.high-score:first-child {
+        font-size:1.2rem;
     }
 
 }

@@ -155,7 +155,7 @@ function checkAnswer(event) {
         rightSoundEffects();
         incrementScore();
         clearInterval(timer);
-        if (audioPlaying && timeLeft < 11) {
+        if (audioPlaying && timeLeft < 7) {
             timerSounds.pause();
         }
     } else {
@@ -177,7 +177,7 @@ function checkAnswer(event) {
         } else if (randomQuestions === hardQuestions) {
             userResult.innerText = userScore -= 5;
         }
-        if (audioPlaying && timeLeft < 11) {
+        if (audioPlaying && timeLeft < 7) {
             timerSounds.pause();
         }
         clearInterval(timer);
@@ -196,8 +196,6 @@ function resetQuestionState() {
         selectedButton.classList.remove('correct');
         selectedButton.classList.remove('wrong');
     }
-
-
     //enable hover effects 
     answerButton1.classList.add("answer-btn-hover");
     answerButton2.classList.add("answer-btn-hover");

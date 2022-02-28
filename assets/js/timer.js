@@ -9,23 +9,21 @@ function startTimer() {
     }
     timeLeft;
     timer = setInterval(function () {
-        timerElement.innerText = timeLeft + 's';
         countdown();
+        timerElement.innerText = timeLeft + 's';
     }, 1000);
 }
 
 
 function countdown() {
     let answerButtons = document.getElementsByClassName("answer-btn");
-
-    if (audioPlaying && timeLeft <= 20 && timeLeft >= 11) {
+    if (audioPlaying && timeLeft <= 20 && timeLeft >= 7) {
         timerSounds.pause();
         timerElement.style.color = '#fff9e6';
-    } else if (audioPlaying && timeLeft < 11) {
+    } else if (audioPlaying && timeLeft < 7) {
         timerSounds.play();
         timerElement.style.color = 'gold';
     }
-
     if (timeLeft === 0) {
         if (audioPlaying) {
             timerSounds.pause();
