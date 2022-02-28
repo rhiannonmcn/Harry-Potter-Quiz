@@ -17,8 +17,15 @@ function startTimer() {
 
 function countdown() {
      let answerButtons = document.getElementsByClassName("answer-btn");
+     
+     if(timeLeft < 11 ){
+        timerElement.style.color = 'gold';
+    } else {
+        timerElement.style.color = 'white';
+    }
     
     if (timeLeft === 0) {
+        clearTimer
         wrongSoundEffects();
         clearInterval(timer);
         nextBtn.classList.add("next-btn-hover");
