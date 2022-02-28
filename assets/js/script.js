@@ -78,7 +78,6 @@ function runQuiz() {
             quizResultsScreen.classList.remove('hide');
             userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
             userFinalScore.innerText = userScore;
-            saveButton.addEventListener('click', (saveHighScore));
             localStorage.setItem('userRecentScore', userScore);
             playButton.addEventListener('click', () => {
                 quizResultsScreen.classList.add('hide');
