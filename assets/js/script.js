@@ -61,7 +61,6 @@ function chooseDifficulty(event) {
     } else if (target.id === "hard-difficulty-btn") {
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     }
-
     buttonSoundEffects();
 }
 

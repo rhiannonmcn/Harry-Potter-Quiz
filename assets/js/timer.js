@@ -19,7 +19,16 @@ function countdown() {
      let answerButtons = document.getElementsByClassName("answer-btn");
     
     if (timeLeft === 0) {
+        wrongSoundEffects();
         clearInterval(timer);
+        nextBtn.classList.add("next-btn-hover");
+        nextBtn.removeAttribute("disabled", "disabled");
+        //If user lets timer run down, subtract from user score depending on difficulty chosen
+        if (randomQuestions === mediumQuestions) {
+            userResult.innerText = userScore -= 3;
+        } else if (randomQuestions === hardQuestions) {
+            userResult.innerText = userScore -= 5;
+        }
         //disable hover effects once answer is clicked
         answerButton1.classList.remove("answer-btn-hover");
         answerButton2.classList.remove("answer-btn-hover");
