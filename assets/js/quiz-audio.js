@@ -2,6 +2,7 @@ const questionRightSound = new Audio("assets/sounds/right-sound.mp3");
 const questionWrongSound = new Audio("assets/sounds/wrong-sound.mp3");
 const buttonClick = new Audio("assets/sounds/button-click.mp3");
 const backgroundMusic = new Audio("assets/sounds/background-music.mp3");
+const timerSounds = new Audio("assets/sounds/timer-clicks.mp3");
 const audioOnButton = document.getElementsByClassName("audio-on");
 const audioOffButton = document.getElementsByClassName("audio-off");
 let audioIconButton = document.getElementsByClassName('audio-icon-button');
@@ -19,7 +20,7 @@ for (let i = 0; i < audioIconButton.length; i++) {
  * Loops through the audio buttons if soumd is not playing and adds the appropriate class in html
  */
 function toggleAudio() {
-    audioPlaying ? toggleAudioOff() : toggleAudioOn ();
+    audioPlaying ? toggleAudioOff() : toggleAudioOn();
 }
 
 
