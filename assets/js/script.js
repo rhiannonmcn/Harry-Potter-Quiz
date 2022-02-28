@@ -155,7 +155,7 @@ function checkAnswer(event) {
         rightSoundEffects();
         incrementScore();
         clearInterval(timer);
-        if (timeLeft < 11) {
+        if (audioPlaying && timeLeft < 11) {
             timerSounds.pause();
         }
     } else {
@@ -177,7 +177,7 @@ function checkAnswer(event) {
         } else if (randomQuestions === hardQuestions) {
             userResult.innerText = userScore -= 5;
         }
-        if (timeLeft < 11) {
+        if (audioPlaying && timeLeft < 11) {
             timerSounds.pause();
         }
         clearInterval(timer);

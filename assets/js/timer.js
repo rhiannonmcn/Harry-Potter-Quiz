@@ -18,16 +18,18 @@ function startTimer() {
 function countdown() {
     let answerButtons = document.getElementsByClassName("answer-btn");
 
-    if (timeLeft <= 20 && timeLeft >= 11) {
+    if (audioPlaying && timeLeft <= 20 && timeLeft >= 11) {
         timerSounds.pause();
         timerElement.style.color = '#fff9e6';
-    } else if (timeLeft < 11) {
+    } else if (audioPlaying && timeLeft < 11) {
         timerSounds.play();
         timerElement.style.color = 'gold';
     }
 
     if (timeLeft === 0) {
-        timerSounds.pause();
+        if (audioPlaying) {
+            timerSounds.pause();
+        }
         wrongSoundEffects();
         clearInterval(timer);
         nextBtn.classList.add("next-btn-hover");
