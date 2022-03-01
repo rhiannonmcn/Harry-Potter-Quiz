@@ -432,7 +432,7 @@ li.high-score:first-child {
         font-size: 1.2rem;
     }
 
-    /*Same styles for quiz difficulty screen, quiz start screen, quiz questions screen and quiz results screen */
+    /*Same styles for quiz screen, quiz difficulty screen, quiz start screen, quiz questions screen and quiz results screen */
 
     .difficulty-btn,
     .start-button,
@@ -442,6 +442,12 @@ li.high-score:first-child {
         margin-top: 8px;
         font-size: 1rem;
         width: 80%;
+    }
+
+    /* unique styles for quiz screen */
+
+    .btn{
+        font-size: 1.2rem;
     }
 
     /*unique styles for quiz questions screen */
@@ -467,8 +473,6 @@ li.high-score:first-child {
     .answer-btn-container button:nth-child(odd) {
         margin-left: unset;
     }
-
-
 
     /* unique styles for results page */
 
