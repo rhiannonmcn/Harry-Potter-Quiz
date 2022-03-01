@@ -112,6 +112,11 @@ function renderQuestions(question) {
     answerButton2.innerText = question.answers[1].text;
     answerButton3.innerText = question.answers[2].text;
     answerButton4.innerText = question.answers[3].text;
+    let ansBtnContainer = document.getElementById('ans-btn-container');
+    //randomises the order of which the answer buttons are shown
+    for (let i = ansBtnContainer.children.length; i >= 0; i--){
+        ansBtnContainer.appendChild(ansBtnContainer.children[Math.random() * i | 0]);
+    }
     answerButton1.onclick = checkAnswer;
     answerButton2.onclick = checkAnswer;
     answerButton3.onclick = checkAnswer;
