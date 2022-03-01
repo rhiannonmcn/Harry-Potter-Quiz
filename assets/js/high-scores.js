@@ -7,7 +7,7 @@ const highScoresList = document.getElementById('high-scores-list');
 
 //Event Listeners
 playButtonHighScores.addEventListener('click', () => {
-    quizDifficultyScreen.classList.remove('hide');
+    enterQuiz.classList.remove('hide');
     quizHighScoresScreen.classList.add('hide');
     buttonSoundEffects();
     window.location.reload();

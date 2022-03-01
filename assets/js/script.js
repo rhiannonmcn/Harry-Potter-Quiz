@@ -112,7 +112,7 @@ function runQuiz() {
             playButton.addEventListener('click', () => {
                 buttonSoundEffects(); //Sound not playing when clicked. reload too fast? 
                 quizResultsScreen.classList.add('hide');
-                quizDifficultyScreen.classList.remove('hide');
+                enterQuiz.classList.remove('hide');
                 window.location.reload();
             })
         } else {
