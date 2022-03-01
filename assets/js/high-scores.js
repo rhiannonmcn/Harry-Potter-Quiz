@@ -11,11 +11,11 @@ playButtonHighScores.addEventListener('click', () => {
     quizHighScoresScreen.classList.add('hide');
     buttonSoundEffects();
     window.location.reload();
-    resetQuestionState();
-})
+});
+saveButton.addEventListener('click', saveHighScore);
 username.addEventListener('keyup', () => {
-    // disables save button from being pressed if there is not a value in the username
-    saveButton.disabled = !username.value;
+    //disables save button from being pressed if there is not a value in the username
+    saveButton.disabled = !username.value;    
 });
 
 /**
