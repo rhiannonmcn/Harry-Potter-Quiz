@@ -21,6 +21,7 @@ const questionNumberDisplayed = document.getElementById("question-nbr");
 const playButton = document.getElementById('play-again-button');
 const userFinalScore = document.getElementById("user-result");
 const userCorrectQuestions = document.getElementById('user-result-text');
+const homeButtonIcon = document.getElementsByClassName('home-button');
 
 let currentQuestionIndex;
 let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
@@ -34,9 +35,14 @@ let timer; //value defined in timer.js
 let audioPlaying = false;
 
 //Event listeners
+for (let i = 0; i < homeButtonIcon.length; i++) {
+    homeButtonIcon[i].addEventListener('click', () => {
+        window.location.reload();
+    });
+}
 startBtn.addEventListener('click', () => {
     buttonSoundEffects();
-    runQuiz()
+    runQuiz();
 });
 easyDifficultyBtn.addEventListener("click", chooseDifficulty);
 mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
