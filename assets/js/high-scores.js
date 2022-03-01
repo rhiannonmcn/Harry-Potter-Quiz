@@ -45,5 +45,4 @@ function saveHighScore(event) {
     highScoresList.innerHTML = highScores.map(highScores => {
         return `<li class="high-score">${highScores.name} - ${highScores.score}</li>`;
     }).join("");
-    console.log(highScores);
 }

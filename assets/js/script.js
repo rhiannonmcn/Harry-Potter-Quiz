@@ -1,4 +1,7 @@
 //Variables
+const enterQuiz = document.getElementById('quiz-home-section');
+const enterQuizBtn = document.getElementById('quiz-button');
+const highScoresBtn = document.getElementById('highscores-btn');
 const easyDifficultyBtn = document.getElementById("easy-difficulty-btn");
 const mediumDifficultyBtn = document.getElementById("medium-difficulty-btn");
 const hardDifficultyBtn = document.getElementById("hard-difficulty-btn");
@@ -35,6 +38,22 @@ let timer; //value defined in timer.js
 let audioPlaying = false;
 
 //Event listeners
+
+enterQuizBtn.addEventListener('click', () => {
+    buttonSoundEffects();
+    enterQuiz.classList.add("hide");
+    quizDifficultyScreen.classList.remove("hide");
+});
+
+highScoresBtn.addEventListener('click', () => {
+    buttonSoundEffects();
+    enterQuiz.classList.add("hide");
+    quizHighScoresScreen.classList.remove("hide");
+    highScoresList.innerHTML = highScores.map(highScores => {
+        return `<li class="high-score">${highScores.name} - ${highScores.score}</li>`;
+    }).join("");
+});
+
 for (let i = 0; i < homeButtonIcon.length; i++) {
     homeButtonIcon[i].addEventListener('click', () => {
         window.location.reload();
@@ -120,7 +139,7 @@ function renderQuestions(question) {
     answerButton4.innerText = question.answers[3].text;
     let ansBtnContainer = document.getElementById('ans-btn-container');
     //randomises the order of which the answer buttons are shown
-    for (let i = ansBtnContainer.children.length; i >= 0; i--){
+    for (let i = ansBtnContainer.children.length; i >= 0; i--) {
         ansBtnContainer.appendChild(ansBtnContainer.children[Math.random() * i | 0]);
     }
     answerButton1.onclick = checkAnswer;
