@@ -120,6 +120,19 @@ Both fonts are a serif font and tie nicely with the theme of the quiz. There is 
 
 # Features
 
+The Harry Potter Online Book Quiz is created to produce an immersive experience for the user through the use of both design and site structure. It moves away from a typical website structure with the a menubar and is structured and designed more like a game.
+
+It is intuitively designed so the user can navigate it with ease, with visible and recognisable Home and Sound button icons, and visual ques and sound effects reflecting the topic.
+
+## Navigation
+
+* The site navigation is done through the info bar at the top of the game area.
+* This does not schange in style throughout the user's navigation of the quiz.
+* The home button is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
+* The position of the Home button does not move throughout the user's navigation of the quiz.
+* The sound button is automatically muted on website loading and like the home button it's position doesn't move.
+* On the quiz run through two more bits of information are added to the right of these: the timer countdown and the user's score.
+* The navbar is responsive and does not change order throughout screen size changes.
 
 [Back to top](<#contents>)
 
