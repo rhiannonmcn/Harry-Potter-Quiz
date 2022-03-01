@@ -23,6 +23,8 @@ function countdown() {
     } else if (audioPlaying && timeLeft < 7) {
         timerSounds.play();
         timerElement.style.color = 'gold';
+    } else if (audioPlaying){
+        timerSounds.pause
     }
     if (timeLeft === 0) {
         if (audioPlaying) {
