@@ -41,6 +41,7 @@ h2 {
 header {
     display: grid;
     grid-template-columns: min(150px) auto;
+    padding:0 10px;
 }
 
 .hogwarts-logo {
