@@ -28,7 +28,7 @@
         </header>
         <section class="quiz-container">
             <!-- home quiz screen-->
-            <section class="quiz-home hide" id="quiz-home-section">
+            <section class="quiz-home" id="quiz-home-section">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome home-button "></i>
@@ -45,11 +45,12 @@
                     <div class="home-btn-container">
                         <button class="btn enter-quiz-btn" id="quiz-button">Quiz</button>
                         <button class="btn highscores-button" id="highscores-btn">High Scores</button>
+                        <button id="rules-btn" class="btn rules-button">Rules</button>
                     </div>
                 </div>
             </section>
             <!-- Start of rules screen-->
-            <section class="rules-screen" id="rules">
+            <section class="rules-screen hide" id="rules">
                 <div class="info-bar">
                     <div>
                         <i class="fab fa-fort-awesome home-button "></i>
@@ -88,7 +89,7 @@
                             <li>5 point penalty for wrong answers or if timer runs out</li>
                         </ul>
                     </div>
-                    <button id="rules-home-btn" class="play-again-btn">Home</button>
+                    <button id="rules-home-btn" class="play-again-btn home-button">Home</button>
                 </div>
                 </div>
             </section>
@@ -187,7 +188,7 @@
                             <button type="submit" class="save-button save-button-hover" id="save-score-btn"
                                 disabled>Save High Score</button>
                         </form>
-                        <button id="play-again-button" class="play-again-btn">Play again?</button>
+                        <button id="play-again-button" class="play-again-btn">Home</button>
                     </div>
                 </div>
             </section>
