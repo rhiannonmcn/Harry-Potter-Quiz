@@ -300,7 +300,7 @@ const easyQuestions = [{
     ],
     correctAnswer: "Mrs. Norris"
 }
-]
+];
 
 const mediumQuestions = [{
     question: "What is Fleur Delacour's sister's name?",
@@ -321,8 +321,7 @@ const mediumQuestions = [{
         {text: "Richard"}
     ],
     correctAnswer: "Arnold"
-}
-,
+},
 {
     question: "What are Neville Longbottom's parent's names?",
     answers: [
@@ -392,8 +391,7 @@ const mediumQuestions = [{
         {text: "Aragog"}
     ],
     correctAnswer: "Aragog"
-}
-,
+},
 {
     question: "What is Harry Potter's date of birth?",
     answers: [
@@ -614,7 +612,7 @@ const mediumQuestions = [{
     ],
     correctAnswer: "Aurora Sinistra"
 }
-]
+];
 
 const hardQuestions = [{
     question: "What does Viktor Krum's wand contain?",
@@ -715,8 +713,7 @@ const hardQuestions = [{
         {text: "38"}
     ],
     correctAnswer: "36"
-}
-,
+},
 {
     question: "How is Bellatrix Lestrange related to Draco Malfoy?",
     answers: [
@@ -786,8 +783,7 @@ const hardQuestions = [{
         {text: "red & yellow"}
     ],
     correctAnswer: "gold"
-}
-,
+},
 {
     question: "What does Albus Dumbledore tell Harry Potter he sees in the Mirror of Erised?",
     answers: [
@@ -918,4 +914,4 @@ const hardQuestions = [{
     ],
     correctAnswer: "Rapier"
 }
-]
+];
