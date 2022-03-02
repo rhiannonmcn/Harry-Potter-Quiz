@@ -99,7 +99,7 @@ function runQuiz() {
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
     currentQuestionIndex = 0;
-    renderQuestions(randomQuestions[currentQuestionIndex]); //renders the first question
+    renderQuestion(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn.addEventListener('click', () => {
         buttonSoundEffects();
         if (currentQuestionIndex >= quizLength) {
@@ -113,7 +113,7 @@ function runQuiz() {
             })
         } else {
             currentQuestionIndex++;
-            renderQuestions(randomQuestions[currentQuestionIndex]);
+            renderQuestion(randomQuestions[currentQuestionIndex]);
             resetQuestionState(); //resets question state once next button click
         }
     });
@@ -125,9 +125,9 @@ function runQuiz() {
  * Disables the next button functionality until an answer is chosen
  * increments the displayed question number in the html
  * startTimer function is called once the question is called 
- * @param {*} question 
+ * @param {current object} question 
  */
-function renderQuestions(question) {
+function renderQuestion(question) {
     questionElement.innerText = question.question;
     answerButton1.innerText = question.answers[0].text;
     answerButton2.innerText = question.answers[1].text;
@@ -147,7 +147,6 @@ function renderQuestions(question) {
     nextBtn.setAttribute("disabled", "disabled");
     questionNumber++;
     questionNumberDisplayed.innerText = questionNumber + '/' + '10';
-
 }
 
 /**
@@ -205,7 +204,7 @@ function checkAnswer(event) {
         
         clearInterval(timer);
     }
-
+    //Bring back the functionality of the next button once answer is picked
     nextBtn.classList.add("next-btn-hover");
     nextBtn.removeAttribute("disabled", "disabled");
 }
@@ -215,6 +214,7 @@ function checkAnswer(event) {
  * Answer button hover effects enabled again as well as the ability to click the answer button
  */
 function resetQuestionState() {
+    //if the user selects a button remove the classes on buttons to reset questions
     if (selectedButton) {
         selectedButton.classList.remove('correct');
         selectedButton.classList.remove('wrong');
