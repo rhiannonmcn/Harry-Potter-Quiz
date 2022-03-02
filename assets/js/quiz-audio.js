@@ -1,3 +1,4 @@
+//Variables
 const questionRightSound = new Audio("assets/sounds/right-sound.mp3");
 const questionWrongSound = new Audio("assets/sounds/wrong-sound.mp3");
 const buttonClick = new Audio("assets/sounds/button-click.mp3");
@@ -7,10 +8,12 @@ const audioOnButton = document.getElementsByClassName("audio-on");
 const audioOffButton = document.getElementsByClassName("audio-off");
 let audioIconButton = document.getElementsByClassName('audio-icon-button');
 
+/**
+ * Create an event listener for each of the audio icon buttons by looping through them.
+ */
 for (let i = 0; i < audioIconButton.length; i++) {
     audioIconButton[i].addEventListener('click', () => {
         toggleAudio();
-        console.log(audioPlaying);
     });
 }
 
@@ -23,7 +26,10 @@ function toggleAudio() {
     audioPlaying ? toggleAudioOff() : toggleAudioOn();
 }
 
-
+/**
+ * If audioPlaying is true, update the audio button by looping through each of the buttons and adding the classlist accordingly
+ * Play the background music immediately, set the volume and loop it through
+ */
 function toggleAudioOn() {
     audioPlaying = true;
     for (let i = 0; i < audioOnButton.length && audioOffButton.length; i++) {
@@ -39,6 +45,11 @@ function toggleAudioOn() {
     }
 }
 
+/**
+ * If audioPlaying is false, update the audio button accordingly
+ * Looping through each of the audio buttons on the screens and adding the claslist accordingly
+ * pause the background music
+ */
 function toggleAudioOff() {
     audioPlaying = false;
     for (let i = 0; i < audioOnButton.length && audioOffButton.length; i++) {
