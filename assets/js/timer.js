@@ -31,7 +31,7 @@ function countdown() {
     } else if (audioPlaying && timeLeft < 7) {
         timerSounds.play();
     } else if (audioPlaying) {
-        timerSounds.pause
+        timerSounds.pause;
     }
 
     if (timeLeft <= 20 && timeLeft >= 7) {

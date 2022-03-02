@@ -36,7 +36,7 @@ let userScore = 0;
 let correctQuestions = 0; //value defined by increment score function 
 let timeLeft; //value defined in timer.js
 let timer; //value defined in timer.js
-let audioPlaying = false;
+let audioPlaying = true;
 
 //Event listeners
 /**
@@ -72,7 +72,7 @@ highScoresBtn.addEventListener('click', () => {
 rulesButton.addEventListener('click', () =>{
     enterQuiz.classList.add("hide");
     rulesScreen.classList.remove("hide");
-})
+});
 
 /**
  * Loops through all the home button icons (info-bar) and adds an event listenter to them
@@ -147,7 +147,7 @@ function runQuiz() {
             playButton.addEventListener('click', () => {
                 buttonSoundEffects(); //Sound not playing when clicked. reload too fast? 
                 window.location.reload();
-            })
+            });
         } else {
             currentQuestionIndex++;
             renderQuestion(randomQuestions[currentQuestionIndex]);
