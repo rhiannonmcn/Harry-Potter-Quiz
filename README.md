@@ -63,44 +63,44 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 
 <details> <summary> Low fidelity desktop wireframes</summary>
 
-![Difficulty screen](assets/images/wireframes/desktop-wireframe-difficulty.png)
+![Difficulty screen](docs/wireframes/desktop-wireframe-difficulty.png)
 
-![Start screen](assets/images/wireframes/desktop-wireframe-start.png)
+![Start screen](docs/wireframes/desktop-wireframe-start.png)
 
-![Questions screen](assets/images/wireframes/dekstop-wireframe-questions.png)
+![Questions screen](docs/wireframes/dekstop-wireframe-questions.png)
 
-![Finish quiz screen](assets/images/wireframes/desktop-wireframe-finish.png)
+![Finish quiz screen](docs/wireframes/desktop-wireframe-finish.png)
 
 </details>
 
 <details> <summary> Low fidelity tablet wireframes</summary>
 
-![Difficulty screen](assets/images/wireframes/tablet-wireframe-difficulty.png)
+![Difficulty screen](docs/wireframes/tablet-wireframe-difficulty.png)
 
-![Start screen](assets/images/wireframes/tablet-wireframe-start.png)
+![Start screen](docs/wireframes/tablet-wireframe-start.png)
 
-![Questions screen](assets/images/wireframes/tablet-wireframe-questions.png)
+![Questions screen](docs/wireframes/tablet-wireframe-questions.png)
 
-![Finish quiz screen](assets/images/wireframes/tablet-wireframe-finish.png)
+![Finish quiz screen](docs/wireframes/tablet-wireframe-finish.png)
 
 </details>
 
 <details> <summary> Low fidelity phone wireframes</summary>
 
-![Difficulty screen](assets/images/wireframes/phone-wireframe-difficulty.png)
+![Difficulty screen](docs/wireframes/phone-wireframe-difficulty.png)
 
-![Start screen](assets/images/wireframes/phone-wireframe-start.png)
+![Start screen](docs/wireframes/phone-wireframe-start.png)
 
-![Questions screen](assets/images/wireframes/phone-wireframe-questions.png)
+![Questions screen](docs/wireframes/phone-wireframe-questions.png)
 
-![Finish quiz screen](assets/images/wireframes/phone-wireframe-finish.png)
+![Finish quiz screen](docs/wireframes/phone-wireframe-finish.png)
 
 </details>
 
 
 ## Site Structure
 
-Harry Potter Online Quiz consists of a one page site with 5 different 'screens' and an optional 6th screen, that the user navigates through to engage with the quiz. The Home screen offers two navigation paths, one to enter the quiz and another to see the highscores. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz you the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go to the home page.
+Harry Potter Online Quiz consists of a one page site with 5 different 'screens' and an optional 6th and 7th screen, that the user navigates through to engage with the quiz. The Home screen offers three navigation paths, one to enter the quiz, another to see the highscores and the last is the rules page. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz you the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go to the home page.
 
 ## Design Choices
 
@@ -108,7 +108,7 @@ Harry Potter Online Quiz consists of a one page site with 5 different 'screens' 
 
 The final colour scheme chosen was a rich dark red colour, with a warm, cream colour for the text and a mid grey colour as an accent. This colour scheme directly links back with the theme of the project: Harry Potter. Red is often associated with Harry Potter, the main character, because of his association with the Gryffindor house, who's colour is red or scarlet. The grey and cream colours are a nod to the main setting of the books, which is a castle, and the magical community's main ways of communication which tends to be a bit old fashioned in it's use of parchment and quills. 
 
-![Site colour scheme](assets/images/readme/color-palete.png)
+![Site colour scheme](docs/readme-images/color-palete.png)
 
 ### Typography
 
@@ -126,7 +126,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Navigation
 
-* The site navigation is done through the info bar at the top of the game area.
+* The site navigation is done through the info bar at the top of the quiz area.
 * This does not change in style throughout the user's navigation of the quiz.
 * The home button is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
 * The position of the Home button does not move throughout the user's navigation of the quiz.
