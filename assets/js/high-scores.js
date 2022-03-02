@@ -1,16 +1,26 @@
 //Variables
 const username = document.getElementById('username');
 const saveButton = document.getElementById('save-score-btn');
-const playButtonHighScores = document.getElementById('play-again-button-highscores');
+const homeButtonHighScores = document.getElementById('play-again-button-highscores');
 const highScores = JSON.parse(localStorage.getItem('highscores')) || []; // variable that creates an array for the most recent high scores
 const highScoresList = document.getElementById('high-scores-list');
 
 //Event Listeners
-playButtonHighScores.addEventListener('click', () => {
+/**
+ * When the home button is clicked it takes the user back to the start page.
+ * It also runs the buttonSoundEffects function to give the sound effect when the button is clicked
+ */
+homeButtonHighScores.addEventListener('click', () => {
     buttonSoundEffects();
     window.location.reload();
 });
 
+/**
+ * When the save button is clicked it loops through to see if the username input has a value
+ * If it doesn't and the user clicks save, it sets a custom validity telling the user the issue
+ * If it does it calls the buttonSoundEffects function, removes and adds hide classes to screens
+ * And calls the saveHighScore function to run
+ */
 saveButton.addEventListener('click', () => {
     if (!username.value) {
         username.setCustomValidity('To save score, please enter a username');
@@ -28,7 +38,6 @@ saveButton.addEventListener('click', () => {
  * Takes the value of the userScore and the value of the username input at the end of the quiz to create an array
  * Array is pushed, then sorted and spliced to the const highScores which uses local storage
  * Value of highScores is then converted via map to display in the relevant html
- * @param {*Takes the users button click on Save Highscore} event 
  */
 function saveHighScore() {
     
