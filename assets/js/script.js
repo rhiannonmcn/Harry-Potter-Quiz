@@ -39,12 +39,23 @@ let timer; //value defined in timer.js
 let audioPlaying = false;
 
 //Event listeners
+/**
+ * Listens for the click of the Quiz button on home screen
+ * runs buttonSoundeffects function
+ * adds and removes class hide to move to the next screen
+ */
 enterQuizBtn.addEventListener('click', () => {
     buttonSoundEffects();
     enterQuiz.classList.add("hide");
     quizDifficultyScreen.classList.remove("hide");
 });
 
+/**
+ * Listens for the click of the Highscores button on the home screen
+ * runs the buttonSoundEffects function
+ * adds and removes classlist hide to go to the highscores screen
+ * maps the highscores store in local storage
+ */
 highScoresBtn.addEventListener('click', () => {
     buttonSoundEffects();
     enterQuiz.classList.add("hide");
@@ -54,23 +65,42 @@ highScoresBtn.addEventListener('click', () => {
     }).join("");
 });
 
+/**
+ * Listens for the click on the rules button on the home screen
+ * adds and removes the hide class to show the rules screen
+ */
 rulesButton.addEventListener('click', () =>{
     enterQuiz.classList.add("hide");
     rulesScreen.classList.remove("hide");
 })
 
+/**
+ * Loops through all the home button icons (info-bar) and adds an event listenter to them
+ * On click it brings the user back to the home screen
+ */
 for (let i = 0; i < homeButtonIcon.length; i++) {
     homeButtonIcon[i].addEventListener('click', () => {
         window.location.reload();
     });
 }
+
+/**
+ * Listens for the button clicks on the easy(troll), medium(O.W.L.) and hard(N.E.W.T.) difficulty buttons
+ * runs the choose difficulty function
+ */
+ easyDifficultyBtn.addEventListener("click", chooseDifficulty);
+ mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
+ hardDifficultyBtn.addEventListener("click", chooseDifficulty);
+
+/**
+ * Listens for the click of the start button on the start quiz screen
+ * runs the buttonSoundEffects function
+ * runs the runQuiz function
+ */
 startBtn.addEventListener('click', () => {
     buttonSoundEffects();
     runQuiz();
 });
-easyDifficultyBtn.addEventListener("click", chooseDifficulty);
-mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
-hardDifficultyBtn.addEventListener("click", chooseDifficulty);
 
 /**
  * Depending on the user's choice of difficulty this function shuffles the questions randomly
@@ -247,7 +277,7 @@ function resetQuestionState() {
 /**
  * Checks what difficulty questions is set for the user currently
  * Depending on the choice, the score is incremented by a certain value
- *  Also adds to the correctQuestions variable to be shown in the user result screen
+ * Also increments the correctQuestions variable to be shown in the user result screen
  */
 function incrementScore() {
     if (randomQuestions === easyQuestions) {
