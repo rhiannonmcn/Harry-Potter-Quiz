@@ -57,7 +57,7 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 | 6 | USER | As a user, I want to be track my score | So I can improve on it |
 | 7 | USER | As a user, I want to see the right answer highlighted if I answer wrong | So I can see where I went wrong |
 | 8 | USER | As a user, I want to be able to start a new game when the current one ends | So I can see if I can beat my score|
-| 9 | USER | As a user, when I play the game a game I want the questions to be randomly ordered | So the game can be as challenging as possible |
+| 9 | USER | As a user, when I play the quiz I want the questions to be randomly ordered | So the game can be as challenging as possible |
 
 ## Design Wireframes
 
@@ -100,7 +100,7 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 
 ## Site Structure
 
-Harry Potter Online Quiz consists of a one page website with 5 different 'screens' and an optional 6th screen, that the user navigates to engage with the quiz. The Home screen offers two navigation paths, one to enter the quiz and another to see the highscores. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz you the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go to the home page.
+Harry Potter Online Quiz consists of a one page site with 5 different 'screens' and an optional 6th screen, that the user navigates through to engage with the quiz. The Home screen offers two navigation paths, one to enter the quiz and another to see the highscores. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz you the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go to the home page.
 
 ## Design Choices
 
@@ -127,7 +127,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 ## Navigation
 
 * The site navigation is done through the info bar at the top of the game area.
-* This does not schange in style throughout the user's navigation of the quiz.
+* This does not change in style throughout the user's navigation of the quiz.
 * The home button is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
 * The position of the Home button does not move throughout the user's navigation of the quiz.
 * The sound button is automatically muted on website loading and like the home button it's position doesn't move.
