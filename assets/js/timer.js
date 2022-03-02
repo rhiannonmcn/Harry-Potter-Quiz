@@ -1,3 +1,8 @@
+
+/**
+ * If the current question set is equal to a certain difficulty alocate a certain amount of time  accordingly
+ * Set it to countdown at 1 sec, run the countdown function and display the relevant time in the html
+ */
 function startTimer() {
 
     if (randomQuestions === easyQuestions) {
@@ -14,9 +19,13 @@ function startTimer() {
     }, 1000);
 }
 
-
+/**
+ * If audio is playing is true and the time is a certain amount of secounds, set styles, colours and sounds accordingly
+ * If timer runs out (=== 0), call sound effects, disable answer buttons so they cant be clicked and enable next buttons
+ * Depending on the user difficulty minus a certain amount of points from user score
+ * loop through answer buttons and highlight the correct and wrong answers by adding the classlists accordingly
+ */
 function countdown() {
-    let answerButtons = document.getElementsByClassName("answer-btn");
     if (audioPlaying && timeLeft <= 20 && timeLeft >= 7) {
         timerSounds.pause();
         timerElement.style.color = '#fff9e6';
@@ -53,7 +62,7 @@ function countdown() {
     } else {
         timeLeft--;
     }
-
+    let answerButtons = document.getElementsByClassName("answer-btn");
     let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer; //gets correct answer value from current question Index
 
     for (let i = 0; i < answerButtons.length; i++) { //loops through the answer buttons
