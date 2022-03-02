@@ -56,6 +56,7 @@ function toggleAudioOff() {
         audioOnButton[i].classList.add('hide');
         audioOffButton[i].classList.remove('hide');
         backgroundMusic.pause();
+        timerSounds.pause();
     }
 }
 

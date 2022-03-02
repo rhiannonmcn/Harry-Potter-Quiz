@@ -37,7 +37,6 @@ let timer; //value defined in timer.js
 let audioPlaying = false;
 
 //Event listeners
-
 enterQuizBtn.addEventListener('click', () => {
     buttonSoundEffects();
     enterQuiz.classList.add("hide");
@@ -76,6 +75,7 @@ function chooseDifficulty(event) {
 
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
+    buttonSoundEffects();
     let target = event.target;
     if (target.id === "easy-difficulty-btn") {
         randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
@@ -85,7 +85,6 @@ function chooseDifficulty(event) {
     } else if (target.id === "hard-difficulty-btn") {
         randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
     }
-    buttonSoundEffects();
 }
 
 /**
@@ -154,12 +153,11 @@ function renderQuestions(question) {
 /**
  * Checks the user's button click text value against the text value of the correct answer of the current question
  * If it is equal it means answer is correct and calls incrementScore() and stops the timer and adds a green background to correct answer
- * If it is not equal the answer is wrong, stops timer and addds a red background to the answer
+ * If it is not equal the answer is wrong, stops timer and addds a red background to the answer and depending on user difficulty subtracts a penalty from user score
  * Disables the answers button hover effects and ability to choose another answer once button is clicked
  * Enables the next buttons hover effects and ability to be clicked on once answer button is clicked
  * @param {target the user's button click} event 
  */
-
 function checkAnswer(event) {
 
     selectedButton = event.target;
@@ -204,9 +202,7 @@ function checkAnswer(event) {
         } else if (randomQuestions === hardQuestions) {
             userResult.innerText = userScore -= 5;
         }
-        if (audioPlaying && timeLeft < 7) {
-            timerSounds.pause();
-        }
+        
         clearInterval(timer);
     }
 
@@ -244,6 +240,7 @@ function resetQuestionState() {
 /**
  * Checks what difficulty questions is set for the user currently
  * Depending on the choice, the score is incremented by a certain value
+ *  Also adds to the correctQuestions variable to be shown in the user result screen
  */
 function incrementScore() {
     if (randomQuestions === easyQuestions) {
