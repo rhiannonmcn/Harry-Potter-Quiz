@@ -167,7 +167,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * Once a question is on the screen, unanswered, the next button functionality is disabled so as to prevent the user from skipping questions and the timer starts.
 * Once the timer reaches 5 seconds it will turn a gold colour and if the audio is playing countdown the 5 secounds with an audible sound effect.
 * If the user answers a question correctly, a 'correct' sound will be played and the correct answer will highlight in green. The timer will pause and the user will receive points determined by the quiz difficulty chosen. 
-* If the user answers a question incorrectly, an 'incorrect' sound will play. The user's answer will highlight in red and the correct answer will highlight in green. The user will not score any points and depending on the difficulty chosen, may be reducted points.
+* If the user answers a question incorrectly, an 'incorrect' sound will play. The user's answer will highlight in red and the correct answer will highlight in green. The user will not score any points and depending on the difficulty chosen, may be deducted points.
 * If the user fails to answer the question within the allotted time, the 'incorrect sound will play', the right answer will highlight in green and the incorrect answers will highlight in red. The user also may be deducted points depending on the quiz difficulty chosen.
 * Once a user answers the question or the timer runs out, the answer button functionality is disabled so as to prevent re-answering and the next button functionality is enabled again.
 
@@ -182,7 +182,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 ## High Scores Screen
 
 * The High Scores screen can be navigated in two ways. Firstly through the homepage, and the highscores button. And secondly by playing the quiz and saving your score.
-* The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alomgside the score.
+* The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alongside the score.
 * The incentive of this feature is to encourage users to beat their previous scores, try the quiz again, play different difficulties and try and beat the timer.
 * From the high scores screen, the user can navigate back to the home screen via the home button.
 
@@ -191,6 +191,31 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * The rules page is navigated to via the home screen.
 * This page has very little interactivity, with just a home button bringing you back to the home page.
 * This page is to give the user further understanding of the different question difficulties and their unique features.
+
+## Timer
+
+* The timer adds another dynamic layer to the quiz.
+* The time given is dependent on the level difficulty chosen (20s, 15s and 10s).
+* On the hard difficulty, the time left on the time countdown is added to the users score if they get an answer right, bringing in the users speed into the quiz.
+* Once the timer reaches 5 seconds it visibly turns a gold colour, and if the user's sound is on, it starts a 'ticking countdown effect' until 0, warning the user that their time is nearly up.
+
+## Sound
+
+* Sound is muted by default but the user has the option to toggle it on via the sound button on the info bar.
+* Background music really draws the user into the experience.
+* There are sound effects for the button clicks, as well as for the correct and wrong answers.
+* The timer also countdowns at 5 secounds with a sound effect.
+* The user has the ability to toggle the sound on and off as many times as they wish as they navigate the quiz.
+
+## Score
+
+* The score is visibly seen in the top right corner of the info bar of the quiz application.
+* It provides an incentive to the user to keep playing the quiz and challenging themselves by trying to beat their last score.
+* By providing different scores for different levels of difficulty, as well as implementing unpredictable elements such as adding the time left to the score and deducting points for wrong answers keeps scoring inconsistent in terms of the total score, encouraging users to challenge themselves. 
+
+## Current Question Display
+
+* This feature provides the user with a clear indication of what question number they are on out of the 10.
 
 # Future Features
 
