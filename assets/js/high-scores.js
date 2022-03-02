@@ -10,10 +10,18 @@ playButtonHighScores.addEventListener('click', () => {
     buttonSoundEffects();
     window.location.reload();
 });
-saveButton.addEventListener('click', saveHighScore);
-username.addEventListener('keyup', () => {
-    //disables save button from being pressed if there is not a value in the username
-    saveButton.disabled = !username.value;
+
+saveButton.addEventListener('click', () => {
+    if (!username.value) {
+        username.setCustomValidity('To save score, please enter a username');
+    } else {
+        buttonSoundEffects();
+        username.setCustomValidity("");
+        quizResultsScreen.classList.add('hide');
+        quizHighScoresScreen.classList.remove('hide');
+        saveHighScore();
+    }
+    username.reportValidity();
 });
 
 /**
@@ -22,13 +30,8 @@ username.addEventListener('keyup', () => {
  * Value of highScores is then converted via map to display in the relevant html
  * @param {*Takes the users button click on Save Highscore} event 
  */
-function saveHighScore(event) {
-    event.preventDefault();
-    buttonSoundEffects();
-
-    quizResultsScreen.classList.add('hide');
-    quizHighScoresScreen.classList.remove('hide');
-
+function saveHighScore() {
+    
     //add our array value to highScores variable
     const storedHighScore = {
         score: userScore,
