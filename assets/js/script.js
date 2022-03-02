@@ -12,7 +12,6 @@ const quizQuestionsScreen = document.getElementById('quiz-questions');
 const quizResultsScreen = document.getElementById('quiz-results-section');
 const quizHighScoresScreen = document.getElementById('highscores-section');
 const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-btn-container');
 const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
 const answerButton3 = document.getElementById('answer-btn-3');

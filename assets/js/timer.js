@@ -28,13 +28,18 @@ function startTimer() {
 function countdown() {
     if (audioPlaying && timeLeft <= 20 && timeLeft >= 7) {
         timerSounds.pause();
-        timerElement.style.color = '#fff9e6';
     } else if (audioPlaying && timeLeft < 7) {
         timerSounds.play();
-        timerElement.style.color = 'gold';
-    } else if (audioPlaying){
+    } else if (audioPlaying) {
         timerSounds.pause
     }
+
+    if (timeLeft <= 20 && timeLeft >= 7) {
+        timerElement.style.color = '#fff9e6';
+    } else {
+        timerElement.style.color = 'gold';
+    }
+    
     if (timeLeft === 0) {
         if (audioPlaying) {
             timerSounds.pause();
