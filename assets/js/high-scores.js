@@ -7,8 +7,6 @@ const highScoresList = document.getElementById('high-scores-list');
 
 //Event Listeners
 playButtonHighScores.addEventListener('click', () => {
-    enterQuiz.classList.remove('hide');
-    quizHighScoresScreen.classList.add('hide');
     buttonSoundEffects();
     window.location.reload();
 });

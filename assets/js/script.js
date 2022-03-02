@@ -111,8 +111,6 @@ function runQuiz() {
             userFinalScore.innerText = userScore;
             playButton.addEventListener('click', () => {
                 buttonSoundEffects(); //Sound not playing when clicked. reload too fast? 
-                quizResultsScreen.classList.add('hide');
-                enterQuiz.classList.remove('hide');
                 window.location.reload();
             })
         } else {
