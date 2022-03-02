@@ -45,10 +45,55 @@
                     <div class="home-btn-container">
                         <button class="btn enter-quiz-btn" id="quiz-button">Quiz</button>
                         <button class="btn highscores-button" id="highscores-btn">High Scores</button>
+                        <button id="rules-btn" class="btn rules-button">Rules</button>
                     </div>
                 </div>
             </section>
-            <!-- Start of game difficulty selection area -->
+            <!-- Start of rules screen-->
+            <section class="rules-screen hide" id="rules">
+                <div class="info-bar">
+                    <div>
+                        <i class="fab fa-fort-awesome home-button "></i>
+                    </div>
+                    <div class="audio-icon-button">
+                        <i class="fas fa-volume-mute audio-off "></i>
+                        <i class="fas fa-volume-up audio-on hide"></i>
+                    </div>
+                </div>
+                <div class="rules-content-container">
+                    <h2 class="rules-heading">Rules</h2>
+                    <div class = "rule-info">
+                        <h3> Troll Level - Easy</h3>
+                        <ul>
+                            <li>Difficulty questions set to easy</li>
+                            <li>Timer = 20s </li>
+                            <li>2 points for every correct answer</li>
+                            <li>No penalty for wrong answers</li>
+                        </ul>
+                    </div>
+                    <div class = "rule-info">
+                        <h3> O.W.L. Level - Medium</h3>
+                        <ul>
+                            <li>Difficulty questions set to Medium</li>
+                            <li>Timer = 15s </li>
+                            <li>5 points for every correct answer</li>
+                            <li>3 point penalty for wrong answers or if timer runs out</li>
+                        </ul>
+                    </div>
+                    <div class = "rule-info">
+                        <h3> N.E.W.T. Level - Hard</h3>
+                        <ul>
+                            <li>Difficulty questions set to Hard</li>
+                            <li>Timer = 10s </li>
+                            <li>2 points + the time left, for every correct answer</li>
+                            <li>5 point penalty for wrong answers or if timer runs out</li>
+                        </ul>
+                    </div>
+                    <button id="rules-home-btn" class="play-again-btn home-button">Home</button>
+                </div>
+                </div>
+            </section>
+            <!-- Start of game difficulty screen -->
             <section class="quiz-difficulty hide" id="quiz-difficulty-section">
                 <div class="info-bar">
                     <div>
@@ -70,7 +115,7 @@
                     </div>
                 </div>
             </section>
-            <!--Start of quiz start area-->
+            <!--Start of quiz start screen-->
             <section class="quiz-start hide" id="quiz-start-section">
                 <div class="info-bar">
                     <div>
@@ -86,7 +131,7 @@
                     <button class="start-button" id="start-btn">Start</button>
                 </div>
             </section>
-            <!--Start of quiz questions area-->
+            <!--Start of quiz questions screen-->
             <section class="quiz-questions-area hide" id="quiz-questions">
                 <div class="info-bar">
                     <div>
@@ -123,7 +168,7 @@
                     <button id="next-question-btn" class="next-btn next-btn-hover">Next</button>
                 </div>
             </section>
-            <!--Start of results section area-->
+            <!--Start of results screen-->
             <section class="quiz-results hide" id="quiz-results-section">
                 <div class="info-bar">
                     <div>
@@ -143,11 +188,11 @@
                             <button type="submit" class="save-button save-button-hover" id="save-score-btn"
                                 disabled>Save High Score</button>
                         </form>
-                        <button id="play-again-button" class="play-again-btn">Play again?</button>
+                        <button id="play-again-button" class="play-again-btn">Home</button>
                     </div>
                 </div>
             </section>
-            <!--Start of highscores section area-->
+            <!--Start of highscores screen-->
             <section class="highscores hide" id="highscores-section">
                 <div class="info-bar">
                     <div>

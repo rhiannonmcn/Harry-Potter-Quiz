@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 html {
@@ -151,7 +151,7 @@ h1 {
 .play-again-btn,
 .save-button,
 .btn {
-    padding: 20px;
+    padding: 16px;
     margin-top: 12px;
     background-color: #4a0600;
     color: #fff9e6;
@@ -175,6 +175,43 @@ h1 {
     outline: 1px solid #4a0600;
     transform: scale(1.1);
     transition: transform 0.2s ease-in;
+}
+
+/*Unique styles for rules screen */
+
+.rules-content-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    padding: 20px 20px;
+}
+
+.rules-heading{
+    grid-column: 1/4;
+}
+
+.rule-info{
+    padding:15px;
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.rule-info h3{
+    font-size: 1.2rem;
+    margin-bottom:6px;
+    color: gold;
+}
+
+.rule-info li{
+    margin-top:4px;
+    align-self: top;
+    font-size: 1rem;
+}
+
+#rules-home-btn{
+    justify-self: center;
+    grid-column: 1/4;
+    max-width: 40%;
 }
 
 /* unique styles for quiz questions screen */
@@ -341,6 +378,23 @@ li.high-score:first-child {
     h2 {
         font-size: 2rem;
     }
+
+    /*uniques styles for rules screen*/
+    .rules-content-container{
+        padding: 10px 10px;
+        grid-template-columns: 1fr;;
+    }
+
+    #rules-home-btn{
+       grid-column: 1/2;
+       grid-row: 5/6;
+    }
+
+    .rules-content-container h2{
+        grid-column:1/2;
+        grid-row: 1/2;
+    }
+    
 
     /*unique styles for questions screen */
 

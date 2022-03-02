@@ -11,6 +11,7 @@ const quizStartScreen = document.getElementById('quiz-start-section');
 const quizQuestionsScreen = document.getElementById('quiz-questions');
 const quizResultsScreen = document.getElementById('quiz-results-section');
 const quizHighScoresScreen = document.getElementById('highscores-section');
+const rulesScreen = document.getElementById('rules');
 const questionElement = document.getElementById('question');
 const answerButton1 = document.getElementById('answer-btn-1');
 const answerButton2 = document.getElementById('answer-btn-2');
@@ -24,6 +25,7 @@ const playButton = document.getElementById('play-again-button');
 const userFinalScore = document.getElementById("user-result");
 const userCorrectQuestions = document.getElementById('user-result-text');
 const homeButtonIcon = document.getElementsByClassName('home-button');
+const rulesButton = document.getElementById('rules-btn');
 
 let currentQuestionIndex;
 let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
@@ -51,6 +53,11 @@ highScoresBtn.addEventListener('click', () => {
         return `<li class="high-score">${highScores.name} - ${highScores.score}</li>`;
     }).join("");
 });
+
+rulesButton.addEventListener('click', () =>{
+    enterQuiz.classList.add("hide");
+    rulesScreen.classList.remove("hide");
+})
 
 for (let i = 0; i < homeButtonIcon.length; i++) {
     homeButtonIcon[i].addEventListener('click', () => {
