@@ -126,15 +126,71 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Navigation
 
-* The site navigation is done through the info bar at the top of the quiz area.
-* This does not change in style throughout the user's navigation of the quiz.
-* The home button is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
-* The position of the Home button does not move throughout the user's navigation of the quiz.
-* The sound button is automatically muted on website loading and like the home button it's position doesn't move.
+* The site navigation is done through the info bar at the top of the quiz area and this does not change in style throughout the user's navigation of the quiz.
+* The user can navigate to the home screen from whereever they are in the quiz through the home button. 
+* This is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
+* The sound button is automatically muted on website loading and like the home button it's position doesn't move but sound can be activated or muted by the user as they wish.
+* Upon activation, there is themed background music and sound effects on the button clicks.
 * On the quiz run through two more bits of information are added to the right of these: the timer countdown and the user's score.
 * The navbar is responsive and does not change order throughout screen size changes.
 
 [Back to top](<#contents>)
+
+## Home Screen
+
+* The Home Screen is the screen thats visible first when the site website loads. It is designed to be immediately recognisable to the user and to allow the user to immediately get playing the quiz.
+* In the middle of the website, the user will the quiz application centered, sitting upon a very recognisable Harry Potter themed background.
+* There is also the title and logo sitting on top of the quiz application, again giving the user the information on what the application is.
+* The user is presented with three buttons; a Quiz button, a Highscores button and a Rules button and from here the user has all the information needed to play the quiz.
+
+## Quiz Difficulty Screen
+
+* Navigation to this screen is through pressing the Quiz button on the home screen.
+* The quiz has three difficulty levels to choose from and are so named after different Harry Potter exam related material from the books.
+* Each difficulty has its' own question pool to choose from, which 10 questions are randomly choosen from.
+* Depending on which quiz difficulty is chosen, also determines other features that are implemented.
+* Choosing Troll (easy level) will give the user a time of 20 secounds to answer a question and will reward the user 2 points for a correct answer with no penalty for a wrong answer. 
+* Choosing O.W.L. (medium level) will give the user a time of 15 secounds to answer the question, will reward the user 5 points for a correct answer but will penalise the user 3 points for every wrong answer or if the timer runs out.
+* Choosing N.E.W.T. (hard level) will give the user a time of 10 secounds to answer the question, will reward the user 2 points plus the addition of whatever time is left on the timer for a correct answer. The quicker the user answers the more points they score. But will penalise the user 5 points for every wrong answer or if the timer runs out.
+
+## Quiz Start Screen
+
+* The quiz start screen is simply a phrase "Are you ready?" and a start button which will run the quiz.
+* This is to give the user a chance to prepare to take the quiz, to take a mental breath before diving in.
+
+## Quiz Questions Screen - Core of the Application
+
+* This is the heart of the game. The user will be asked to answer 10 questions no matter which difficulty is chosen, which was determined in a previous screen.
+* The pool of questions is randomly chosen from a list of questions grouped by question difficulty in the questions.js file.
+* Each question is a multiple choice question with four possible answers.
+* Each of the answer boxes are also randomly displayed, to challenge the user and prevent memorisation of the answers if the quiz is played a second time.
+* Once a question is on the screen, unanswered, the next button functionality is disabled so as to prevent the user from skipping questions and the timer starts.
+* Once the timer reaches 5 seconds it will turn a gold colour and if the audio is playing countdown the 5 secounds with an audible sound effect.
+* If the user answers a question correctly, a 'correct' sound will be played and the correct answer will highlight in green. The timer will pause and the user will receive points determined by the quiz difficulty chosen. 
+* If the user answers a question incorrectly, an 'incorrect' sound will play. The user's answer will highlight in red and the correct answer will highlight in green. The user will not score any points and depending on the difficulty chosen, may be reducted points.
+* If the user fails to answer the question within the allotted time, the 'incorrect sound will play', the right answer will highlight in green and the incorrect answers will highlight in red. The user also may be deducted points depending on the quiz difficulty chosen.
+* Once a user answers the question or the timer runs out, the answer button functionality is disabled so as to prevent re-answering and the next button functionality is enabled again.
+
+## Results Section
+
+* When the user has looped through ten questions, they will then be automatically brought to the result's screen, which will display the user's score and how many questions out of 10 they got correct.
+* There is an input field, a Save score button and a Home Button.
+* The input field cannot be submitted empty and upon clicking the save button the user will be notified that they must enter a username to save their score. 
+* They also have the option to skip this step and navigate straight to the home screen by clicking the home button.
+* Once the user enters a username and clicks save, they are then brought to the high scores screen.
+
+## High Scores Screen
+
+* The High Scores screen can be navigated in two ways. Firstly through the homepage, and the highscores button. And secondly by playing the quiz and saving your score.
+* The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alomgside the score.
+* The incentive of this feature is to encourage users to beat their previous scores, try the quiz again, play different difficulties and try and beat the timer.
+* From the high scores screen, the user can navigate back to the home screen via the home button.
+
+## Rule Screen
+
+* The rules page is navigated to via the home screen.
+* This page has very little interactivity, with just a home button bringing you back to the home page.
+* This page is to give the user further understanding of the different question difficulties and their unique features.
 
 # Future Features
 
