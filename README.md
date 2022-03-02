@@ -202,6 +202,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 ## Sound
 
 * Sound is muted by default but the user has the option to toggle it on via the sound button on the info bar.
+* It gives the user additional feedback as they navigate the quiz.
 * Background music really draws the user into the experience.
 * There are sound effects for the button clicks, as well as for the correct and wrong answers.
 * The timer also countdowns at 5 secounds with a sound effect.
@@ -217,9 +218,40 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 * This feature provides the user with a clear indication of what question number they are on out of the 10.
 
+[Back to top](<#contents>)
+
 # Future Features
 
+## Different Sections
+
+* Including questions targeted at certain books only. Having question pools and sections dedicated only to Book 1, and another question pool dedicated to Book 2 etc. 
+
+## A Harder Difficulty/End Game Content
+
+* Have a level that creates a question index from the entire question pool, but if the user get's one question wrong, their score is saved at that point and they have to start from the beginning again, but the question pool has been randomly shuffled so they wont start with the first question. They wont be limited to just 10 questions but will have the chance to go through all the questions if they can get them all correct. This type of functionality offers long term usability, as with dedicated question pools and question numbers answered, the score can only go so high as the 10 questions right can give you. 
+
+## Global Highscores
+
+* Instead of saving the high scores locally, saving the scores on a global level will raise the level of engagement with the quiz application, as users could compete against other people qhile accessing the application from different devices.
+
+## Sound Settings
+
+* Upon quiz refresh, it takes the user out of the experience if they have to toggle the sound on again, despite turning it on he first time and this would be something to update in the future.
+
+[Back to top](<#contents>)
+
 # Technologies Used
+
+* HTML5 - Delivers the structure and content for the site.
+* CSS3 - Provides the styling for the site
+* Javascript -Provides functionality to the site
+* [Adobe XD](https://www.adobe.com/ie/products/xd.html) - Used to create wireframes for the website
+* [Adobe Lightroom](https://www.adobe.com/ie/products/photoshop-lightroom.html) - Used to optimise and resize images for screen.
+* [Tiny PNG](https://tinypng.com/) - Used to further compress optimised images.
+* Google Chrome DevTools - Used to debug and test responsiveness of the site
+* Gitpod - Used to develop the website.
+* GitBash - Terminal used to push changes to the GitHub repository.
+* Github - Used to host and deploy the website.
 
 [Back to top](<#contents>)
 
