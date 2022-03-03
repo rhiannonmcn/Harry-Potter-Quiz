@@ -36,7 +36,7 @@ let userScore = 0;
 let correctQuestions = 0; //value defined by increment score function 
 let timeLeft; //value defined in timer.js
 let timer; //value defined in timer.js
-let audioPlaying = true;
+let audioPlaying = false;
 
 //Event listeners
 /**
