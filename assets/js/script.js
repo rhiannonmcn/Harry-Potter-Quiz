@@ -222,6 +222,9 @@ function checkAnswer(event) {
     } else {
         selectedButton.classList.add('wrong');
         wrongSoundEffects();
+        if (audioPlaying && timeLeft < 7) {
+            timerSounds.pause();
+        }
         if (answerButton1.innerText === rightAnswer) {
             answerButton1.classList.add('correct');
         } else if (answerButton2.innerText === rightAnswer) {

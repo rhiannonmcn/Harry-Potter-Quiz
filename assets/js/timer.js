@@ -3,7 +3,7 @@
  * Set it to countdown at 1 sec, run the countdown function and display the relevant time in the html
  */
  function startTimer() {
-
+     
     if (randomQuestions === easyQuestions) {
         timeLeft = 20;
     } else if (randomQuestions === mediumQuestions) {
@@ -12,10 +12,8 @@
         timeLeft = 10;
     }
     timeLeft;
-    timer = setInterval(function () {
-        timerElement.innerText = timeLeft + 's';
-        countdown();
-    }, 1000);
+    timer = setInterval(countdown, 1000);
+    countdown();
 }
 
 /**
@@ -25,15 +23,28 @@
  * loop through answer buttons and highlight the correct and wrong answers by adding the classlists accordingly
  */
 function countdown() {
-    if (audioPlaying && timeLeft <= 20 && timeLeft >= 7) {
+    let answerButtons = document.getElementsByClassName("answer-btn");
+    let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer; //gets correct answer value from current question Index
+
+    for (let i = 0; i < answerButtons.length; i++) { //loops through the answer buttons
+        if (answerButtons[i].innerText === rightAnswer && timeLeft === 0) { // if the buttons inner text matches the correct answer and time = 0 turn green
+            answerButtons[i].classList.add("correct");
+        } else if (answerButtons[i].innerText !== rightAnswer && timeLeft === 0) { // if the buttons inner text does not match turn red
+            answerButtons[i].classList.add("wrong");
+        }
+    }
+    timerElement.innerText = timeLeft + 's';
+    // timeLeft < 6 to account for a slight delay to when function is called meaning sounds start at 5s 
+    if (audioPlaying && timeLeft <= 20 && timeLeft >= 6) {
         timerSounds.pause();
-    } else if (audioPlaying && timeLeft < 7) {
+    } else if (audioPlaying && timeLeft < 6) {
         timerSounds.play();
     } else if (audioPlaying) {
         timerSounds.pause;
     }
 
-    if (timeLeft <= 20 && timeLeft >= 7) {
+    // timeLeft >= 6 to account for a slight delay to when function is called meaning style displayed at 5s
+    if (timeLeft <= 20 && timeLeft >= 6) {
         timerElement.style.color = '#fff9e6';
     } else {
         timerElement.style.color = 'gold';
@@ -65,15 +76,5 @@ function countdown() {
         }
     } else {
         timeLeft--;
-    }
-    let answerButtons = document.getElementsByClassName("answer-btn");
-    let rightAnswer = randomQuestions[currentQuestionIndex].correctAnswer; //gets correct answer value from current question Index
-
-    for (let i = 0; i < answerButtons.length; i++) { //loops through the answer buttons
-        if (answerButtons[i].innerText === rightAnswer && timeLeft === 0) { // if the buttons inner text matches the correct answer and time = 0 turn green
-            answerButtons[i].classList.add("correct");
-        } else if (answerButtons[i].innerText !== rightAnswer && timeLeft === 0) { // if the buttons inner text does not match turn red
-            answerButtons[i].classList.add("wrong");
-        }
     }
 }
