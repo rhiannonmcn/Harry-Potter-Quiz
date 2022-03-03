@@ -1,9 +1,8 @@
-
 /**
  * If the current question set is equal to a certain difficulty alocate a certain amount of time  accordingly
  * Set it to countdown at 1 sec, run the countdown function and display the relevant time in the html
  */
-function startTimer() {
+ function startTimer() {
 
     if (randomQuestions === easyQuestions) {
         timeLeft = 20;
@@ -14,8 +13,8 @@ function startTimer() {
     }
     timeLeft;
     timer = setInterval(function () {
-        countdown();
         timerElement.innerText = timeLeft + 's';
+        countdown();
     }, 1000);
 }
 
