@@ -23,7 +23,14 @@ for (let i = 0; i < audioIconButton.length; i++) {
  * Loops through the audio buttons if soumd is not playing and adds the appropriate class in html
  */
 function toggleAudio() {
-    audioPlaying ? toggleAudioOff() : toggleAudioOn();
+    switch(audioPlaying){
+        case false:
+            toggleAudioOn();
+            break;
+        case true:
+            toggleAudioOff();
+            break;
+    }
 }
 
 /**

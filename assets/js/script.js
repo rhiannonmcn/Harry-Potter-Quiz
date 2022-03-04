@@ -109,7 +109,7 @@ startBtn.addEventListener('click', () => {
  * @param {target the user's button click} event 
  */
 function chooseDifficulty(event) {
-
+    let target = event.target;
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
     buttonSoundEffects();
