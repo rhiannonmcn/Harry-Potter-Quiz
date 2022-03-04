@@ -113,14 +113,17 @@ function chooseDifficulty(event) {
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
     buttonSoundEffects();
-    let target = event.target;
-    if (target.id === "easy-difficulty-btn") {
-        randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
-    } else if (target.id === "medium-difficulty-btn") {
-        randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
-        console.log('you have picked medium');
-    } else if (target.id === "hard-difficulty-btn") {
-        randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
+    
+    switch(target.id){
+        case 'easy-difficulty-btn':
+            randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
+            break;
+        case 'medium-difficulty-btn':
+            randomQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
+            break;
+        case 'hard-difficulty-btn':
+            randomQuestions = hardQuestions.sort(() => Math.random() - 0.5);
+            break;
     }
 }
 
