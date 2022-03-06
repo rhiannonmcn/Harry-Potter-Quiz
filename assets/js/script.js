@@ -21,14 +21,14 @@ const userResult = document.getElementById("user-score");
 const timerElement = document.getElementById('timer');
 const nextBtn = document.getElementById('next-question-btn');
 const questionNumberDisplayed = document.getElementById("question-nbr");
-const playButton = document.getElementById('play-again-button');
+const homeButtonResultScreen = document.getElementById('play-again-button');
 const userFinalScore = document.getElementById("user-result");
 const userCorrectQuestions = document.getElementById('user-result-text');
 const homeButtonIcon = document.getElementsByClassName('home-button');
 const rulesButton = document.getElementById('rules-btn');
 
-let currentQuestionIndex;
-let questionNumber = 0; // question number displayed out of 10 displayed as quiz is run
+let currentQuestionIndex = 0;
+let questionNumber = 1; // question number displayed out of 10 displayed as quiz is run
 let randomQuestions; //value defined by areYouReady function
 let difficultyChosen; //value defined in runQuiz function
 let selectedButton; //value definied in checkAnswer function
@@ -69,7 +69,7 @@ highScoresBtn.addEventListener('click', () => {
  * Listens for the click on the rules button on the home screen
  * adds and removes the hide class to show the rules screen
  */
-rulesButton.addEventListener('click', () =>{
+rulesButton.addEventListener('click', () => {
     enterQuiz.classList.add("hide");
     rulesScreen.classList.remove("hide");
 });
@@ -77,10 +77,40 @@ rulesButton.addEventListener('click', () =>{
 /**
  * Loops through all the home button icons (info-bar) and adds an event listenter to them
  * On click it brings the user back to the home screen
+ * Checks if the specific html elements do not have a class of hide and if they dont it adds the class of hide
+ * Resets variables to restart quiz
  */
 for (let i = 0; i < homeButtonIcon.length; i++) {
     homeButtonIcon[i].addEventListener('click', () => {
-        window.location.reload();
+        buttonSoundEffects(); 
+                enterQuiz.classList.remove('hide');
+                if(!quizDifficultyScreen.classList.contains('hide')){
+                    quizDifficultyScreen.classList.add('hide');
+                } else if(!quizStartScreen.classList.contains('hide')){
+                    quizDifficultyScreen.classList.add('hide');
+                } else if(!quizQuestionsScreen.classList.contains('hide')){
+                    quizQuestionsScreen.classList.add('hide');
+                } else if(!quizResultsScreen.classList.contains('hide')){
+                    quizResultsScreen.classList.add('hide');
+                } else if(!quizHighScoresScreen.classList.contains('hide')){
+                    quizHighScoresScreen.classList.add('hide');
+                } else if(!rulesScreen.classList.contains('hide')){
+                    rulesScreen.classList.add('hide');
+                } 
+
+                clearInterval(timer);
+                resetQuestionState();
+                currentQuestionIndex = 0;
+                questionNumber = 1;
+                randomQuestions = undefined;
+                difficultyChosen = undefined;
+                selectedButton = undefined;
+                userScore = 0;
+                correctQuestions = 0;
+                timeLeft = undefined;
+                timer = undefined;
+                userResult.innerText = 0;
+                questionNumberDisplayed.innerText = questionNumber + '/' + '10';
     });
 }
 
@@ -88,9 +118,9 @@ for (let i = 0; i < homeButtonIcon.length; i++) {
  * Listens for the button clicks on the easy(troll), medium(O.W.L.) and hard(N.E.W.T.) difficulty buttons
  * runs the choose difficulty function
  */
- easyDifficultyBtn.addEventListener("click", chooseDifficulty);
- mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
- hardDifficultyBtn.addEventListener("click", chooseDifficulty);
+easyDifficultyBtn.addEventListener("click", chooseDifficulty);
+mediumDifficultyBtn.addEventListener("click", chooseDifficulty);
+hardDifficultyBtn.addEventListener("click", chooseDifficulty);
 
 /**
  * Listens for the click of the start button on the start quiz screen
@@ -113,8 +143,8 @@ function chooseDifficulty(event) {
     quizDifficultyScreen.classList.add("hide");
     quizStartScreen.classList.remove("hide");
     buttonSoundEffects();
-    
-    switch(target.id){
+
+    switch (target.id) {
         case 'easy-difficulty-btn':
             randomQuestions = easyQuestions.sort(() => Math.random() - 0.5);
             break;
@@ -138,7 +168,6 @@ function runQuiz() {
     let quizLength = 9;
     quizStartScreen.classList.add("hide");
     quizQuestionsScreen.classList.remove("hide");
-    currentQuestionIndex = 0;
     renderQuestion(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn.addEventListener('click', () => {
         buttonSoundEffects();
@@ -147,17 +176,32 @@ function runQuiz() {
             quizResultsScreen.classList.remove('hide');
             userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
             userFinalScore.innerText = userScore;
-            playButton.addEventListener('click', () => {
-                buttonSoundEffects(); //Sound not playing when clicked. reload too fast? 
-                window.location.reload();
+            homeButtonResultScreen.addEventListener('click', () => {
+                buttonSoundEffects();
+                enterQuiz.classList.remove('hide');
+                quizResultsScreen.classList.add('hide');
+                clearInterval(timer);
+                resetQuestionState();
+                currentQuestionIndex = 0;
+                questionNumber = 1;
+                randomQuestions = undefined;
+                difficultyChosen = undefined;
+                selectedButton = undefined;
+                userScore = 0;
+                correctQuestions = 0;
+                timeLeft = undefined;
+                timer = undefined;
+                userResult.innerText = 0;
+                questionNumberDisplayed.innerText = questionNumber + '/' + '10';
             });
         } else {
-            currentQuestionIndex++;
+            clearInterval(timer);
             renderQuestion(randomQuestions[currentQuestionIndex]);
-            resetQuestionState(); //resets question state once next button click
+            resetQuestionState();
         }
     });
 }
+
 
 /**
  * Displays the question and answer text in the html
@@ -185,7 +229,6 @@ function renderQuestion(question) {
     startTimer();
     nextBtn.classList.remove("next-btn-hover");
     nextBtn.setAttribute("disabled", "disabled");
-    questionNumber++;
     questionNumberDisplayed.innerText = questionNumber + '/' + '10';
 }
 
@@ -219,12 +262,16 @@ function checkAnswer(event) {
         rightSoundEffects();
         incrementScore();
         clearInterval(timer);
+        questionNumber++;
+        currentQuestionIndex++;
         if (audioPlaying && timeLeft < 7) {
             timerSounds.pause();
         }
     } else {
         selectedButton.classList.add('wrong');
         wrongSoundEffects();
+        currentQuestionIndex++;
+         questionNumber++;
         if (audioPlaying && timeLeft < 7) {
             timerSounds.pause();
         }
@@ -244,7 +291,7 @@ function checkAnswer(event) {
         } else if (randomQuestions === hardQuestions) {
             userResult.innerText = userScore -= 5;
         }
-        
+
         clearInterval(timer);
     }
     //Bring back the functionality of the next button once answer is picked
