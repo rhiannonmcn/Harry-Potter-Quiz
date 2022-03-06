@@ -7,12 +7,26 @@ const highScoresList = document.getElementById('high-scores-list');
 
 //Event Listeners
 /**
- * When the home button is clicked it takes the user back to the start page.
+ * When the home button is clicked it takes the user back to the start page and resets variables.
  * It also runs the buttonSoundEffects function to give the sound effect when the button is clicked
  */
 homeButtonHighScores.addEventListener('click', () => {
     buttonSoundEffects();
-    window.location.reload();
+    enterQuiz.classList.remove('hide');
+    quizHighScoresScreen.classList.add('hide');
+    clearInterval(timer);
+    resetQuestionState();
+    currentQuestionIndex = 0;
+    questionNumber = 1;
+    randomQuestions = undefined;
+    difficultyChosen = undefined;
+    selectedButton = undefined;
+    userScore = 0;
+    correctQuestions = 0;
+    timeLeft = undefined;
+    timer = undefined;
+    userResult.innerText = 0;
+    questionNumberDisplayed.innerText = questionNumber + '/' + '10';
 });
 
 /**
@@ -40,7 +54,7 @@ saveButton.addEventListener('click', () => {
  * Value of highScores is then converted via map to display in the relevant html
  */
 function saveHighScore() {
-    
+
     //add our array value to highScores variable
     const storedHighScore = {
         score: userScore,

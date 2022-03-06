@@ -56,6 +56,8 @@ function countdown() {
         }
         wrongSoundEffects();
         clearInterval(timer);
+        currentQuestionIndex++;
+        questionNumber++;
         nextBtn.classList.add("next-btn-hover");
         nextBtn.removeAttribute("disabled", "disabled");
         //disable hover effects once answer is clicked
