@@ -41,7 +41,7 @@ h2 {
 header {
     display: grid;
     grid-template-columns: min(150px) auto;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .hogwarts-logo {
@@ -168,7 +168,8 @@ h1 {
 .start-button:hover,
 .answer-btn-hover:hover,
 .next-btn-hover,
-.play-again-btn:hover, .btn:hover {
+.play-again-btn:hover,
+.btn:hover {
     background-color: #fff9e6;
     color: #4a0600;
     border: 2px #4a0600 solid;
@@ -179,35 +180,35 @@ h1 {
 
 /*Unique styles for rules screen */
 
-.rules-content-container{
+.rules-content-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr;
     padding: 20px 20px;
 }
 
-.rules-heading{
+.rules-heading {
     grid-column: 1/4;
 }
 
-.rule-info{
-    padding:15px;
+.rule-info {
+    padding: 15px;
     display: grid;
     grid-auto-rows: minmax(min-content, max-content);
 }
 
-.rule-info h3{
+.rule-info h3 {
     font-size: 1.2rem;
-    margin-bottom:6px;
+    margin-bottom: 6px;
     color: gold;
 }
 
-.rule-info li{
-    margin-top:4px;
+.rule-info li {
+    margin-top: 4px;
     font-size: 1rem;
 }
 
-#rules-home-btn{
+#rules-home-btn {
     justify-self: center;
     grid-column: 1/4;
     max-width: 40%;
@@ -354,7 +355,7 @@ li.high-score:first-child {
 
 /* For screens of 700px wide and down */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:700px) and (orientation:portrait) {
     /* header styles */
 
     h1 {
@@ -379,21 +380,22 @@ li.high-score:first-child {
     }
 
     /*uniques styles for rules screen*/
-    .rules-content-container{
+    .rules-content-container {
         padding: 10px 10px;
-        grid-template-columns: 1fr;;
+        grid-template-columns: 1fr;
+        ;
     }
 
-    #rules-home-btn{
-       grid-column: 1/2;
-       grid-row: 5/6;
+    #rules-home-btn {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 
-    .rules-content-container h2{
-        grid-column:1/2;
+    .rules-content-container h2 {
+        grid-column: 1/2;
         grid-row: 1/2;
     }
-    
+
 
     /*unique styles for questions screen */
 
@@ -448,7 +450,7 @@ li.high-score:first-child {
 
 /* For screens of 490px wide and down */
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:490px) and (orientation:portrait) {
 
     /*header styles*/
 
@@ -491,8 +493,7 @@ li.high-score:first-child {
     .difficulty-btn,
     .start-button,
     .answer-btn,
-    .next-btn
-    .btn {
+    .next-btn .btn {
         margin-top: 8px;
         font-size: 1rem;
         width: 80%;
@@ -500,7 +501,7 @@ li.high-score:first-child {
 
     /* unique styles for quiz screen */
 
-    .btn{
+    .btn {
         font-size: 1.2rem;
     }
 
@@ -555,5 +556,119 @@ li.high-score:first-child {
 
 }
 
-/*Styles for screens of max width 320px and down */
+/* Media queries for landscape orientation on phones and tablets of a max-width of 950px and min-height of 320px */
 
+@media screen and (max-width: 950px) and (orientation:landscape) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding: 4px;
+    }
+
+    .hogwarts-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .main {
+        grid-gap: 0rem;
+    }
+
+    .quiz-container {
+        max-width: 96%;
+        padding: 2px;
+    }
+
+    .info-bar {
+        height: 40px;
+    }
+
+    .difficulty-btn-container,
+    .home-btn-container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .difficulty-btn,
+
+    .answer-btn,
+    .next-btn,
+    .play-again-btn,
+    .save-button,
+    .btn {
+        width: 90%;
+        height: 100%;
+        font-size: 1.6rem;
+        margin-top: 4px;
+        padding: 6px;
+
+    }
+
+    .question-text p {
+        font-size: 1rem;
+    }
+
+    .play-again-btn, .save-button{
+        width:100%;
+        height:100%;
+        font-size: 1rem;
+        margin-top:10px;
+    }
+    .answer-btn {
+        height: 90%;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .answer-btn-container button:nth-child(even) {
+        margin-right: 20px;
+    }
+
+    .answer-btn-container button:nth-child(odd) {
+        margin-left: 20px;
+    }
+
+    .next-btn{
+        font-size: 1rem;
+    }
+
+    .results-content-container h2{
+        font-size: 1.2rem;
+    }
+
+    .results-content-container p{
+        font-size: 1.6rem;
+    }
+
+    .input-container{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+    }
+
+    input#username{
+        grid-column: 1/3;
+        margin-top: 0px;
+        font-size: 1.2rem;
+    }
+
+    ul#high-scores-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    li.high-score:first-child{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        justify-self: center;
+        font-size:1.4rem;
+    }
+
+    li.high-score{
+        font-size: 1rem;
+    }
+
+
+}
