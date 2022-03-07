@@ -173,7 +173,7 @@ function runQuiz() {
     renderQuestion(randomQuestions[currentQuestionIndex]); //renders the first question
     nextBtn.addEventListener('click', () => {
         buttonSoundEffects();
-        if (currentQuestionIndex >= quizLength) {
+        if (currentQuestionIndex > quizLength) {
             quizQuestionsScreen.classList.add('hide');
             quizResultsScreen.classList.remove('hide');
             userCorrectQuestions.innerText = `You got ${correctQuestions}/10. Your score is`;
