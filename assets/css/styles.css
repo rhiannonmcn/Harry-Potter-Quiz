@@ -561,7 +561,9 @@ li.high-score:first-child {
 @media screen and (max-width: 950px) and (orientation:landscape) {
 
     h1 {
+
         font-size: 2.8rem;
+
     }
 
     h2 {
