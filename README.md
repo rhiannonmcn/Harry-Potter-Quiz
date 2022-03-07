@@ -255,6 +255,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Code Validation
 
+The Harry Potter Book Quiz has been tested via W3C HTML validate and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in (<#bugs-fixed>)
+
 ## Lighthouse Testing
 
 ## Accessibility Testing
