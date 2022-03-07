@@ -255,15 +255,63 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Code Validation
 
-The Harry Potter Book Quiz has been tested via W3C HTML validate and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in (<#bugs-fixed>)
+The Harry Potter Book Quiz has been tested via W3C HTML validate and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in [!Bugs Fixed](<#bugs-fixed>).
+
+## JSHint
+
+The Javascript files were validated via JSHint. Due to there being multiple Javascript files, validating each page threw up multiple notces, many of which were undefined varibles. This was due to the variables and functions being defined or called on other pages. 
 
 ## Lighthouse Testing
 
+The quiz was also put through Lighthouse testing via Chrome DevTools which tests the site under 4 different headings; Performance, Accessibility, Best Practices and SEO and it tests it under mobile and desktop criteria.
+
 ## Accessibility Testing
+
+A11y was used to test the color contrast of the website for accessibility purposes and it passed.
+
+Adobe Color was used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
 
 ## Responsive Testing
 
+Responsiveness was tested via a few different mediums manually, including Chrome Devtools, The Viewport Resizer chrome extension and The Responsive Design Checker website.
+
 ## Manual Testing
+
+In addition to the automated process above, manual testing was carried out on the site as well.
+
+* Home Screen
+    * Verified that clicking the Home Button icon brought the user back to the home screen.
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verfied that the Quiz button takes the user to the Difficulty screen.
+    * Verified that the High Scores button brings the user to the High Scores screen.
+    * Verified that the Rules button brings the user to the rules screen.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+* Difficulty Screen
+    * Verified that clicking the Home Button icon brought the user back to the home screen.
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified via console.log that pressing the Troll button difficulty accesses the easy difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
+    * Verified via console.log that pressing the O.W.L. button accesses the medium difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
+    * Verified via console.log that pressing the N.E.W.T. button accesses the hard difficulty questions and randomly sorts and takes the user to the Start Quiz screen.
+    * Verified that all sounds work if the sound is toggle on; background music and button clicks.
+
+* Start Quiz Screen
+    * Verified that clicking the Home Button icon brought the user back to the Home screen and reset the quiz choices made so far.
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified via console.log that the users selected question level difficulty was still correct prior to pressing the start button.
+    * Verified that pressing the Start button brings the user to the Quiz Questions Screen.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+* Quiz Questions Screen
+    * Verified that clicking the Home Button brought the user back to the Home screen and reset the entire quiz, including users previous choices and answers.
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified that the question displayed correctly with the correct answer buttons also displayed.
+    * Verified via console.log that the current question displayed matched the question index question.
+    * Verified that the timer started on loading of the question, that it was displayed properly, that the correct amount of time was counted down depending on the difficulty chosen and that the timer stopped if an answer was chosen or time ran out, that the timer cleared and restarted upon pressing the next button.
+    * Verified that the score increments by the correct amount depending on the difficulty chosen, that the score deducts by the correct amount depending on the difficulty shown, and that the score is displayed correctly at all times.
+    * Verified that the question number is displayed correctly, and that it increments currently.
+    * Verified that the questions are iterated through 10 times before bringing to the results page via the next button.
+    * Verified that all sounds work if the sound is toggled on; background music, button clicks, sound for the correct answer, sound for the wrong answer and sound for the timer countdown st 5 secounds.
 
 ## Bugs Fixed
 https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
