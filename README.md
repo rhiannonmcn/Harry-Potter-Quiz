@@ -234,10 +234,6 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 * Instead of saving the high scores locally, saving the scores on a global level will raise the level of engagement with the quiz application, as users could compete against other people qhile accessing the application from different devices.
 
-## Sound Settings
-
-* Upon quiz refresh, it takes the user out of the experience if they have to toggle the sound on again, despite turning it on he first time and this would be something to update in the future.
-
 [Back to top](<#contents>)
 
 # Technologies Used
