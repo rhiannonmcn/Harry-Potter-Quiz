@@ -1,3 +1,5 @@
+/*jshint esversion: 8 */
+
 //Variables
 const username = document.getElementById('username');
 const saveButton = document.getElementById('save-score-btn');

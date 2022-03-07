@@ -1,3 +1,5 @@
+/*jshint esversion: 8 */
+
 //Variables
 const questionRightSound = new Audio("assets/sounds/right-sound.mp3");
 const questionWrongSound = new Audio("assets/sounds/wrong-sound.mp3");

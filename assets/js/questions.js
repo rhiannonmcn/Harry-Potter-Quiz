@@ -1,3 +1,5 @@
+/*jshint esversion: 8 */
+
 //array for each of the different difficulty levels stored below
 
 const easyQuestions = [{

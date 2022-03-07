@@ -1,3 +1,5 @@
+/*jshint esversion: 8 */
+
 //Variables
 const enterQuiz = document.getElementById('quiz-home-section');
 const enterQuizBtn = document.getElementById('quiz-button');
