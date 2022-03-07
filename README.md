@@ -307,11 +307,21 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified that the question displayed correctly with the correct answer buttons also displayed.
     * Verified via console.log that the current question displayed matched the question index question.
-    * Verified that the timer started on loading of the question, that it was displayed properly, that the correct amount of time was counted down depending on the difficulty chosen and that the timer stopped if an answer was chosen or time ran out, that the timer cleared and restarted upon pressing the next button.
-    * Verified that the score increments by the correct amount depending on the difficulty chosen, that the score deducts by the correct amount depending on the difficulty shown, and that the score is displayed correctly at all times.
+    * Verified that the timer showed up in the info-bar correctly and started on loading of the question. That it was displayed properly, that the correct amount of time was counted down depending on the difficulty chosen and that the timer stopped if an answer was chosen or time ran out and that the timer cleared and restarted upon pressing the next button.
+    * Verified that the score icon shows up correctly in the info-bar, that it increments by the correct amount depending on the difficulty chosen. That the score deducts by the correct amount depending on the difficulty shown, and that the score is displayed correctly at all times.
     * Verified that the question number is displayed correctly, and that it increments currently.
     * Verified that the questions are iterated through 10 times before bringing to the results page via the next button.
     * Verified that all sounds work if the sound is toggled on; background music, button clicks, sound for the correct answer, sound for the wrong answer and sound for the timer countdown st 5 secounds.
+
+* Results Screen
+    * Verified that clicking the Home button brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified that the message is displayed correctly with the number of correct questions the user had and their final score is displayed correctly.
+    * Verified that save button cannot be activated if the username input is empty and that it throws up a notification to the user if pressed while the input is empty.
+    * Verified that the save button takes the user to the High Scores page.
+    * Verified via DevTools and console.log that the username and score is saved in local storage on click of the save button.
+    * Verified that the Home button brings the user back to the home page and resets the entire quiz, including the users previous choices and answers and that the users score is not saved if the home button is clicked.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 ## Bugs Fixed
 https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
