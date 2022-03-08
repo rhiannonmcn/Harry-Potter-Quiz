@@ -280,7 +280,7 @@ Responsiveness was tested via a few different mediums manually, including Chrome
 In addition to the automated process above, manual testing was carried out on the site as well.
 
 * Home Screen
-    * Verified that clicking the Home Button icon brought the user back to the home screen.
+    * Verified that clicking the Home Button icon on the info-bar brought the user back to the home screen.
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verfied that the Quiz button takes the user to the Difficulty screen.
     * Verified that the High Scores button brings the user to the High Scores screen.
@@ -288,7 +288,7 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 * Difficulty Screen
-    * Verified that clicking the Home Button icon brought the user back to the home screen.
+    * Verified that clicking the Home Button icon on the info-bar brought the user back to the home screen.
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified via console.log that pressing the Troll button difficulty accesses the easy difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
     * Verified via console.log that pressing the O.W.L. button accesses the medium difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
@@ -296,14 +296,14 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that all sounds work if the sound is toggle on; background music and button clicks.
 
 * Start Quiz Screen
-    * Verified that clicking the Home Button icon brought the user back to the Home screen and reset the quiz choices made so far.
+    * Verified that clicking the Home Button icon on the info-bar brought the user back to the Home screen and reset the quiz choices made so far.
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified via console.log that the users selected question level difficulty was still correct prior to pressing the start button.
     * Verified that pressing the Start button brings the user to the Quiz Questions Screen.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 * Quiz Questions Screen
-    * Verified that clicking the Home Button brought the user back to the Home screen and reset the entire quiz, including users previous choices and answers.
+    * Verified that clicking the Home Button icon in the info-bar brought the user back to the Home screen and reset the entire quiz, including users previous choices and answers.
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified that the question displayed correctly with the correct answer buttons also displayed.
     * Verified via console.log that the current question displayed matched the question index question.
@@ -314,13 +314,27 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that all sounds work if the sound is toggled on; background music, button clicks, sound for the correct answer, sound for the wrong answer and sound for the timer countdown st 5 secounds.
 
 * Results Screen
-    * Verified that clicking the Home button brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
+    * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified that the message is displayed correctly with the number of correct questions the user had and their final score is displayed correctly.
     * Verified that save button cannot be activated if the username input is empty and that it throws up a notification to the user if pressed while the input is empty.
     * Verified that the save button takes the user to the High Scores page.
     * Verified via DevTools and console.log that the username and score is saved in local storage on click of the save button.
     * Verified that the Home button brings the user back to the home page and resets the entire quiz, including the users previous choices and answers and that the users score is not saved if the home button is clicked.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+* High Scores Screen
+    * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified through multiple plays of the quiz and saving high scores that the highscores are indeed saved, sorted into descending order and cut off at 5 high scores and that any new high scores in the top 5 replace the lowest score that was previously visible.
+    * Verified that the Home Button takes the user to the home screen and resets the quiz fully.
+    * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+* Rules Screen
+    * * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen.
+    * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
+    * Verified that the rules were displayed properly.
+    * Verified that the Home Button takes the user to the home screen.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 ## Bugs Fixed
