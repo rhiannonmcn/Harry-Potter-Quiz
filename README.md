@@ -338,6 +338,10 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 * Quiz Reset
+    * Verfied that once the quiz is finished and whether the user decides to save their score or go straight back to the home page, that the entire quiz reset; timer, score, quiz difficulty, quiz question randomising, correct question number and the current question number the user is on - and would loop perfectly again, with just the user audio options remaining the same and the high scores saved.
+    
+* Resonisiveness
+    * Verified manually by playing through each page of the quiz that the quiz was fully responsive on the devices available in DevTools and any other devices that were available to actually test on.
 
 ## Bugs Fixed
 https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
