@@ -22,7 +22,7 @@ You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-P
     * [Code Validation](<#code-validation>)
     * [Lighthouse Testing](<#lighthouse-testing>)
     * [Accessibility Testing](<#accessibility-testing>)
-    * [Responsive Testing](<#responsive-testing>)bnghhhhhhhhhhhhhh
+    * [Responsive Testing](<#responsive-testing>)
     * [Manual Testing](<#manual-testing>)
     * [Bugs Fixed](<#bugs-fixed>)
 * [Deployment](<#deployment>)
@@ -389,7 +389,9 @@ Upon completing the Quiz, the code worked perfectly and naturally on desktops, t
 
 After a lot of research on the issue [here](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation), CSS queries were used to tighten responsiveness using the orientation property of portrait and landscape to be very specific.
 
-![Screen Landscape Responsiveness after media Query](docs/readme-images/version-control-image2.png)
+![Responsive Portrait Orientation](docs/readme-images/responsiveness-portrait.png)
+
+![Responsive Landscape Orientation](docs/readme-images/responsiveness-landscape.png)
 
 ### Console Error
 
@@ -403,7 +405,7 @@ One console error that kept cropping up was the error as seen below in the scree
 
 At one stage, changes were made to timer.js that completely broke the quiz. While it was thought the changes were reset, it still seemed to be broken. Because of this, using version control we could go back to a stage where timer.js was working correctly and use the previous code which worked.
 
-![Version control](/workspace/Harry-Potter-Quiz/docs/readme-images/version-control-image2.png)
+![Version control from commits in github](docs/readme-images/version-control-image2.png)
 
 # Deployment
 
