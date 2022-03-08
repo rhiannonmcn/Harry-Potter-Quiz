@@ -21,8 +21,8 @@ You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-P
 * [Testing](<#testing>)
     * [Code Validation](<#code-validation>)
     * [Lighthouse Testing](<#lighthouse-testing>)
-    * [Responsive Testing](<#responsive-testing>)
     * [Accessibility Testing](<#accessibility-testing>)
+    * [Responsive Testing](<#responsive-testing>)bnghhhhhhhhhhhhhh
     * [Manual Testing](<#manual-testing>)
     * [Bugs Fixed](<#bugs-fixed>)
 * [Deployment](<#deployment>)
@@ -339,9 +339,13 @@ In addition to the automated process above, manual testing was carried out on th
 
 * Quiz Reset
     * Verfied that once the quiz is finished and whether the user decides to save their score or go straight back to the home page, that the entire quiz reset; timer, score, quiz difficulty, quiz question randomising, correct question number and the current question number the user is on - and would loop perfectly again, with just the user audio options remaining the same and the high scores saved.
-    
+
 * Resonisiveness
     * Verified manually by playing through each page of the quiz that the quiz was fully responsive on the devices available in DevTools and any other devices that were available to actually test on.
+
+* Browser Testing
+    * Harry Potter Book Quiz has been tested manually in Google Chrome, Microsoft Edge, Mozilla Firefox and Safari on both desktop and mobile.
+    * Verified that the design and structure was consistent across all browsers.
 
 ## Bugs Fixed
 https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
