@@ -255,21 +255,45 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Code Validation
 
-The Harry Potter Book Quiz has been tested via W3C HTML validate and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in [!Bugs Fixed](<#bugs-fixed>).
+The Harry Potter Book Quiz has been tested via W3C HTML validator and W3C CSS validator. There were a few minor errors that came up for the HTML pages which were immediately corrected and documented down below in [Bugs Fixed](<#bugs-fixed>).
+
+![HTML W3C validator](docs/readme-images/html-validator.png)
+![CSS W3C Validator](docs/readme-images/css-validator-pass.png)
 
 ## JSHint
 
 The Javascript files were validated via JSHint. Due to there being multiple Javascript files, validating each page threw up multiple notces, many of which were undefined varibles. This was due to the variables and functions being defined or called on other pages. 
 
+JSHint came up with a lot of undefined variables. However this is because there are multiple javascript pages
+
+<details><summary>JSHint Validation</summary>
+
+![JSHint validation for script.js](docs/readme-images/jshint-script-jspage.png)
+![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
+![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
+![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
+![JSHint validation for highscores.js](https://rhiannonmcn-harrypotterq-ht5qryfelfq.ws-eu34xl.gitpod.io/)
+
+</details>
+
 ## Lighthouse Testing
 
 The quiz was also put through Lighthouse testing via Chrome DevTools which tests the site under 4 different headings; Performance, Accessibility, Best Practices and SEO and it tests it under mobile and desktop criteria.
+
+![Lighthouse testing for desktop](docs/readme-images/lighthouse-testing.png)
+
+![Lighthouse testing for mobile](docs/readme-images/lighthouse-testing2.png)
 
 ## Accessibility Testing
 
 A11y was used to test the color contrast of the website for accessibility purposes and it passed.
 
+![A11y color contrast accessibility](docs/readme-images/Color-Contrast-Accessibility-Validator.png)
+
 Adobe Color was used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
+
+![Adobe Colour contrast checker](docs/readme-images/color-contrast-checker.png)
+![Adobe Color contrast checker image 2](docs/readme-images/color-contrast-checker2.png)
 
 ## Responsive Testing
 
