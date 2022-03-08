@@ -4,6 +4,8 @@ Harry Potter Book Quiz is an interactive online quiz for users who would like to
 
 You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-Potter-Quiz/" target="_blank"> Harry Potter Book Quiz </a>
 
+![Harry Potter Book Quiz Am I Responsive image](docs/readme-images/am-i-responsive.png)
+
 # Contents
 
 * [Objective](<#objective>) 
@@ -178,6 +180,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * The input field cannot be submitted empty and upon clicking the save button the user will be notified that they must enter a username to save their score. 
 * They also have the option to skip this step and navigate straight to the home screen by clicking the home button.
 * Once the user enters a username and clicks save, they are then brought to the high scores screen.
+
+![Custom Validity for input on Results screen](docs/readme-images/custom-validity.png)
 
 ## High Scores Screen
 
@@ -371,6 +375,12 @@ In addition to the automated process above, manual testing was carried out on th
     * Harry Potter Book Quiz has been tested manually in Google Chrome, Microsoft Edge, Mozilla Firefox and Safari on both desktop and mobile.
     * Verified that the design and structure was consistent across all browsers.
 
+* Branches
+    * Different branches were used to test blocks of code/mass code changes without messing with the integrity of the already working code.
+
+    ![Using branches to test code](docs/readme-images/branches-image.png)
+    ![Using branches within gitpod to test code](docs/readme-images/branches-image2.png)
+
 ## Bugs Fixed
 
 ### Silent Error
@@ -390,6 +400,15 @@ There was a slight delay in the visual of the timer showing on screen and it sta
 This wasn't an error as such but the logical order in which the code was being called was the cause for the delay. A simple code switch solved this problem, by taking the countdown function out of the setInterval solved this issue.
 
 ![Code switch of the countdown function](docs/readme-images/accurate-timer-2.png)
+
+### Stylesheet Conflicts
+
+After testing, certain styles on the font awesome icons were not showing. DevTools was used to troubleshoot the problem. It could be seen that the syles in styles.css were being overwritten by another styles sheet. 
+
+![DevTools to troubleshoot the stylesheet problems](docs/readme-images/stylesheet-order.png)
+![Stylesheet link moved in index.html](docs/readme-images/stylesheet-order2.png)
+
+Making sure that the link for the the font awesome icons was above the link to the styles.css in index.html sorted out the issue as styles.css then became priorty in terms of any styles written.
 
 ### Screen Broken
 
