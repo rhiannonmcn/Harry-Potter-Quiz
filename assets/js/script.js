@@ -89,7 +89,7 @@ for (let i = 0; i < homeButtonIcon.length; i++) {
                 if(!quizDifficultyScreen.classList.contains('hide')){
                     quizDifficultyScreen.classList.add('hide');
                 } else if(!quizStartScreen.classList.contains('hide')){
-                    quizDifficultyScreen.classList.add('hide');
+                    quizStartScreen.classList.add('hide');
                 } else if(!quizQuestionsScreen.classList.contains('hide')){
                     quizQuestionsScreen.classList.add('hide');
                 } else if(!quizResultsScreen.classList.contains('hide')){
