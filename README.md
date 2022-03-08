@@ -337,6 +337,8 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that the Home Button takes the user to the home screen.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
+* Quiz Reset
+
 ## Bugs Fixed
 https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
 
