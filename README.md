@@ -348,9 +348,62 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that the design and structure was consistent across all browsers.
 
 ## Bugs Fixed
-https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
+
+### Silent Error
+
+The most difficult error that presented itself was upon completing the quiz and trying to restart it, i.e. resetting variables and clearing timers. However something was breaking and yet no errors were showing up in the console. Using console.log showed results that were expected upon the restart of the quiz, variables seemed to be clearing. But the timers seemed to be counting down doubly (called twice/or not being cleared and called again), same with the question number counter and the user score. The easy solution was to use a window.location.reload, however this took the user from the experience as it also reset the user's sound settings and caused a visual reload.
+
+This bug was clearly a logical error in where the code was situated and called. Once the code was shifted, console.log and DevTool were used to track the variable results and functions called and the correct order for the reset was soon found.
+
+![Testing the shifted code around until the right order was established](docs/readme-images/bugs-image.png)
+
+### Timer Delay
+
+There was a slight delay in the visual of the timer showing on screen and it starting, so the timer started before the visual loaded and thus the user saw 9s rather than 10s etc. 
+
+![Timer Delay starting at 9s in N.E.W.T. Difficulty](docs/readme-images/timer-delay.png)
+
+This wasn't an error as such but the logical order in which the code was being called was the cause for the delay. A simple code switch solved this problem, by taking the countdown function out of the setInterval solved this issue.
+
+![Code switch of the countdown function](docs/readme-images/accurate-timer-2.png)
+
+### Screen Broken
+
+During testing by the average user, I was alerted to a bug which cause the screen to break if the home button icon in the info bar is pressed, in the Start Screen only. It would bring the user home and reset the quiz, however it failed to 'hide' the Start Screen and appended the screen onto the bottom of the Home Screen and onto any other screen thereafter. The problem was easily replicated.
+
+<details><summary>Screen Split Bug</summary>
+
+![Testing Alert](docs/readme-images/testing-outsource.png)
+![Broken Screen Bug](docs/readme-images/screen-bug3.jpg)
+![Replicated the Bug](docs/readme-images/screen-bug2.png)
+
+</details>
+
+Upon identifying the code visually, it was easy to tell exactly where the code was broken/incorrect. The 'hide' class was being added to the wrong html container, and once amended to the correct container, the screen worked correctly.
+
+### Screen Orientation Responsiveness
+
+Upon completing the Quiz, the code worked perfectly and naturally on desktops, tablets and mobile phones. However, for the most part, this was for portrait orientation of the tablets and mobile phones.  Responsiveness was not as tight in landscape orientation.
+
+![Landscape Orientation Pre Media Queries](docs/readme-images/landscape-responsiveness2.png)
+
+After a lot of research on the issue [here](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation), CSS queries were used to tighten responsiveness using the orientation property of portrait and landscape to be very specific.
+
+![Screen Landscape Responsiveness after media Query](docs/readme-images/version-control-image2.png)
+
+### Console Error
+
+One console error that kept cropping up was the error as seen below in the screenshot, when inspecting the site for errors via DevTools. Upon a bit of research it was quickly recognised that the error was solved by adding a favicon to the site.
+
+![Favicon Error](docs/readme-images/manual-testing.png)
 
 [Back to top](<#contents>)
+
+### Version Control
+
+At one stage, changes were made to timer.js that completely broke the quiz. While it was thought the changes were reset, it still seemed to be broken. Because of this, using version control we could go back to a stage where timer.js was working correctly and use the previous code which worked.
+
+![Version control](/workspace/Harry-Potter-Quiz/docs/readme-images/version-control-image2.png)
 
 # Deployment
 
@@ -380,6 +433,13 @@ https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object
 https://stackoverflow.com/questions/13610638/loop-audio-with-javascript
 https://www.zapsplat.com/
 https://stackoverflow.com/questions/14718561/how-to-check-if-a-number-is-between-two-values
+https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+https://www.codegrepper.com/code-examples/javascript/20+second+countdown+timer+html
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals
+https://siongui.github.io/2012/10/12/javascript-toggle-sound-onclick/
+https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+https://stackoverflow.com/questions/52738241/my-quiz-count-down-timer-not-working-as-expected
+https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
 
 [Back to top](<#contents>)
 
