@@ -293,7 +293,7 @@ The quiz was also put through Lighthouse testing via Chrome DevTools which tests
 
 A11y was used to test the color contrast of the website for accessibility purposes and it passed.
 
-![A11y color contrast accessibility](docs/readme-images/Color-Contrast-Accessibility-Validator.png)
+![A11y color contrast accessibility](docs/readme-images/color-contrast-accessibility-validator.png)
 
 Adobe Color was used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
 

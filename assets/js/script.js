@@ -84,35 +84,35 @@ rulesButton.addEventListener('click', () => {
  */
 for (let i = 0; i < homeButtonIcon.length; i++) {
     homeButtonIcon[i].addEventListener('click', () => {
-        buttonSoundEffects(); 
-                enterQuiz.classList.remove('hide');
-                if(!quizDifficultyScreen.classList.contains('hide')){
-                    quizDifficultyScreen.classList.add('hide');
-                } else if(!quizStartScreen.classList.contains('hide')){
-                    quizStartScreen.classList.add('hide');
-                } else if(!quizQuestionsScreen.classList.contains('hide')){
-                    quizQuestionsScreen.classList.add('hide');
-                } else if(!quizResultsScreen.classList.contains('hide')){
-                    quizResultsScreen.classList.add('hide');
-                } else if(!quizHighScoresScreen.classList.contains('hide')){
-                    quizHighScoresScreen.classList.add('hide');
-                } else if(!rulesScreen.classList.contains('hide')){
-                    rulesScreen.classList.add('hide');
-                } 
+        buttonSoundEffects();
+        enterQuiz.classList.remove('hide');
+        if (!quizDifficultyScreen.classList.contains('hide')) {
+            quizDifficultyScreen.classList.add('hide');
+        } else if (!quizStartScreen.classList.contains('hide')) {
+            quizStartScreen.classList.add('hide');
+        } else if (!quizQuestionsScreen.classList.contains('hide')) {
+            quizQuestionsScreen.classList.add('hide');
+        } else if (!quizResultsScreen.classList.contains('hide')) {
+            quizResultsScreen.classList.add('hide');
+        } else if (!quizHighScoresScreen.classList.contains('hide')) {
+            quizHighScoresScreen.classList.add('hide');
+        } else if (!rulesScreen.classList.contains('hide')) {
+            rulesScreen.classList.add('hide');
+        }
 
-                clearInterval(timer);
-                resetQuestionState();
-                currentQuestionIndex = 0;
-                questionNumber = 1;
-                randomQuestions = undefined;
-                difficultyChosen = undefined;
-                selectedButton = undefined;
-                userScore = 0;
-                correctQuestions = 0;
-                timeLeft = undefined;
-                timer = undefined;
-                userResult.innerText = 0;
-                questionNumberDisplayed.innerText = questionNumber + '/' + '10';
+        clearInterval(timer);
+        resetQuestionState();
+        currentQuestionIndex = 0;
+        questionNumber = 1;
+        randomQuestions = undefined;
+        difficultyChosen = undefined;
+        selectedButton = undefined;
+        userScore = 0;
+        correctQuestions = 0;
+        timeLeft = undefined;
+        timer = undefined;
+        userResult.innerText = 0;
+        questionNumberDisplayed.innerText = questionNumber + '/' + '10';
     });
 }
 
@@ -204,7 +204,6 @@ function runQuiz() {
     });
 }
 
-
 /**
  * Displays the question and answer text in the html
  * Once an answer is clicked, calls the checkAnswer function
@@ -221,6 +220,7 @@ function renderQuestion(question) {
     answerButton4.innerText = question.answers[3].text;
     let ansBtnContainer = document.getElementById('ans-btn-container');
     //randomises the order of which the answer buttons are shown
+    //credit for the code is from a stack overflow post https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
     for (let i = ansBtnContainer.children.length; i >= 0; i--) {
         ansBtnContainer.appendChild(ansBtnContainer.children[Math.random() * i | 0]);
     }
@@ -273,7 +273,7 @@ function checkAnswer(event) {
         selectedButton.classList.add('wrong');
         wrongSoundEffects();
         currentQuestionIndex++;
-         questionNumber++;
+        questionNumber++;
         if (audioPlaying && timeLeft < 7) {
             timerSounds.pause();
         }
