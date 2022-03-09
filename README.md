@@ -22,6 +22,7 @@ You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-P
 * [Technologies Used](<#technologies-used>)
 * [Testing](<#testing>)
     * [Code Validation](<#code-validation>)
+    * [JSHint](<#jshint>)
     * [Lighthouse Testing](<#lighthouse-testing>)
     * [Accessibility Testing](<#accessibility-testing>)
     * [Responsive Testing](<#responsive-testing>)
