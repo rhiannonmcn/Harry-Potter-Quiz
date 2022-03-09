@@ -470,6 +470,12 @@ At one stage, changes were made to timer.js that completely broke the quiz. Whil
 
 ![JSHint undefined and unused variables](docs/readme-images/jshint-undefined-variables.png) 
 
+### Console Error in DevTools
+
+This error is in relation to Github pages and their FLoC. As it is enabled by Github themselves there is nothing that can be donw at this time to fix this if we are deploying via GitHub pages. More information on this can be seen [here](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/3) .
+
+![Devtools Error](docs/readme-images/devtools-error.png)
+
 # Deployment
 
 The website was deployed to GitHub pages via the following methods:
