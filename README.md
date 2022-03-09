@@ -271,17 +271,13 @@ The Harry Potter Book Quiz has been tested via W3C HTML validator and W3C CSS va
 
 The Javascript files were validated via JSHint. Due to there being multiple Javascript files, validating each page threw up multiple notces, many of which were undefined varibles. This was due to the variables and functions being defined or called on other pages. 
 
-JSHint came up with a lot of undefined variables. However this is because there are multiple javascript pages
-
-<details><summary>JSHint Validation</summary>
+JSHint came up with no errors and multiple warnings which are explained below in [Bugs Resolved](<#bugs-resolved>).
 
 ![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
 ![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
 ![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
 ![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
 ![JSHint validation for highscores.js](https://rhiannonmcn-harrypotterq-ht5qryfelfq.ws-eu34xl.gitpod.io/)
-
-</details>
 
 ## Lighthouse Testing
 
@@ -385,12 +381,6 @@ In addition to the automated process above, manual testing was carried out on th
     ![Using branches within gitpod to test code](docs/readme-images/branches-image2.png)
 
 ## Bugs Fixed
-
-### JSHint Validation
-
-There are two warnings above in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
-
-The secound warning deals with the calling of a variable where JSHint expected the call of a function but saw an expression instead. Again not a problem to worry about as the code is correct.
 
 ### Silent Error
 
