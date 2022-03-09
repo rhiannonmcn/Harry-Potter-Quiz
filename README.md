@@ -476,6 +476,8 @@ This error is in relation to Github pages and their FLoC. As it is enabled by Gi
 
 ![Devtools Error](docs/readme-images/devtools-error.png)
 
+[Back to top](<#contents>)
+
 # Deployment
 
 The website was deployed to GitHub pages via the following methods:
@@ -509,25 +511,21 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 # Credits
 
 * [Hogwarts Crest image](https://commons.wikimedia.org/wiki/File:Hogwarts-Crest.png)
-*[3D CSS effect in h1](https://codepen.io/ryandsouza13/pen/yEBJQV)
-https://www.sitepoint.com/simple-javascript-quiz/
-https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
-https://www.youtube.com/watch?v=riDzcEQbX6k&t=1419s&ab_channel=WebDevSimplified
-https://stackoverflow.com/questions/54753424/how-to-keep-score-for-questions-answered-correct-and-deduct-points-for-questions
-https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=9&ab_channel=JamesQQuick
-https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
-https://www.youtube.com/watch?v=eHn8eF0nwD0&ab_channel=KenezNonwar
-https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object
-https://stackoverflow.com/questions/13610638/loop-audio-with-javascript
-https://www.zapsplat.com/
-https://stackoverflow.com/questions/14718561/how-to-check-if-a-number-is-between-two-values
-https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
-https://www.codegrepper.com/code-examples/javascript/20+second+countdown+timer+html
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals
-https://siongui.github.io/2012/10/12/javascript-toggle-sound-onclick/
-https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
-https://stackoverflow.com/questions/52738241/my-quiz-count-down-timer-not-working-as-expected
-https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript
+* [Site background image](https://unsplash.com/photos/b7MUFydsU64)
+* [Where sound effects were sourced](https://www.zapsplat.com/)
+* [Download link for background music available under the video description](https://www.youtube.com/watch?v=eHn8eF0nwD0&ab_channel=KenezNonwar)
+* [3D CSS effect in h1 css code](https://codepen.io/ryandsouza13/pen/yEBJQV)
+* [Javascript Quiz Tutorial source](https://www.sitepoint.com/simple-javascript-quiz/)
+* [Javascript Quiz tutorial source 2](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/)
+* [Javascript Quiz Tutorial source 3](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1419s&ab_channel=WebDevSimplified)
+* [Code for helping figure out the adding and deduction if user score points](https://stackoverflow.com/questions/54753424/)
+* [Tutorial for using local storage for high scores](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=9&ab_channel=JamesQQuick)
+* [Code for setting the volume of audio in javascript](https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object)
+* [Code for looping audion in Javascript](https://stackoverflow.com/questions/13610638/loop-audio-with-javascript)
+* [Code for learning about setInterval and setTimeout](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+* [Code for timer function](https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward)
+* [Code for learning about toggling play and pause function for audio](https://siongui.github.io/2012/10/12/javascript-toggle-sound-onclick/)
+* [Code for randomly ordering the html button elements](https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript)
 
 [Back to top](<#contents>)
 
