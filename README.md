@@ -139,9 +139,19 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * On the quiz run through two more bits of information are added to the right of these: the timer countdown and the user's score.
 * The navbar is responsive and does not change order throughout screen size changes.
 
+<details><summary>Desktop Info bar images</summary>
+
 ![info-bar image of all screens other than questions screen](docs/readme-images/info-bar-image-1.png)
 ![info-bar of questions screen while playing quiz](docs/readme-images/info-bar-image-2.png)
 ![info-bar of questions screen while playing quiz image 2](docs/readme-images/info-bar-image-3.png)
+
+</details>
+<details><summary>Mobile Info bar images</summary>
+
+![Mobile info-bar image of all screens other than questions](docs/readme-images/mobile-info-bar-2.jpeg)
+![Mobile info-bar of questions screen while playing quiz](docs/readme-images/mobile-info-bar.jpeg)
+
+</details>
 
 [Back to top](<#contents>)
 
@@ -153,6 +163,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * The user is presented with three buttons; a Quiz button, a Highscores button and a Rules button and from here the user has all the information needed to play the quiz.
 
 ![Home Screen image](docs/readme-images/home-screen.png)
+![Mobile Home Screen](docs/readme-images/mobile-home-screen.png)
 
 ## Quiz Difficulty Screen
 
@@ -165,6 +176,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * Choosing N.E.W.T. (hard level) will give the user a time of 10 secounds to answer the question, will reward the user 2 points plus the addition of whatever time is left on the timer for a correct answer. The quicker the user answers the more points they score. But will penalise the user 5 points for every wrong answer or if the timer runs out.
 
 ![Quiz Difficulty Screen image](docs/readme-images/difficulty-screen.png)
+![Mobile quiz Difficulty Screen image](docs/readme-images/mobile-difficulty-screen.png)
 
 ## Quiz Start Screen
 
@@ -172,6 +184,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * This is to give the user a chance to prepare to take the quiz, to take a mental breath before diving in.
 
 ![Quiz Start Screen image](docs/readme-images/start-screen.png)
+![Mobile Quiz Start Screen](docs/readme-images/mobile-start-screen.png)
 
 ## Quiz Questions Screen - Core of the Application
 
@@ -186,10 +199,22 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * If the user fails to answer the question within the allotted time, the 'incorrect sound will play', the right answer will highlight in green and the incorrect answers will highlight in red. The user also may be deducted points depending on the quiz difficulty chosen.
 * Once a user answers the question or the timer runs out, the answer button functionality is disabled so as to prevent re-answering and the next button functionality is enabled again.
 
+<details><summary>Desktop Questions Screens</summary>
+
 ![Quiz Questions Screen](docs/readme-images/questions-screen-no-answer-chosen.png)
 ![Quiz Questions Screen Correct Answer Chosen](docs/readme-images/questions-screen-correct-ans-chosen.png)
 ![Quiz Questions Screen wrong answer chosen](docs/readme-images/questions-screen-wrong-answer-chosen.png)
 ![Quiz Questions Screen timer runs out](docs/readme-images/questions-screen-timer-runs-out.png)
+
+</details>
+<details><summary>Mobile Questions Screens</summary>
+
+![Mobile Quiz Questions Screen](docs/readme-images/mobile-questions-screen.png)
+![Mobile Quiz Questions screen Correct Answer Chosen](docs/readme-images/mobile-questions-screen-correct-answer.png)
+![Mobile Quiz Questions Screen Incorrect Answer Chosen](docs/readme-images/mobile-questions-screen-incorrect-answer.png)
+![Mobile Quiz Questions Screen Timeer runs out](docs/readme-images/mobile-questions-screen-timer-runs-out.png)
+
+</details>
 
 ## Results Section
 
@@ -201,6 +226,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ![Custom Validity for input on Results screen](docs/readme-images/custom-validity.png)
 ![Results Screen image](docs/readme-images/results-screen.png)
+![Mobile Results Screen image](docs/readme-images/mobile-results-screen.png)
 
 ## High Scores Screen
 
@@ -210,6 +236,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * From the high scores screen, the user can navigate back to the home screen via the home button.
 
 ![Highscores Screen image](docs/readme-images/highscores-screen.png)
+![Mobile Highscores Screen image](docs/readme-images/mobile-highscores-screen.png)
 
 ## Rule Screen
 
@@ -218,6 +245,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * This page is to give the user further understanding of the different question difficulties and their unique features.
 
 ![Rules Screen image](docs/readme-images/rules-screen.png)
+![Mobile Rules Screen image](docs/readme-images/mobile-rules-screen.png)
 
 ## Timer
 
