@@ -34,6 +34,8 @@ You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-P
 
 # Objective
 
+The aim of this project is to deliver an interactive, engaging quiz that is visually and functionally satisfying for the user to play.
+
 [Back to top](<#contents>)
 
 # User Experience (UX)
