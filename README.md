@@ -272,7 +272,7 @@ JSHint came up with a lot of undefined variables. However this is because there 
 
 <details><summary>JSHint Validation</summary>
 
-![JSHint validation for script.js](docs/readme-images/jshint-script-jspage.png)
+![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
 ![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
 ![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
 ![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
