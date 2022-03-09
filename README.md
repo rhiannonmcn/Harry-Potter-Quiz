@@ -131,13 +131,17 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Navigation
 
-* The site navigation is done through the info bar at the top of the quiz area and this does not change in style throughout the user's navigation of the quiz.
+* The site navigation is done through the info-bar at the top of the quiz area and this does not change in style throughout the user's navigation of the quiz.
 * The user can navigate to the home screen from whereever they are in the quiz through the home button. 
 * This is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
 * The sound button is automatically muted on website loading and like the home button it's position doesn't move but sound can be activated or muted by the user as they wish.
 * Upon activation, there is themed background music and sound effects on the button clicks.
 * On the quiz run through two more bits of information are added to the right of these: the timer countdown and the user's score.
 * The navbar is responsive and does not change order throughout screen size changes.
+
+![info-bar image of all screens other than questions screen](docs/readme-images/info-bar-image-1.png)
+![info-bar of questions screen while playing quiz](docs/readme-images/info-bar-image-2.png)
+![info-bar of questions screen while playing quiz image 2](docs/readme-images/info-bar-image-3.png)
 
 [Back to top](<#contents>)
 
@@ -254,7 +258,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * Google Chrome DevTools - Used to debug and test responsiveness of the site
 * Gitpod - Used to develop the website.
 * GitBash - Terminal used to push changes to the GitHub repository.
-* Github - Used to host and deploy the website.
+* GitHub - Used to host and deploy the website.
 
 [Back to top](<#contents>)
 
