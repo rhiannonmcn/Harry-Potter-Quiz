@@ -231,7 +231,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Different Sections
 
-* Including questions targeted at certain books only. Having question pools and sections dedicated only to Book 1, and another question pool dedicated to Book 2 etc. 
+* Include questions targeted at certain books only. Having question pools and sections dedicated only to Book 1, and another question pool dedicated to Book 2 etc. 
 
 ## A Harder Difficulty/End Game Content
 
@@ -386,11 +386,17 @@ In addition to the automated process above, manual testing was carried out on th
 
 ## Bugs Fixed
 
+### JSHint Validation
+
+There are two warnings above in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
+
+The secound warning deals with the calling of a variable where JSHint expected the call of a function but saw an expression instead. Again not a problem to worry about as the code is correct.
+
 ### Silent Error
 
 The most difficult error that presented itself was upon completing the quiz and trying to restart it, i.e. resetting variables and clearing timers. However something was breaking and yet no errors were showing up in the console. Using console.log showed results that were expected upon the restart of the quiz, variables seemed to be clearing. But the timers seemed to be counting down doubly (called twice/or not being cleared and called again), same with the question number counter and the user score. The easy solution was to use a window.location.reload, however this took the user from the experience as it also reset the user's sound settings and caused a visual reload.
 
-This bug was clearly a logical error in where the code was situated and called. Once the code was shifted, console.log and DevTool were used to track the variable results and functions called and the correct order for the reset was soon found.
+This bug was clearly a logical error in where the code was situated and called. Once the code was shifted, console.log and DevTools were used to track the variable results and functions called and the correct order for the reset was soon found.
 
 ![Testing the shifted code around until the right order was established](docs/readme-images/bugs-image.png)
 
@@ -452,6 +458,27 @@ One console error that kept cropping up was the error as seen below in the scree
 At one stage, changes were made to timer.js that completely broke the quiz. While it was thought the changes were reset, it still seemed to be broken. Because of this, using version control we could go back to a stage where timer.js was working correctly and use the previous code which worked.
 
 ![Version control from commits in github](docs/readme-images/version-control-image2.png)
+
+## Unresolved Bugs
+
+### JSHint Validation
+
+1. There are two warnings above in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
+
+![JSHint functions declared in a loop warning](docs/readme-images/jshint-function-loop-error.png)
+![JSHint functions declared in a loop warning 2](docs/readme-images/jshint-function-loop-error-2.png)
+
+2. The secound warning deals with the calling of a variable where JSHint expected the call of a function but saw an expression instead. Again not a problem to worry about as the code is correct.
+
+![JSHint calling of expression warning](docs/readme-images/jshint-expression-errors.png)
+
+3. The third warning is relation to using a bitwise logical operator. Upon discussion it is unsure of why JSHint is calling this an error, however it is suspected that it's because it is a bitwise logical operator that isn't actually manipulating bits.
+
+![JSHint use of bitwise logical operator](docs/readme-images/jshint-bitwise-operator-error.png)
+
+4. There are a large number of undefined or unused variables. This is because there are multiple Javascript pages and a lot of the variables are being called or defined in functions on other pages.
+
+![JSHint undefined and unused variables](docs/readme-images/jshint-undefined-variables.png) 
 
 # Deployment
 
