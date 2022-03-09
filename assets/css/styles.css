@@ -12,7 +12,7 @@
 }
 
 html {
-    background: url("../images/hp-bg-image2.jpg") no-repeat center center fixed;
+    background: url("../images/background-image.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -683,6 +683,4 @@ li.high-score:first-child {
     li.high-score {
         font-size: 1rem;
     }
-
-
 }
