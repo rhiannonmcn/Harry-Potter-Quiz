@@ -462,7 +462,7 @@ At one stage, changes were made to timer.js that completely broke the quiz. Whil
 
 ![JSHint calling of expression warning](docs/readme-images/jshint-expression-errors.png)
 
-3. The third warning is relation to using a bitwise logical operator. Upon discussion it is unsure of why JSHint is calling this an error, however it is suspected that it's because it is a bitwise logical operator that isn't actually manipulating bits.
+3. The third warning is relation to using a bitwise logical operator. Upon discussion it is unsure of why JSHint is calling this an error, however it is suspected that it's because it is a bitwise logical operator that isn't actually manipulating bits. More info [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code)
 
 ![JSHint use of bitwise logical operator](docs/readme-images/jshint-bitwise-operator-error.png)
 
@@ -518,14 +518,15 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 * [Javascript Quiz Tutorial source](https://www.sitepoint.com/simple-javascript-quiz/)
 * [Javascript Quiz tutorial source 2](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/)
 * [Javascript Quiz Tutorial source 3](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1419s&ab_channel=WebDevSimplified)
-* [Code for helping figure out the adding and deduction if user score points](https://stackoverflow.com/questions/54753424/)
+* [Code for helping to figure out the adding and deduction if user score points](https://stackoverflow.com/questions/54753424/)
 * [Tutorial for using local storage for high scores](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=9&ab_channel=JamesQQuick)
-* [Code for setting the volume of audio in javascript](https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object)
+* [Code for learning about setting the volume of audio in javascript](https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object)
 * [Code for looping audion in Javascript](https://stackoverflow.com/questions/13610638/loop-audio-with-javascript)
-* [Code for learning about setInterval and setTimeout](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
-* [Code for timer function](https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward)
+* [Tutorial for learning about setInterval and setTimeout](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+* [Code for learning timer function](https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward)
 * [Code for learning about toggling play and pause function for audio](https://siongui.github.io/2012/10/12/javascript-toggle-sound-onclick/)
 * [Code for randomly ordering the html button elements](https://stackoverflow.com/questions/63421963/on-click-get-button-values-from-array-javascript)
+* [Code for shuffling html elements](https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order)
 
 [Back to top](<#contents>)
 
