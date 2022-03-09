@@ -28,6 +28,7 @@ You can view the live site here - <a href="https://rhiannonmcn.github.io/Harry-P
     * [Responsive Testing](<#responsive-testing>)
     * [Manual Testing](<#manual-testing>)
     * [Bugs Fixed](<#bugs-fixed>)
+    * [Unresolved Bugs](<#unresolved-bugs>)
 * [Deployment](<#deployment>)
 * [Credits](<#credits>)
 * [Acknowledgements](<#acknowledgements>)
@@ -59,7 +60,7 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 | 3 | USER | As a user, I want to be able to play the quiz across all devices | So I can play the quiz while on the go or in different locations |
 | 4 | USER | As a user, I want the option of a more difficult quiz | So I can challenge myself  |
 | 5 | USER | As a user, I want to be able to start the game when I am ready | So I can prepare myself |
-| 6 | USER | As a user, I want to be track my score | So I can improve on it |
+| 6 | USER | As a user, I want to be able to track my score | So I can improve on it |
 | 7 | USER | As a user, I want to see the right answer highlighted if I answer wrong | So I can see where I went wrong |
 | 8 | USER | As a user, I want to be able to start a new game when the current one ends | So I can see if I can beat my score|
 | 9 | USER | As a user, when I play the quiz I want the questions to be randomly ordered | So the game can be as challenging as possible |
@@ -105,13 +106,13 @@ The **user** is any person who has read the Harry Potter book series (1-7) and w
 
 ## Site Structure
 
-Harry Potter Online Quiz consists of a one page site with 5 different 'screens' and an optional 6th and 7th screen, that the user navigates through to engage with the quiz. The Home screen offers three navigation paths, one to enter the quiz, another to see the highscores and the last is the rules page. Each screen has an information bar with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz you the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go to the home page.
+The Harry Potter Book Quiz consists of a one page site with 5 different 'screens' and an optional 6th and 7th screen, that the user navigates through to engage with the quiz. The Home screen offers three navigation paths, one to enter the quiz, another to see the highscores and the last is the rules page. Each screen has an information bar (info-bar) with information and controls on it; the home page button is to the immediate left and the sound icon toggles the sound on and off and is right beside it. When the user progresses to the actual quiz, the bar is filled with a timer, counting down how long the user has to answer the questions and a score which tallies the user's score as they progress through the quiz. Upon finishing the quiz the user is immediately taken to the results screen that gives the option to navigate to the optional 6th screen which is the highscores screen which can also be accessed from the home screen or to go back to the home page.
 
 ## Design Choices
 
 ### Colour Scheme
 
-The final colour scheme chosen was a rich dark red colour, with a warm, cream colour for the text and a mid grey colour as an accent. This colour scheme directly links back with the theme of the project: Harry Potter. Red is often associated with Harry Potter, the main character, because of his association with the Gryffindor house, who's colour is red or scarlet. The grey and cream colours are a nod to the main setting of the books, which is a castle, and the magical community's main ways of communication which tends to be a bit old fashioned in it's use of parchment and quills. 
+The final color scheme chosen was a rich dark red colour, with a warm, cream colour for the text and a mid grey colour as an accent. This colour scheme directly links back with the theme of the project: Harry Potter. Red is often associated with Harry Potter, the main character, because of his association with the Gryffindor house, who's colour is red or scarlet. The grey and cream colours are a nod to the main setting of the books, which is a castle, and the magical community's main ways of communication which tends to be a bit old fashioned in it's use of parchment and quills. 
 
 ![Site colour scheme](docs/readme-images/color-palete.png)
 
@@ -119,24 +120,24 @@ The final colour scheme chosen was a rich dark red colour, with a warm, cream co
 
 The fonts chosen were Cinzel for the main heading text and Prata for the subsequent heading and body text. Sans-serif is the fallback font. 
 
-Both fonts are a serif font and tie nicely with the theme of the quiz. There is a slight vintage feel to both fonts, with the use of letter spacing to give it a clean feel.
+Both fonts are a serif font and tie nicely with the theme of the quiz. There is a slight vintage feel to both fonts, but with the use of letter spacing to give it a clean feel.
 
 [Back to top](<#contents>)
 
 # Features
 
-The Harry Potter Online Book Quiz is created to produce an immersive experience for the user through the use of both design and site structure. It moves away from a typical website structure with the a menubar and is structured and designed more like a game.
+The Harry Potter Book Quiz was created to produce an immersive experience for the user through the use of both design and site structure. It moves away from the typical website structure with the menubar and is structured and designed more like a game.
 
 It is intuitively designed so the user can navigate it with ease, with visible and recognisable Home and Sound button icons, and visual ques and sound effects reflecting the topic.
 
 ## Navigation
 
 * The site navigation is done through the info-bar at the top of the quiz area and this does not change in style throughout the user's navigation of the quiz.
-* The user can navigate to the home screen from whereever they are in the quiz through the home button. 
+* The user can navigate to the home screen from wherever they are in the quiz through the home button. 
 * This is an icon of a castle, a nod to the theme itself while still being recognisable as a 'home' button. 
-* The sound button is automatically muted on website loading and like the home button it's position doesn't move but sound can be activated or muted by the user as they wish.
+* The sound button is automatically muted on the website loading and like the home button its' position doesn't move, but the sound can be activated or muted by the user as they wish.
 * Upon activation, there is themed background music and sound effects on the button clicks.
-* On the quiz run through two more bits of information are added to the right of these: the timer countdown and the user's score.
+* On the quiz starting two more informative icons are added to the right of these: the timer countdown and the user's score.
 * The navbar is responsive and does not change order throughout screen size changes.
 
 <details><summary>Desktop Info bar images</summary>
@@ -157,9 +158,9 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Home Screen
 
-* The Home Screen is the screen thats visible first when the site website loads. It is designed to be immediately recognisable to the user and to allow the user to immediately get playing the quiz.
-* In the middle of the website, the user will the quiz application centered, sitting upon a very recognisable Harry Potter themed background.
-* There is also the title and logo sitting on top of the quiz application, again giving the user the information on what the application is.
+* The Home Screen is the screen that's visible first when the site loads. It is designed to be immediately recognisable to the user and to allow the user to immediately start playing the quiz.
+* In the middle of the screen, the user will see the quiz main content centered, sitting upon a very recognisable Harry Potter themed background.
+* There is also the title and logo sitting on top of the quiz content, again giving the user information on what the site is.
 * The user is presented with three buttons; a Quiz button, a Highscores button and a Rules button and from here the user has all the information needed to play the quiz.
 
 ![Home Screen image](docs/readme-images/home-screen.png)
@@ -169,17 +170,18 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 * Navigation to this screen is through pressing the Quiz button on the home screen.
 * The quiz has three difficulty levels to choose from and are so named after different Harry Potter exam related material from the books.
-* Each difficulty has its' own question pool to choose from, which 10 questions are randomly choosen from.
-* Depending on which quiz difficulty is chosen, also determines other features that are implemented.
-* Choosing Troll (easy level) will give the user a time of 20 secounds to answer a question and will reward the user 2 points for a correct answer with no penalty for a wrong answer. 
-* Choosing O.W.L. (medium level) will give the user a time of 15 secounds to answer the question, will reward the user 5 points for a correct answer but will penalise the user 3 points for every wrong answer or if the timer runs out.
-* Choosing N.E.W.T. (hard level) will give the user a time of 10 secounds to answer the question, will reward the user 2 points plus the addition of whatever time is left on the timer for a correct answer. The quicker the user answers the more points they score. But will penalise the user 5 points for every wrong answer or if the timer runs out.
+* Each difficulty has its' own question pool to choose from, from which 10 questions are randomly choosen.
+* Depending on which quiz difficulty is chosen, this also determines other features that are implemented.
+* Choosing Troll (easy level) will give the user a time of 20 seconds to answer a question and will reward the user 2 points for a correct answer with no penalty for a wrong answer. 
+* Choosing O.W.L. (medium level) will give the user a time of 15 seconds to answer the question, will reward the user 5 points for a correct answer but will penalise the user 3 points for every wrong answer or if the timer runs out.
+* Choosing N.E.W.T. (hard level) will give the user a time of 10 seconds to answer the question, will reward the user 2 points plus the addition of whatever time is left on the timer for a correct answer. The quicker the user answers the more points they score. But will penalise the user 5 points for every wrong answer or if the timer runs out.
 
 ![Quiz Difficulty Screen image](docs/readme-images/difficulty-screen.png)
 ![Mobile quiz Difficulty Screen image](docs/readme-images/mobile-difficulty-screen.png)
 
 ## Quiz Start Screen
 
+* The quiz start screen is navigated to from the Quiz Difficulty Screen.
 * The quiz start screen is simply a phrase "Are you ready?" and a start button which will run the quiz.
 * This is to give the user a chance to prepare to take the quiz, to take a mental breath before diving in.
 
@@ -192,8 +194,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * The pool of questions is randomly chosen from a list of questions grouped by question difficulty in the questions.js file.
 * Each question is a multiple choice question with four possible answers.
 * Each of the answer boxes are also randomly displayed, to challenge the user and prevent memorisation of the answers if the quiz is played a second time.
-* Once a question is on the screen, unanswered, the next button functionality is disabled so as to prevent the user from skipping questions and the timer starts.
-* Once the timer reaches 5 seconds it will turn a gold colour and if the audio is playing countdown the 5 secounds with an audible sound effect.
+* Once a question is on the screen unanswered, the next button functionality is disabled so as to prevent the user from skipping questions and the timer starts.
+* Once the timer reaches 5 seconds it will turn a gold colour and if the audio is playing countdown the 5 seconds with an audible sound effect.
 * If the user answers a question correctly, a 'correct' sound will be played and the correct answer will highlight in green. The timer will pause and the user will receive points determined by the quiz difficulty chosen. 
 * If the user answers a question incorrectly, an 'incorrect' sound will play. The user's answer will highlight in red and the correct answer will highlight in green. The user will not score any points and depending on the difficulty chosen, may be deducted points.
 * If the user fails to answer the question within the allotted time, the 'incorrect sound will play', the right answer will highlight in green and the incorrect answers will highlight in red. The user also may be deducted points depending on the quiz difficulty chosen.
@@ -218,8 +220,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Results Section
 
-* When the user has looped through ten questions, they will then be automatically brought to the result's screen, which will display the user's score and how many questions out of 10 they got correct.
-* There is an input field, a Save score button and a Home Button.
+* When the user has looped through ten questions, they will then be automatically brought to the results screen, which will display the user's score and how many questions out of 10 they got correct.
+* There is an input field, a Save High Score button and a Home Button.
 * The input field cannot be submitted empty and upon clicking the save button the user will be notified that they must enter a username to save their score. 
 * They also have the option to skip this step and navigate straight to the home screen by clicking the home button.
 * Once the user enters a username and clicks save, they are then brought to the high scores screen.
@@ -230,10 +232,10 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## High Scores Screen
 
-* The High Scores screen can be navigated in two ways. Firstly through the homepage, and the highscores button. And secondly by playing the quiz and saving your score.
+* The High Scores screen can be navigated in two ways. Firstly through the home screen, and the High Scores button. And secondly by playing the quiz and saving your score.
 * The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alongside the score.
 * The incentive of this feature is to encourage users to beat their previous scores, try the quiz again, play different difficulties and try and beat the timer.
-* From the high scores screen, the user can navigate back to the home screen via the home button.
+* From the high scores screen, the user can navigate back to the Home screen via the home button.
 
 ![Highscores Screen image](docs/readme-images/highscores-screen.png)
 ![Mobile Highscores Screen image](docs/readme-images/mobile-highscores-screen.png)
@@ -241,7 +243,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 ## Rule Screen
 
 * The rules page is navigated to via the home screen.
-* This page has very little interactivity, with just a home button bringing you back to the home page.
+* This page has very little interactivity, with just a home button bringing the user back to the home screen.
 * This page is to give the user further understanding of the different question difficulties and their unique features.
 
 ![Rules Screen image](docs/readme-images/rules-screen.png)
@@ -251,8 +253,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 * The timer adds another dynamic layer to the quiz.
 * The time given is dependent on the level difficulty chosen (20s, 15s and 10s).
-* On the hard difficulty, the time left on the time countdown is added to the users score if they get an answer right, bringing in the users speed into the quiz.
-* Once the timer reaches 5 seconds it visibly turns a gold colour, and if the user's sound is on, it starts a 'ticking countdown effect' until 0, warning the user that their time is nearly up.
+* On the hard difficulty, the time left on the time countdown is added to the users score if they get an answer right, bringing the users speed into the quiz.
+* Once the timer reaches 5 seconds it visibly turns a gold colour, and if the user's sound is on, it starts a 'ticking countdown sound effect' until 0, warning the user that their time is nearly up.
 
 ## Sound
 
@@ -265,9 +267,9 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## Score
 
-* The score is visibly seen in the top right corner of the info bar of the quiz application.
+* The score is visibly seen in the top right corner of the info bar of the quiz content.
 * It provides an incentive to the user to keep playing the quiz and challenging themselves by trying to beat their last score.
-* By providing different scores for different levels of difficulty, as well as implementing unpredictable elements such as adding the time left to the score and deducting points for wrong answers keeps scoring inconsistent in terms of the total score, encouraging users to challenge themselves. 
+* By providing different scores for different levels of difficulty, as well as implementing unpredictable elements such as adding the time left to the score and deducting points for wrong answers, keeps the scoring inconsistent in terms of the total score, encouraging users to challenge themselves. 
 
 ## Current Question Display
 
@@ -283,11 +285,11 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 ## A Harder Difficulty/End Game Content
 
-* Have a level that creates a question index from the entire question pool, but if the user get's one question wrong, their score is saved at that point and they have to start from the beginning again, but the question pool has been randomly shuffled so they wont start with the first question. They wont be limited to just 10 questions but will have the chance to go through all the questions if they can get them all correct. This type of functionality offers long term usability, as with dedicated question pools and question numbers answered, the score can only go so high as the 10 questions right can give you. 
+* Have a option that creates a question index in random order from the entire question pool, but if the user get's one question wrong, their score is saved at that point and they have to start from the beginning again, but the question pool has been randomly shuffled so they wont start with the same first question. They wont be limited to just 10 questions but will have the chance to go through all the questions and see if they can get them all correct. This type of functionality offers long term usability, as with the current dedicated question pools and question numbers answered, the score can only go so high as the 10 questions right can give you. 
 
 ## Global Highscores
 
-* Instead of saving the high scores locally, saving the scores on a global level will raise the level of engagement with the quiz application, as users could compete against other people qhile accessing the application from different devices.
+* Instead of saving the high scores locally, saving the scores on a global level will raise the level of engagement with the quiz application, as users could compete against other people while accessing the site from different devices.
 
 [Back to top](<#contents>)
 
@@ -317,15 +319,15 @@ The Harry Potter Book Quiz has been tested via W3C HTML validator and W3C CSS va
 
 ## JSHint
 
-The Javascript files were validated via JSHint. Due to there being multiple Javascript files, validating each page threw up multiple notces, many of which were undefined varibles. This was due to the variables and functions being defined or called on other pages. 
+The Javascript files were validated via JSHint. Due to there being multiple Javascript files, validating each page threw up multiple warnings, many of which were undefined varibles. This was due to the variables and functions being defined or called on other pages. 
 
-JSHint came up with no errors and multiple warnings which are explained below in [Bugs Resolved](<#bugs-resolved>).
+JSHint came up with no errors and multiple warnings which are explained below in [Unresolved Bugs](<#unresolved-bugs>).
 
 ![JSHint validation for script.js](docs/readme-images/jshint-scriptpage.png)
 ![JSHint validation for questions.js](docs/readme-images/jshint-questions-jspage.png)
 ![JSHint validation for quiz-audio.js](docs/readme-images/jshint-audio-jspage.png)
 ![JSHint validation for timer.js](docs/readme-images/jshint-timer-jspage.png)
-![JSHint validation for highscores.js](https://rhiannonmcn-harrypotterq-ht5qryfelfq.ws-eu34xl.gitpod.io/)
+![JSHint validation for highscores.js](docs/readme-images/jshint-highscores-jspage.png)
 
 ## Lighthouse Testing
 
@@ -341,10 +343,12 @@ A11y was used to test the color contrast of the website for accessibility purpos
 
 ![A11y color contrast accessibility](docs/readme-images/color-contrast-accessibility-validator.png)
 
-Adobe Color was used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
+Adobe Color was used to also test the color contrast of the color scheme that was initially chosen.
 
 ![Adobe Colour contrast checker](docs/readme-images/color-contrast-checker.png)
 ![Adobe Color contrast checker image 2](docs/readme-images/color-contrast-checker2.png)
+
+Adobe Color was also used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
 
 ## Responsive Testing
 
@@ -367,8 +371,10 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified via console.log that pressing the Troll button difficulty accesses the easy difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
     * Verified via console.log that pressing the O.W.L. button accesses the medium difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
-    * Verified via console.log that pressing the N.E.W.T. button accesses the hard difficulty questions and randomly sorts and takes the user to the Start Quiz screen.
+    * Verified via console.log that pressing the N.E.W.T. button accesses the hard difficulty questions and randomly sorts them and takes the user to the Start Quiz screen.
     * Verified that all sounds work if the sound is toggle on; background music and button clicks.
+
+    ![Verified via console.log user difficulty questions](docs/readme-images/testing-difficulty-level.png)
 
 * Start Quiz Screen
     * Verified that clicking the Home Button icon on the info-bar brought the user back to the Home screen and reset the quiz choices made so far.
@@ -376,6 +382,8 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified via console.log that the users selected question level difficulty was still correct prior to pressing the start button.
     * Verified that pressing the Start button brings the user to the Quiz Questions Screen.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
+
+    ![Testing if the button was connected to the correct function via console.log](docs/readme-images/manual-testing.png)
 
 * Quiz Questions Screen
     * Verified that clicking the Home Button icon in the info-bar brought the user back to the Home screen and reset the entire quiz, including users previous choices and answers.
@@ -385,28 +393,28 @@ In addition to the automated process above, manual testing was carried out on th
     * Verified that the timer showed up in the info-bar correctly and started on loading of the question. That it was displayed properly, that the correct amount of time was counted down depending on the difficulty chosen and that the timer stopped if an answer was chosen or time ran out and that the timer cleared and restarted upon pressing the next button.
     * Verified that the score icon shows up correctly in the info-bar, that it increments by the correct amount depending on the difficulty chosen. That the score deducts by the correct amount depending on the difficulty shown, and that the score is displayed correctly at all times.
     * Verified that the question number is displayed correctly, and that it increments currently.
-    * Verified that the questions are iterated through 10 times before bringing to the results page via the next button.
-    * Verified that all sounds work if the sound is toggled on; background music, button clicks, sound for the correct answer, sound for the wrong answer and sound for the timer countdown st 5 secounds.
+    * Verified that the questions are iterated through 10 times before bringing the user to the results screen via the next button.
+    * Verified that all sounds work if the sound is toggled on; background music, button clicks, sound for the correct answer, sound for the wrong answer and sound for the timer countdown at 5 seconds.
 
 * Results Screen
     * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified that the message is displayed correctly with the number of correct questions the user had and their final score is displayed correctly.
     * Verified that save button cannot be activated if the username input is empty and that it throws up a notification to the user if pressed while the input is empty.
-    * Verified that the save button takes the user to the High Scores page.
-    * Verified via DevTools and console.log that the username and score is saved in local storage on click of the save button.
+    * Verified that the save button takes the user to the High Scores screen.
+    * Verified via DevTools and console.log that the username and score is saved in local storage on click of the Save High Scores button.
     * Verified that the Home button brings the user back to the home page and resets the entire quiz, including the users previous choices and answers and that the users score is not saved if the home button is clicked.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 * High Scores Screen
-    * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
+    * Verified that clicking the Home button icon on the info-bar brings the user back to the Home screen and resets the entire quiz, including the users previous choices and answers. 
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified through multiple plays of the quiz and saving high scores that the highscores are indeed saved, sorted into descending order and cut off at 5 high scores and that any new high scores in the top 5 replace the lowest score that was previously visible.
     * Verified that the Home Button takes the user to the home screen and resets the quiz fully.
     * Verified that all sounds work if the sound is toggled on; background music and button clicks.
 
 * Rules Screen
-    * * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen.
+    * Verified that clicking the Home button icon on the info-bar brought the user back to the Home screen.
     * Verified that toggling the audio button will toggle the audio on and off as many times as the user presses it.
     * Verified that the rules were displayed properly.
     * Verified that the Home Button takes the user to the home screen.
@@ -416,7 +424,7 @@ In addition to the automated process above, manual testing was carried out on th
     * Verfied that once the quiz is finished and whether the user decides to save their score or go straight back to the home page, that the entire quiz reset; timer, score, quiz difficulty, quiz question randomising, correct question number and the current question number the user is on - and would loop perfectly again, with just the user audio options remaining the same and the high scores saved.
 
 * Resonisiveness
-    * Verified manually by playing through each page of the quiz that the quiz was fully responsive on the devices available in DevTools and any other devices that were available to actually test on.
+    * Verified manually by playing through each screen of the quiz that the quiz was fully responsive on the devices available in DevTools and any other devices that were available to actually test on.
 
 * Browser Testing
     * Harry Potter Book Quiz has been tested manually in Google Chrome, Microsoft Edge, Mozilla Firefox and Safari on both desktop and mobile.
@@ -459,7 +467,7 @@ Making sure that the link for the the font awesome icons was above the link to t
 
 ### Screen Broken
 
-During testing by the average user, I was alerted to a bug which cause the screen to break if the home button icon in the info bar is pressed, in the Start Screen only. It would bring the user home and reset the quiz, however it failed to 'hide' the Start Screen and appended the screen onto the bottom of the Home Screen and onto any other screen thereafter. The problem was easily replicated.
+During testing the quiz was given to users with no experience in code, and from there alerted to a bug which caused the screen to break if the home button icon in the info-bar is pressed, in the Start Screen only. It would bring the user home and reset the quiz, however it failed to 'hide' the Start Screen and appended the screen onto the bottom of the Home Screen and onto any other screen thereafter. The problem was easily replicated.
 
 <details><summary>Screen Split Bug</summary>
 
@@ -469,7 +477,7 @@ During testing by the average user, I was alerted to a bug which cause the scree
 
 </details>
 
-Upon identifying the code visually, it was easy to tell exactly where the code was broken/incorrect. The 'hide' class was being added to the wrong html container, and once amended to the correct container, the screen worked correctly.
+Upon replicating and identifying the problem visually, it was easy to tell exactly where the code was broken/incorrect. The 'hide' class was being added to the wrong html container, and once amended to the correct container, the screen worked correctly.
 
 ### Screen Orientation Responsiveness
 
@@ -501,7 +509,7 @@ At one stage, changes were made to timer.js that completely broke the quiz. Whil
 
 ### JSHint Validation
 
-1. There are two warnings above in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
+1. There are two warnings below in respect of declaring a function inside of a loop. It was assured that this wouldn't be an issue as the code is correct and will cause no problems.
 
 ![JSHint functions declared in a loop warning](docs/readme-images/jshint-function-loop-error.png)
 ![JSHint functions declared in a loop warning 2](docs/readme-images/jshint-function-loop-error-2.png)
@@ -510,17 +518,21 @@ At one stage, changes were made to timer.js that completely broke the quiz. Whil
 
 ![JSHint calling of expression warning](docs/readme-images/jshint-expression-errors.png)
 
-3. The third warning is relation to using a bitwise logical operator. Upon discussion it is unsure of why JSHint is calling this an error, however it is suspected that it's because it is a bitwise logical operator that isn't actually manipulating bits. More info [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code)
+3. The third warning is in relation to using a bitwise logical operator. Upon discussion it is unsure of why JSHint is calling this an error, however it is suspected that it's because it is a bitwise logical operator that isn't actually manipulating bits. More info [here](https://stackoverflow.com/questions/11605068/why-does-jshint-argue-against-bitwise-operators-how-should-i-express-this-code)
 
 ![JSHint use of bitwise logical operator](docs/readme-images/jshint-bitwise-operator-error.png)
 
-4. There are a large number of undefined or unused variables. This is because there are multiple Javascript pages and a lot of the variables are being called or defined in functions on other pages.
+4. There are a large number of undefined or unused variables. This is because there are multiple Javascript pages and a lot of the variables are being called or defined in functions on other pages and JSHint does not recognise that. Therefore it was manually checked that all variables are being used/called.
 
-![JSHint undefined and unused variables](docs/readme-images/jshint-undefined-variables.png) 
+![JSHint undefined and unused variables](docs/readme-images/jshint-undefined-variables.png)
+
+### Audio Autoplay Mobile issues
+
+This error is in relation to how Mobile browsers work with sound on websites. Most browsers prevent auto play of sound, and prevent sound being played without specific user interaction. This means the sound of the timer counting down from 5s does not work on mobiles as it is considered auto play. All other sounds work correctly as they are initialised by some sort of user action, i.e a button click. There is a lot of information found separately on the subject [here](https://stackoverflow.com/questions/17889297/sound-does-not-play-in-mobile) , and specifically on Chromes autoplay policies [here](https://developer.chrome.com/blog/autoplay/).
 
 ### Console Error in DevTools
 
-This error is in relation to Github pages and their FLoC. As it is enabled by Github themselves there is nothing that can be donw at this time to fix this if we are deploying via GitHub pages. More information on this can be seen [here](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/3) .
+This error is in relation to Github pages and their FLoC. As it is enabled by Github themselves there is nothing that can be done at this time to fix this if deployment is via GitHub pages. More information on this can be seen [here](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780/3) .
 
 ![Devtools Error](docs/readme-images/devtools-error.png)
 
@@ -542,7 +554,7 @@ The website was deployed to GitHub pages via the following methods:
 A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the original repository.
 
 1. Log in to GitHub and locate the repository in question.
-2. Locate the Fork button which can be founf in the top corner, right-hand side of the page,inline with the repository name.
+2. Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
 3. Click this button to create a copy of the original repository in your GitHub Account.
 
 ## To clone the repository on GitHub
@@ -579,5 +591,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 [Back to top](<#contents>)
 
 # Acknowledgements
+
+This site, Harry Potter Book Quiz was designed and developed in conjunction with the Full Stack Software Developer Diploma course (eccommerce) at the Code Institute. I would like to thank my mentor, my cohort facilitator, the members of our cohort, the Slack community and Code Institute for all their support.
 
 [Back to top](<#contents>)
