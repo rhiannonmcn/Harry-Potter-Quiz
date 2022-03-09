@@ -152,6 +152,8 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * There is also the title and logo sitting on top of the quiz application, again giving the user the information on what the application is.
 * The user is presented with three buttons; a Quiz button, a Highscores button and a Rules button and from here the user has all the information needed to play the quiz.
 
+![Home Screen image](docs/readme-images/home-screen.png)
+
 ## Quiz Difficulty Screen
 
 * Navigation to this screen is through pressing the Quiz button on the home screen.
@@ -162,10 +164,14 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * Choosing O.W.L. (medium level) will give the user a time of 15 secounds to answer the question, will reward the user 5 points for a correct answer but will penalise the user 3 points for every wrong answer or if the timer runs out.
 * Choosing N.E.W.T. (hard level) will give the user a time of 10 secounds to answer the question, will reward the user 2 points plus the addition of whatever time is left on the timer for a correct answer. The quicker the user answers the more points they score. But will penalise the user 5 points for every wrong answer or if the timer runs out.
 
+![Quiz Difficulty Screen image](docs/readme-images/difficulty-screen.png)
+
 ## Quiz Start Screen
 
 * The quiz start screen is simply a phrase "Are you ready?" and a start button which will run the quiz.
 * This is to give the user a chance to prepare to take the quiz, to take a mental breath before diving in.
+
+![Quiz Start Screen image](docs/readme-images/start-screen.png)
 
 ## Quiz Questions Screen - Core of the Application
 
@@ -180,6 +186,11 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * If the user fails to answer the question within the allotted time, the 'incorrect sound will play', the right answer will highlight in green and the incorrect answers will highlight in red. The user also may be deducted points depending on the quiz difficulty chosen.
 * Once a user answers the question or the timer runs out, the answer button functionality is disabled so as to prevent re-answering and the next button functionality is enabled again.
 
+![Quiz Questions Screen](docs/readme-images/questions-screen-no-answer-chosen.png)
+![Quiz Questions Screen Correct Answer Chosen](docs/readme-images/questions-screen-correct-ans-chosen.png)
+![Quiz Questions Screen wrong answer chosen](docs/readme-images/questions-screen-wrong-answer-chosen.png)
+![Quiz Questions Screen timer runs out](docs/readme-images/questions-screen-timer-runs-out.png)
+
 ## Results Section
 
 * When the user has looped through ten questions, they will then be automatically brought to the result's screen, which will display the user's score and how many questions out of 10 they got correct.
@@ -189,6 +200,7 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * Once the user enters a username and clicks save, they are then brought to the high scores screen.
 
 ![Custom Validity for input on Results screen](docs/readme-images/custom-validity.png)
+![Results Screen image](docs/readme-images/results-screen.png)
 
 ## High Scores Screen
 
@@ -197,11 +209,15 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 * The incentive of this feature is to encourage users to beat their previous scores, try the quiz again, play different difficulties and try and beat the timer.
 * From the high scores screen, the user can navigate back to the home screen via the home button.
 
+![Highscores Screen image](docs/readme-images/highscores-screen.png)
+
 ## Rule Screen
 
 * The rules page is navigated to via the home screen.
 * This page has very little interactivity, with just a home button bringing you back to the home page.
 * This page is to give the user further understanding of the different question difficulties and their unique features.
+
+![Rules Screen image](docs/readme-images/rules-screen.png)
 
 ## Timer
 
