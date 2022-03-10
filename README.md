@@ -154,8 +154,6 @@ It is intuitively designed so the user can navigate it with ease, with visible a
 
 </details>
 
-[Back to top](<#contents>)
-
 ## Home Screen
 
 * The Home Screen is the screen that's visible first when the site loads. It is designed to be immediately recognisable to the user and to allow the user to immediately start playing the quiz.
@@ -348,11 +346,15 @@ Adobe Color was used to also test the color contrast of the color scheme that wa
 ![Adobe Colour contrast checker](docs/readme-images/color-contrast-checker.png)
 ![Adobe Color contrast checker image 2](docs/readme-images/color-contrast-checker2.png)
 
-Adobe Color was also used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing.
+Adobe Color was also used to test that the color scheme was accessible for people with different types of blindness, which it also succeeded in doing. As Adobe Color doesn't let you change the number of colors you are testing from 5, two other dummy colors were added just to fill the bar and conflict was only checked againts the first 3 colors to make sure they are accessible and do not blend into each causing difficulty distnguishing between them.
+
+![Adobe Color Blindness Accessibility](docs/readme-images/accessible-color-blindness.png)
 
 ## Responsive Testing
 
 Responsiveness was tested via a few different mediums manually, including Chrome Devtools, The Viewport Resizer chrome extension and The Responsive Design Checker website.
+
+[Back to top](<#contents>)
 
 ## Manual Testing
 
@@ -436,6 +438,8 @@ In addition to the automated process above, manual testing was carried out on th
     ![Using branches to test code](docs/readme-images/branches-image.png)
     ![Using branches within gitpod to test code](docs/readme-images/branches-image2.png)
 
+[Back to top](<#contents>)
+
 ## Bugs Fixed
 
 ### Silent Error
@@ -504,6 +508,8 @@ One console error that kept cropping up was the error as seen below in the scree
 At one stage, changes were made to timer.js that completely broke the quiz. While it was thought the changes were reset, it still seemed to be broken. Because of this, using version control we could go back to a stage where timer.js was working correctly and use the previous code which worked.
 
 ![Version control from commits in github](docs/readme-images/version-control-image2.png)
+
+[Back to top](<#contents>)
 
 ## Unresolved Bugs
 
