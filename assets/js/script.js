@@ -72,9 +72,11 @@ highScoresBtn.addEventListener('click', () => {
  * adds and removes the hide class to show the rules screen
  */
 rulesButton.addEventListener('click', () => {
+    buttonSoundEffects();
     enterQuiz.classList.add("hide");
     rulesScreen.classList.remove("hide");
 });
+
 
 /**
  * Loops through all the home button icons (info-bar) and adds an event listenter to them
